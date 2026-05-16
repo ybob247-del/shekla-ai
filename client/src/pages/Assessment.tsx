@@ -1,5 +1,5 @@
-import MoneyResetScore from "@/components/MoneyResetScore";
 import { Link } from "wouter";
+import MoneyResetScore from "@/components/MoneyResetScore";
 
 const HOW_IT_WORKS = [
   {
@@ -17,6 +17,14 @@ const HOW_IT_WORKS = [
     title: "See Your Plan",
     description: "Get personalized recommendations and toolkit suggestions based on your results.",
   },
+];
+
+const SCORE_RANGES = [
+  { range: "80–100", grade: "A", label: "Strong Foundation", color: "emerald", desc: "You're doing great. Focus on optimization and wealth building." },
+  { range: "60–79", grade: "B", label: "On Track", color: "blue", desc: "Good habits in place. A few targeted fixes will accelerate your progress." },
+  { range: "40–59", grade: "C", label: "Needs Attention", color: "yellow", desc: "Some gaps to address. Prioritize emergency fund and debt reduction." },
+  { range: "20–39", grade: "D", label: "Struggling", color: "orange", desc: "Multiple areas need work. Start with a basic budget and emergency fund." },
+  { range: "0–19", grade: "F", label: "Reset Needed", color: "red", desc: "Financial reset required. Take it one step at a time — start with the basics." },
 ];
 
 export default function Assessment() {
@@ -51,13 +59,47 @@ export default function Assessment() {
           ))}
         </div>
 
-        {/* Assessment Form */}
+        {/* Assessment Form — MoneyResetScore uses react-hook-form + zod internally */}
         <MoneyResetScore />
+
+        {/* Score Range Guide */}
+        <div className="mt-12 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <h3 className="font-bold text-gray-900 mb-4 text-center">Score Range Guide</h3>
+          <div className="space-y-3">
+            {SCORE_RANGES.map((s) => (
+              <div key={s.grade} className="flex items-start gap-4">
+                <div
+                  className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm shrink-0 ${
+                    s.color === "emerald"
+                      ? "bg-emerald-100 text-emerald-700"
+                      : s.color === "blue"
+                      ? "bg-blue-100 text-blue-700"
+                      : s.color === "yellow"
+                      ? "bg-yellow-100 text-yellow-700"
+                      : s.color === "orange"
+                      ? "bg-orange-100 text-orange-700"
+                      : "bg-red-100 text-red-700"
+                  }`}
+                >
+                  {s.grade}
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span className="font-semibold text-gray-900 text-sm">{s.label}</span>
+                    <span className="text-gray-400 text-xs">({s.range})</span>
+                  </div>
+                  <p className="text-gray-600 text-xs">{s.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Bottom info */}
         <div className="mt-8 text-center text-sm text-gray-500">
           <p>
-            Your answers are not stored or shared. This assessment is for educational purposes only and does not constitute financial advice.
+            Your answers are not stored or shared. This assessment is for educational purposes only
+            and does not constitute financial advice.
           </p>
           <p className="mt-2">
             Want to learn more?{" "}

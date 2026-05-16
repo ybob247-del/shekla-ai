@@ -1,3 +1,4 @@
+// Single router: wouter only (react-router-dom removed to fix dual-router conflict)
 import { Switch, Route, Link, useLocation } from "wouter";
 import { useState } from "react";
 import Home from "@/pages/Home";
@@ -69,6 +70,7 @@ function Header() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100"
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
