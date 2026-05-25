@@ -613,6 +613,35 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "🔗",
     readTime: 7,
   },
+
+  // New SEO Articles - May 2026
+  {
+    slug: "how-to-open-roth-ira",
+    title: "How to Open a Roth IRA: A Beginner's Guide",
+    description: "Learn what a Roth IRA is, why you need one, and a step-by-step guide to opening your account today.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 8,
+    isNew: true,
+  },
+  {
+    slug: "what-is-a-mortgage",
+    title: "What Is a Mortgage and How Does It Work?",
+    description: "A simple, jargon-free explanation of mortgages, interest rates, and the home buying process.",
+    category: "debt",
+    categoryEmoji: "📉",
+    readTime: 7,
+    isNew: true,
+  },
+  {
+    slug: "best-side-hustles",
+    title: "Best Side Hustles to Make Extra Money",
+    description: "Discover proven ways to earn extra income online and offline to reach your financial goals faster.",
+    category: "spending",
+    categoryEmoji: "🛒",
+    readTime: 9,
+    isNew: true,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
