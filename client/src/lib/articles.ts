@@ -614,6 +614,35 @@ export const ARTICLES: Article[] = [
     readTime: 7,
   },
 
+  // New SEO Articles - June 2026
+  {
+    slug: "what-is-a-credit-union",
+    title: "What Is a Credit Union? Banks vs. Credit Unions Explained",
+    description: "Discover the differences between credit unions and traditional banks, the pros and cons of each, and how to choose the right place for your money.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 7,
+    isNew: true,
+  },
+  {
+    slug: "how-do-personal-loans-work",
+    title: "How Do Personal Loans Work? A Complete Guide",
+    description: "Learn what a personal loan is, how the application process works, and when it makes sense to use one for debt consolidation or major expenses.",
+    category: "debt",
+    categoryEmoji: "📉",
+    readTime: 8,
+    isNew: true,
+  },
+  {
+    slug: "what-is-a-high-yield-savings-account",
+    title: "What Is a High-Yield Savings Account (HYSA)?",
+    description: "Learn how high-yield savings accounts work, why they pay significantly more interest than traditional banks, and how to choose the right one.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 6,
+    isNew: true,
+  },
+
   // New SEO Articles - May 2026
   {
     slug: "how-to-open-roth-ira",
