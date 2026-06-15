@@ -817,6 +817,240 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
     ],
   },
 
+  "what-is-a-401k": {
+    slug: "what-is-a-401k",
+    title: "What Is a 401(k)? 401(k) vs. IRA Explained for Beginners",
+    subtitle: "Learn what a 401(k) is, how it compares to an IRA, and the best strategy for using both to build a secure retirement.",
+    keyLesson: "Always contribute enough to your 401(k) to get the full employer match — it's free money. Then fund a Roth IRA for flexibility. Then go back and max out the 401(k).",
+    sections: [
+      {
+        type: "heading",
+        content: "What Is a 401(k)?",
+      },
+      {
+        type: "paragraph",
+        content: "A 401(k) is an employer-sponsored retirement savings plan that allows employees to save and invest a portion of their paycheck before taxes are taken out. The name comes directly from the section of the U.S. tax code that governs these accounts. Taxes on contributions and investment growth are deferred until you withdraw the money in retirement, typically after age 59½.",
+      },
+      {
+        type: "heading",
+        content: "Key Benefits of a 401(k)",
+      },
+      {
+        type: "list",
+        content: "Why a 401(k) is a powerful savings tool:",
+        items: [
+          "Employer Match: Many employers match a portion of your contributions — often 50-100% up to 3-6% of your salary. This is free money you should never leave on the table.",
+          "Tax-Deferred Growth: Your investments grow without being taxed each year, accelerating compounding over time.",
+          "High Contribution Limits: In 2024, you can contribute up to $23,000 (plus $7,500 catch-up if you're 50+).",
+          "Automatic Savings: Contributions come directly out of your paycheck, making saving effortless.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "What Is an IRA?",
+      },
+      {
+        type: "paragraph",
+        content: "An Individual Retirement Account (IRA) is a retirement savings account you open independently, not through an employer. You can open one at a bank, brokerage, or through a robo-advisor. There are two main types: a Traditional IRA, where contributions may be tax-deductible and you pay taxes on withdrawal, and a Roth IRA, where you contribute after-tax dollars and all qualified withdrawals in retirement are completely tax-free.",
+      },
+      {
+        type: "heading",
+        content: "401(k) vs. IRA: The Key Differences",
+      },
+      {
+        type: "list",
+        content: "How they compare at a glance:",
+        items: [
+          "Employer Match: 401(k) can have it; IRA does not.",
+          "Contribution Limit (2024): 401(k) is $23,000; IRA is $7,000.",
+          "Investment Options: 401(k) is limited to a pre-selected fund menu; IRA offers nearly unlimited options.",
+          "Portability: IRA is fully portable; 401(k) must be rolled over when you change jobs.",
+          "Tax-Free Growth: Roth IRA offers tax-free withdrawals; Traditional 401(k) does not.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "The Best Strategy: Use Both",
+      },
+      {
+        type: "paragraph",
+        content: "You don't have to choose between a 401(k) and an IRA — in fact, using both is often the optimal strategy. The most effective order of operations is: first, contribute enough to your 401(k) to capture 100% of the employer match. Second, open and max out a Roth IRA for its superior flexibility and tax-free growth. Third, if you still have money to invest, go back and increase your 401(k) contributions up to the annual limit.",
+      },
+      {
+        type: "tip",
+        content: "If your employer offers a Roth 401(k) option, consider using it. You get the high contribution limits of a 401(k) with the tax-free withdrawal benefits of a Roth IRA.",
+      },
+      {
+        type: "heading",
+        content: "Using AI to Optimize Your Retirement Contributions",
+      },
+      {
+        type: "paragraph",
+        content: "Deciding how much to contribute can feel overwhelming. AI-assisted financial tools can analyze your current income, expenses, and goals to recommend a personalized contribution rate. They can also model how different contribution amounts today will affect your portfolio balance at retirement, helping you find the right balance between saving for the future and living comfortably now.",
+      },
+      {
+        type: "keyLesson",
+        content: "The single most important retirement move you can make is to contribute at least enough to your 401(k) to get the full employer match. After that, a Roth IRA is your next best move for tax-free retirement income.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "how-to-save-for-a-house": {
+    slug: "how-to-save-for-a-house",
+    title: "How to Save for a House: A Step-by-Step Guide for First-Time Buyers",
+    subtitle: "A practical, step-by-step plan for first-time buyers to save for a down payment — from setting your target to automating your savings.",
+    keyLesson: "You don't need a 20% down payment to buy a house. Set a realistic target, automate your savings into a high-yield account, and protect your credit score throughout the process.",
+    sections: [
+      {
+        type: "heading",
+        content: "Step 1: Determine How Much You Actually Need",
+      },
+      {
+        type: "paragraph",
+        content: "The biggest myth in real estate is that you need a 20% down payment. While 20% is ideal because it eliminates Private Mortgage Insurance (PMI), it is not a strict requirement. FHA loans allow down payments as low as 3.5% for buyers with a credit score of 580 or higher. Many conventional loans now allow as little as 3% down for first-time buyers. VA and USDA loans may offer 0% down for qualifying veterans and rural buyers.",
+      },
+      {
+        type: "tip",
+        content: "Don't forget closing costs! These typically add 2–5% of the loan amount on top of your down payment. Factor this into your total savings goal from day one.",
+      },
+      {
+        type: "heading",
+        content: "Step 2: Set a Realistic Timeline",
+      },
+      {
+        type: "paragraph",
+        content: "Once you know your target number, you need a timeline. If your goal is to save $30,000, trying to do it in one year requires saving $2,500 per month — which may be unrealistic. Spreading it over three years drops that to about $833 per month. AI-assisted goal-setting tools can analyze your income and spending to suggest a timeline that won't leave you financially strained before you even close on the home.",
+      },
+      {
+        type: "heading",
+        content: "Step 3: Automate Your Savings",
+      },
+      {
+        type: "paragraph",
+        content: "The most effective way to save is to treat your house fund like a non-negotiable bill. Set up an automatic transfer from your checking account to a dedicated savings account the day after you receive each paycheck. The best place to keep your house fund is a High-Yield Savings Account (HYSA). These FDIC-insured accounts offer significantly higher interest rates than traditional banks, helping your money grow safely while you save.",
+      },
+      {
+        type: "heading",
+        content: "Step 4: Audit and Optimize Your Spending",
+      },
+      {
+        type: "list",
+        content: "Quick wins to accelerate your savings:",
+        items: [
+          "Cancel unused subscriptions and streaming services.",
+          "Negotiate lower rates on internet, insurance, and phone bills.",
+          "Apply the 24-hour rule: wait a full day before any non-essential purchase over $50.",
+          "Meal prep to cut restaurant and takeout spending by 30–50%.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 5: Boost Your Income",
+      },
+      {
+        type: "paragraph",
+        content: "Cutting expenses only goes so far. To accelerate your timeline, consider asking for a raise if you've taken on more responsibility, or starting a side hustle. Freelance work, tutoring, or selling items online can add hundreds of dollars per month to your house fund. The key is to dedicate 100% of any extra income directly to your down payment savings account.",
+      },
+      {
+        type: "heading",
+        content: "Step 6: Protect Your Credit Score",
+      },
+      {
+        type: "paragraph",
+        content: "While you're saving, fiercely protect your credit score. Your score determines the interest rate you'll be offered on your mortgage. Even a 0.5% difference in your mortgage rate can mean tens of thousands of dollars over the life of the loan. Pay every bill on time, keep credit card balances below 30% of your limit, and avoid opening any new credit accounts in the 12 months before you apply for a mortgage.",
+      },
+      {
+        type: "keyLesson",
+        content: "Saving for a house is a marathon, not a sprint. Automate your savings, keep your money in a high-yield account, and protect your credit score. These three habits will get you to the closing table faster than any other strategy.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "how-to-check-credit-score": {
+    slug: "how-to-check-credit-score",
+    title: "What Is a Credit Score and How to Check It Safely",
+    subtitle: "Understand exactly what makes up your credit score, what the ranges mean, and how to check it for free without hurting it.",
+    keyLesson: "Checking your own credit score is a 'soft inquiry' and will never lower your score. You can and should check it for free at least once a month using your bank app or a free monitoring service.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Is a Credit Score?",
+      },
+      {
+        type: "paragraph",
+        content: "A credit score is a three-digit number that represents your creditworthiness — essentially, how likely you are to repay borrowed money on time. The most widely used model is the FICO® Score, which ranges from 300 to 850. Lenders use this number to decide whether to approve your application for a loan or credit card, and at what interest rate.",
+      },
+      {
+        type: "heading",
+        content: "Credit Score Ranges Explained",
+      },
+      {
+        type: "list",
+        content: "What your score means:",
+        items: [
+          "Exceptional (800–850): You'll qualify for the best rates on any loan.",
+          "Very Good (740–799): You'll receive better-than-average rates from most lenders.",
+          "Good (670–739): You'll be approved for most loans at competitive rates.",
+          "Fair (580–669): You may be approved but at higher interest rates.",
+          "Poor (300–579): You may be denied credit or face very high rates.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How Is Your Credit Score Calculated?",
+      },
+      {
+        type: "paragraph",
+        content: "Your FICO score is built from five factors. Payment History (35%) is the most critical — even one payment that is 30 days late can significantly hurt your score. Credit Utilization (30%) measures how much of your available credit you're using; keeping this below 30% is key. Length of Credit History (15%) rewards long-standing accounts, which is why you shouldn't close your oldest credit card. New Credit (10%) accounts for recent hard inquiries from loan applications. Credit Mix (10%) rewards having a variety of account types, like both credit cards and installment loans.",
+      },
+      {
+        type: "heading",
+        content: "How to Check Your Credit Score for Free",
+      },
+      {
+        type: "paragraph",
+        content: "There is a persistent myth that checking your own credit score will lower it. This is completely false. When you check your own credit, it is a 'soft inquiry' which has zero impact on your score. Only a 'hard inquiry' — which occurs when a lender checks your credit because you applied for new credit — can temporarily lower your score.",
+      },
+      {
+        type: "list",
+        content: "The best free ways to check your credit score:",
+        items: [
+          "Your Bank or Credit Card App: Most major banks and credit card issuers now display your FICO score or VantageScore for free in their mobile app.",
+          "AnnualCreditReport.com: By law, you are entitled to a free copy of your full credit report from each of the three bureaus (Equifax, Experian, TransUnion) every 12 months.",
+          "Free Monitoring Services: Apps like Credit Karma or Credit Sesame offer free weekly score updates and monitoring alerts.",
+        ],
+      },
+      {
+        type: "tip",
+        content: "Request one credit report from a different bureau every four months (one from Equifax in January, one from Experian in May, one from TransUnion in September). This gives you free year-round monitoring of your full credit history.",
+      },
+      {
+        type: "heading",
+        content: "Using AI to Manage Your Credit Health",
+      },
+      {
+        type: "paragraph",
+        content: "Modern AI-assisted financial tools can help you take a proactive approach to your credit health. They can automatically alert you when your credit utilization is approaching the 30% threshold, flag unusual activity on your accounts that could indicate fraud, and use predictive modeling to show you how specific actions — like paying off a particular debt — might impact your score before you take that action.",
+      },
+      {
+        type: "keyLesson",
+        content: "Your credit score is built on two simple habits: pay every bill on time, and keep your credit card balances low. Master these two things and your score will take care of itself.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];

@@ -643,6 +643,35 @@ export const ARTICLES: Article[] = [
     isNew: true,
   },
 
+  // New SEO Articles - June 2026 (Week 2)
+  {
+    slug: "what-is-a-401k",
+    title: "What Is a 401(k)? 401(k) vs. IRA Explained for Beginners",
+    description: "Learn what a 401(k) is, how it compares to an IRA, and the best strategy for using both to build a secure retirement.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 8,
+    isNew: true,
+  },
+  {
+    slug: "how-to-save-for-a-house",
+    title: "How to Save for a House: A Step-by-Step Guide",
+    description: "A practical, step-by-step plan for first-time buyers to save for a down payment — from setting your target to automating your savings.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 9,
+    isNew: true,
+  },
+  {
+    slug: "how-to-check-credit-score",
+    title: "What Is a Credit Score and How to Check It Safely",
+    description: "Understand exactly what makes up your credit score, what the ranges mean, and how to check it for free without hurting it.",
+    category: "debt",
+    categoryEmoji: "📉",
+    readTime: 7,
+    isNew: true,
+  },
+
   // New SEO Articles - May 2026
   {
     slug: "how-to-open-roth-ira",
