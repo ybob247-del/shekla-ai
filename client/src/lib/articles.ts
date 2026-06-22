@@ -672,6 +672,35 @@ export const ARTICLES: Article[] = [
     isNew: true,
   },
 
+  // New SEO Articles - June 2026 (Week 3)
+  {
+    slug: "how-to-refinance-a-mortgage",
+    title: "How to Refinance a Mortgage: A Beginner's Guide",
+    description: "Learn how mortgage refinancing works, when it makes financial sense to do it, and a step-by-step guide to the process.",
+    category: "debt",
+    categoryEmoji: "📉",
+    readTime: 8,
+    isNew: true,
+  },
+  {
+    slug: "what-are-etfs",
+    title: "What Are ETFs? A Beginner's Guide to Exchange-Traded Funds",
+    description: "Discover what ETFs are, how they differ from mutual funds, and why they are one of the best ways for beginners to start investing.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 7,
+    isNew: true,
+  },
+  {
+    slug: "how-to-negotiate-salary",
+    title: "How to Negotiate a Salary Raise: 7 Proven Steps",
+    description: "A practical guide to asking for a raise, complete with research strategies, timing tips, and scripts to help you get the pay you deserve.",
+    category: "financial-health",
+    categoryEmoji: "💪",
+    readTime: 9,
+    isNew: true,
+  },
+
   // New SEO Articles - May 2026
   {
     slug: "how-to-open-roth-ira",

@@ -1051,6 +1051,359 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
     ],
   },
 
+  "how-to-refinance-a-mortgage": {
+    slug: "how-to-refinance-a-mortgage",
+    title: "How to Refinance a Mortgage: A Beginner's Guide",
+    subtitle: "Lower your rate, reduce your payment, or tap your equity — here's how refinancing works",
+    keyLesson: "Refinancing replaces your existing mortgage with a new one. It makes financial sense when the long-term savings outweigh the closing costs — calculate your break-even point before you commit.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Does It Mean to Refinance a Mortgage?",
+      },
+      {
+        type: "paragraph",
+        content: "Refinancing a mortgage simply means replacing your current home loan with a new one. When you refinance, your new lender pays off your old mortgage, and you begin making payments on the new loan. People typically refinance to lower their interest rate, change their loan term, or access their home's equity through a cash-out refinance.",
+      },
+      {
+        type: "list",
+        content: "The three main reasons people refinance:",
+        items: [
+          "Lower their interest rate: Securing a lower rate can reduce your monthly payment and save you thousands over the life of the loan.",
+          "Change the loan term: Refinance from a 30-year to a 15-year mortgage to pay off your home faster, or extend the term to lower monthly payments.",
+          "Cash-out equity: Borrow more than you owe and take the difference in cash for home improvements, debt consolidation, or other major expenses.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "When Does Refinancing Make Sense?",
+      },
+      {
+        type: "paragraph",
+        content: "Refinancing comes with closing costs that typically range from 2% to 6% of the loan amount. Therefore, refinancing only makes sense if the financial benefits outweigh these upfront costs. The key calculation is your break-even point: how long will it take for your monthly savings to cover the closing costs?",
+      },
+      {
+        type: "example",
+        content: "Break-Even Example: If your closing costs are $4,000 and refinancing saves you $100 per month, your break-even point is 40 months. If you plan to sell or move before 40 months, refinancing will cost you money.",
+      },
+      {
+        type: "list",
+        content: "Good scenarios for refinancing:",
+        items: [
+          "Interest rates have dropped by 1% or more since you got your original mortgage.",
+          "Your credit score has improved significantly, qualifying you for a better rate.",
+          "You want to switch from an adjustable-rate mortgage (ARM) to a stable fixed-rate mortgage.",
+          "Your home's value has increased and you now have 20% equity, allowing you to drop PMI.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step-by-Step Guide to Refinancing",
+      },
+      {
+        type: "subheading",
+        content: "Step 1: Check Your Credit Score",
+      },
+      {
+        type: "paragraph",
+        content: "Before applying, check your credit score. Lenders will use it to determine the rate you qualify for. Generally, a score of 760 or higher will get you the best rates. Take time to correct any errors on your credit report before applying.",
+      },
+      {
+        type: "subheading",
+        content: "Step 2: Determine Your Home's Value and Equity",
+      },
+      {
+        type: "paragraph",
+        content: "Lenders will require an appraisal to determine your home's current market value. You need to know how much equity you have (home's value minus what you owe). Most lenders require at least 20% equity to avoid paying private mortgage insurance (PMI).",
+      },
+      {
+        type: "subheading",
+        content: "Step 3: Shop Around for the Best Rates",
+      },
+      {
+        type: "paragraph",
+        content: "Don't just accept the first offer from your current lender. Get quotes from multiple lenders, including large banks, credit unions, and online mortgage brokers. Compare not only the interest rates but also the fees and total closing costs associated with each offer.",
+      },
+      {
+        type: "subheading",
+        content: "Step 4: Gather Your Documents",
+      },
+      {
+        type: "list",
+        content: "Documents you will need:",
+        items: [
+          "Recent pay stubs (last 30 days)",
+          "W-2 forms from the past two years",
+          "Tax returns from the past two years",
+          "Recent bank statements (last 2-3 months)",
+          "Proof of homeowners insurance",
+        ],
+      },
+      {
+        type: "subheading",
+        content: "Step 5: Lock In Your Rate and Close",
+      },
+      {
+        type: "paragraph",
+        content: "When you find a rate and terms you are happy with, lock the rate to protect yourself from market fluctuations. A rate lock typically lasts 30 to 60 days. The final step is the closing, where you sign the loan documents, pay your closing costs, and your new mortgage officially replaces the old one.",
+      },
+      {
+        type: "tip",
+        content: "Ask your lender about a 'no-closing-cost refinance.' Instead of paying closing costs upfront, they are rolled into your loan balance or offset by a slightly higher interest rate. This can be a smart option if you don't plan to stay in the home for many years.",
+      },
+      {
+        type: "heading",
+        content: "Using AI to Analyze Your Refinance Options",
+      },
+      {
+        type: "paragraph",
+        content: "Navigating mortgage refinancing can be complex, but AI tools are making it easier. Shekla AI can help you analyze your current mortgage terms, calculate your break-even point for a potential refinance, and run scenario comparisons — like a 15-year vs. a 30-year term — to see exactly how different choices will impact your long-term wealth.",
+      },
+      {
+        type: "keyLesson",
+        content: "Before refinancing, always calculate your break-even point. Divide your total closing costs by your monthly savings to find out how many months it takes to come out ahead. If you plan to stay in the home longer than that, refinancing is likely a smart financial move.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "what-are-etfs": {
+    slug: "what-are-etfs",
+    title: "What Are ETFs? A Beginner's Guide to Exchange-Traded Funds",
+    subtitle: "Instant diversification, low costs, and easy to start — ETFs are the ideal investment for beginners",
+    keyLesson: "An ETF is a basket of investments (like stocks or bonds) that trades on an exchange like a single stock. They offer instant diversification at a very low cost, making them one of the best tools for beginner investors.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Is an ETF?",
+      },
+      {
+        type: "paragraph",
+        content: "An Exchange-Traded Fund (ETF) is a type of investment fund that pools money from many investors to buy a diversified collection of assets, such as stocks, bonds, or commodities. Think of it like a basket: instead of buying a single company's stock, you buy a pre-packaged basket that contains a small slice of many different companies. When you buy one share of an ETF, you are buying a tiny piece of that entire basket.",
+      },
+      {
+        type: "example",
+        content: "Example: An S&P 500 ETF holds shares in the 500 largest publicly traded companies in the United States. By purchasing just one share, you instantly gain exposure to Apple, Microsoft, Amazon, and 497 other major companies.",
+      },
+      {
+        type: "heading",
+        content: "How Do ETFs Work?",
+      },
+      {
+        type: "paragraph",
+        content: "ETFs combine the diversification of a mutual fund with the trading flexibility of an individual stock. They are bought and sold on stock exchanges throughout the trading day at market-determined prices. Most ETFs are passively managed, meaning they are designed to track the performance of a specific index rather than trying to beat the market. This passive approach results in very low fees.",
+      },
+      {
+        type: "heading",
+        content: "ETFs vs. Mutual Funds",
+      },
+      {
+        type: "list",
+        content: "Key differences between ETFs and mutual funds:",
+        items: [
+          "Trading: ETFs trade throughout the day like stocks; mutual funds only trade once per day at closing price.",
+          "Minimum Investment: ETFs often require just the price of one share; mutual funds often require $1,000 to $3,000 minimums.",
+          "Fees: ETFs generally have much lower expense ratios than actively managed mutual funds.",
+          "Tax Efficiency: ETFs are more tax-efficient due to their unique creation/redemption structure.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Why ETFs Are Great for Beginners",
+      },
+      {
+        type: "subheading",
+        content: "1. Instant Diversification",
+      },
+      {
+        type: "paragraph",
+        content: "Diversification is the golden rule of investing — it means not putting all your eggs in one basket. An ETF spreads your money across hundreds or thousands of companies, significantly reducing your risk. If one company fails, it barely impacts your overall portfolio.",
+      },
+      {
+        type: "subheading",
+        content: "2. Low Costs",
+      },
+      {
+        type: "paragraph",
+        content: "Because most ETFs simply track an index automatically, they don't need to pay a team of expensive analysts to pick stocks. This results in very low expense ratios. You can find broad-market ETFs with expense ratios as low as 0.03%, meaning you pay just $3 per year for every $10,000 invested.",
+      },
+      {
+        type: "subheading",
+        content: "3. Easy to Start",
+      },
+      {
+        type: "paragraph",
+        content: "You don't need thousands of dollars to start investing in ETFs. Many brokerage platforms now offer fractional shares, allowing you to invest with as little as $1 or $5. This makes ETFs accessible to virtually anyone who wants to start building wealth.",
+      },
+      {
+        type: "heading",
+        content: "How to Start Investing in ETFs",
+      },
+      {
+        type: "list",
+        content: "Your step-by-step guide:",
+        items: [
+          "Open a Brokerage Account: Choose a platform like Vanguard, Fidelity, Charles Schwab, or a modern app like Robinhood.",
+          "Fund Your Account: Transfer money from your bank account into your new brokerage account.",
+          "Choose Your ETFs: For beginners, a broad-market index ETF (like a Total Stock Market ETF or an S&P 500 ETF) is often the best starting point.",
+          "Place a Trade: Search for the ETF's ticker symbol (e.g., VOO or SPY) and place a buy order.",
+          "Automate: Set up automatic monthly contributions to buy more shares consistently, regardless of market conditions.",
+        ],
+      },
+      {
+        type: "tip",
+        content: "Look for ETFs with a low expense ratio (under 0.20%) and high trading volume (over 1 million shares per day). These two factors indicate a low-cost, liquid fund that is easy to buy and sell.",
+      },
+      {
+        type: "heading",
+        content: "Leveraging AI for Your Investment Strategy",
+      },
+      {
+        type: "paragraph",
+        content: "Building an investment portfolio doesn't have to be overwhelming. Shekla AI can assist you in understanding your risk tolerance and simulating how different ETF portfolios might perform over time. With AI-assisted goal setting, you can project how consistent monthly investments in broad-market ETFs can grow your net worth over decades, helping you visualize the power of compound interest.",
+      },
+      {
+        type: "keyLesson",
+        content: "For most beginners, a simple two-ETF portfolio — a total US stock market ETF and a total international stock market ETF — provides excellent diversification at a very low cost. You don't need to be complex to be successful.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "how-to-negotiate-salary": {
+    slug: "how-to-negotiate-salary",
+    title: "How to Negotiate a Salary Raise: 7 Proven Steps",
+    subtitle: "A practical, data-driven guide to getting the pay you deserve",
+    keyLesson: "Negotiating a raise is a skill, not a confrontation. Come prepared with market data, a list of your achievements, and a specific number in mind. Confidence backed by evidence is the most powerful negotiating tool you have.",
+    sections: [
+      {
+        type: "heading",
+        content: "Why Negotiating Your Salary Matters",
+      },
+      {
+        type: "paragraph",
+        content: "Asking for a raise is one of the most nerve-wracking conversations you can have at work. But not negotiating your salary can cost you hundreds of thousands of dollars over the course of your career. The good news is that negotiating a raise is a skill — and like any skill, it can be learned, practiced, and mastered.",
+      },
+      {
+        type: "heading",
+        content: "Step 1: Do Your Market Research",
+      },
+      {
+        type: "paragraph",
+        content: "You cannot successfully negotiate if you don't know what your skills are worth in the current market. Your goal is to find objective data that supports your request. Use salary tools like Glassdoor, Payscale, Salary.com, and Indeed to find the average salary for your exact job title in your specific geographic area.",
+      },
+      {
+        type: "tip",
+        content: "Reach out to recruiters in your industry. They have their finger on the pulse of current market rates and can tell you what companies are currently paying for your skill set.",
+      },
+      {
+        type: "heading",
+        content: "Step 2: Document Your Achievements",
+      },
+      {
+        type: "paragraph",
+        content: "Your manager won't give you a raise just because you want one. You need to prove that you are delivering more value to the company than you were when your current salary was set. Create a 'brag document' that lists your major accomplishments over the past year, with a focus on quantifiable impact.",
+      },
+      {
+        type: "list",
+        content: "What to include in your brag document:",
+        items: [
+          "Quantified impact: Did you increase sales by 15%? Save the company $10,000 by streamlining a process? Use hard numbers.",
+          "New responsibilities: Have you taken on tasks outside your original job description or started managing new projects?",
+          "Positive feedback: Include praise from clients, colleagues, or upper management.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 3: Choose the Right Time",
+      },
+      {
+        type: "paragraph",
+        content: "Timing is everything when asking for a raise. You want to approach your manager when the company is doing well and when your value is highly visible.",
+      },
+      {
+        type: "list",
+        content: "Best times to ask:",
+        items: [
+          "During your annual performance review.",
+          "Right after you have successfully completed a major project.",
+          "When you are asked to take on significant new responsibilities.",
+          "When the company has just announced strong financial results.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 4: Prepare Your Pitch",
+      },
+      {
+        type: "paragraph",
+        content: "Don't wing the conversation. Write down exactly what you want to say and practice it until you feel confident. Your pitch should be professional, collaborative, and focused on the value you bring to the organization.",
+      },
+      {
+        type: "example",
+        content: "Sample script: 'I've really enjoyed taking the lead on the Smith account this year, which resulted in a 20% increase in their contract size. Based on my expanded responsibilities and my research on current market rates for this role, I'd like to discuss adjusting my salary to $75,000.'",
+      },
+      {
+        type: "heading",
+        content: "Step 5: Anticipate Objections",
+      },
+      {
+        type: "list",
+        content: "Common objections and how to respond:",
+        items: [
+          "'We don't have the budget right now.' → 'I understand. Can we discuss a timeline for when this might be possible, and what specific milestones I need to hit to make it happen?'",
+          "'Your performance hasn't met the criteria for a raise.' → 'I appreciate the feedback. Can we work together to create a specific, measurable plan so I can reach that level in the next six months?'",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 6: Have the Conversation",
+      },
+      {
+        type: "paragraph",
+        content: "When it's time for the meeting, keep your emotions in check. Treat this as a collaborative business discussion, not a confrontation. Be confident but not aggressive. Don't make ultimatums unless you are truly prepared to leave. Listen carefully to your manager's response and take notes.",
+      },
+      {
+        type: "heading",
+        content: "Step 7: Negotiate Alternatives if Needed",
+      },
+      {
+        type: "paragraph",
+        content: "If a salary increase is genuinely impossible due to company finances, be ready to negotiate for other forms of compensation that hold real value for you.",
+      },
+      {
+        type: "list",
+        content: "Valuable alternatives to a direct raise:",
+        items: [
+          "Additional paid time off (PTO)",
+          "A more flexible work schedule or remote work options",
+          "A professional development or education stipend",
+          "Better health benefits or stock options",
+          "A guaranteed performance review in six months rather than a year",
+        ],
+      },
+      {
+        type: "heading",
+        content: "AI-Assisted Career Growth",
+      },
+      {
+        type: "paragraph",
+        content: "Shekla AI can assist you in building your case for a raise by helping you structure your achievement document and organize your accomplishments into compelling, quantifiable data points. You can also use AI tools to simulate negotiation scenarios, allowing you to practice your pitch and refine your responses to common objections before the real conversation.",
+      },
+      {
+        type: "keyLesson",
+        content: "The single biggest mistake people make when asking for a raise is not asking at all. Come prepared with market data and a list of your achievements, state a specific number with confidence, and remember: the worst they can say is no.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
