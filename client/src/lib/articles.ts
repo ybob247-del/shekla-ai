@@ -701,6 +701,35 @@ export const ARTICLES: Article[] = [
     isNew: true,
   },
 
+  // New SEO Articles - June 2026 (Week 4)
+  {
+    slug: "money-market-vs-savings-account",
+    title: "Money Market Account vs. Savings Account: Which Is Right for You?",
+    description: "Understand the key differences between money market accounts and traditional savings accounts to maximize your interest and access to your cash.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 7,
+    isNew: true,
+  },
+  {
+    slug: "how-to-make-a-budget-step-by-step",
+    title: "How to Make a Budget for Beginners: A Step-by-Step Guide",
+    description: "Learn how to create a simple, effective monthly budget from scratch in just 5 easy steps. Take control of your money today.",
+    category: "budgeting",
+    categoryEmoji: "💰",
+    readTime: 8,
+    isNew: true,
+  },
+  {
+    slug: "how-to-build-wealth-20s-30s",
+    title: "How to Build Wealth in Your 20s and 30s: A Practical Guide",
+    description: "Discover the proven, no-nonsense strategies to start building long-term wealth early in your career, leveraging time and compound interest.",
+    category: "financial-health",
+    categoryEmoji: "💪",
+    readTime: 9,
+    isNew: true,
+  },
+
   // New SEO Articles - May 2026
   {
     slug: "how-to-open-roth-ira",
