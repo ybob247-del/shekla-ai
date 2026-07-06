@@ -758,6 +758,35 @@ export const ARTICLES: Article[] = [
     readTime: 9,
     isNew: true,
   },
+
+  // New SEO Articles - July 2026
+  {
+    slug: "what-is-apr-explained",
+    title: "What is APR? Interest Rates Explained for Beginners",
+    description: "Learn what Annual Percentage Rate (APR) means, how it differs from a simple interest rate, and why it's the most important number when borrowing money.",
+    category: "debt",
+    categoryEmoji: "📉",
+    readTime: 7,
+    isNew: true,
+  },
+  {
+    slug: "how-to-reduce-monthly-expenses",
+    title: "How to Reduce Monthly Expenses: 10 Creative Ways to Cut Costs",
+    description: "Discover practical, actionable strategies to cut your household bills and reduce your monthly expenses without sacrificing the things you love.",
+    category: "spending",
+    categoryEmoji: "🛒",
+    readTime: 8,
+    isNew: true,
+  },
+  {
+    slug: "what-is-a-sinking-fund",
+    title: "What is a Sinking Fund? The Secret to Stress-Free Saving",
+    description: "Find out how sinking funds can help you save for large, irregular expenses like car repairs or holidays without dipping into your emergency fund.",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readTime: 6,
+    isNew: true,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
