@@ -1959,6 +1959,340 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+
+  "what-is-debt-to-income-ratio": {
+    slug: "what-is-debt-to-income-ratio",
+    title: "What Is Debt-to-Income Ratio? How to Calculate and Lower Your DTI",
+    subtitle: "Understand the number lenders use to measure how comfortably you can manage debt.",
+    keyLesson: "Your debt-to-income ratio compares required monthly debt payments with gross monthly income. It does not tell your whole financial story, but it helps you and potential lenders see how much room is left before adding another payment.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Is a Debt-to-Income Ratio?",
+      },
+      {
+        type: "paragraph",
+        content: "Your debt-to-income ratio, usually shortened to DTI, is the percentage of your gross monthly income that goes toward required debt payments. Gross income means income before taxes, insurance premiums, retirement contributions, and other deductions. The Consumer Financial Protection Bureau explains that lenders use DTI as one way to judge whether a borrower can manage the monthly payments on new credit.",
+      },
+      {
+        type: "paragraph",
+        content: "DTI is different from a credit score. A credit score is based largely on information in your credit reports, such as payment history and credit use. DTI compares current payments with income, and income generally does not appear on a credit report. Someone can have a strong credit score but a high DTI after taking on several large loans. Another person can have a modest score but a manageable DTI. Lenders may consider both, along with savings, employment, loan type, and other details.",
+      },
+      {
+        type: "heading",
+        content: "How to Calculate Your DTI",
+      },
+      {
+        type: "paragraph",
+        content: "First, add the debt payments you must make in a typical month. Then divide that total by your gross monthly income and multiply by 100. The formula is: monthly debt payments ÷ gross monthly income × 100 = DTI percentage.",
+      },
+      {
+        type: "example",
+        content: "Suppose your gross monthly income is $5,000. Your required payments are $1,200 for rent or a mortgage, $300 for an auto loan, $200 for a student loan, and $100 in minimum credit card payments. Your monthly debt total is $1,800. Divide $1,800 by $5,000 to get 0.36, then multiply by 100. Your DTI is 36%.",
+      },
+      {
+        type: "heading",
+        content: "What Counts as Debt and Income?",
+      },
+      {
+        type: "paragraph",
+        content: "Typical DTI calculations include housing payments, auto and student loans, personal loans, court-ordered obligations, and the minimum payments shown on revolving accounts. Everyday expenses such as groceries, utilities, phone service, transportation, and subscriptions usually are not part of the formula, even though they still matter to your real-life budget. Credit card purchases do not count individually; the required monthly payment does.",
+      },
+      {
+        type: "paragraph",
+        content: "Income can include regular wages, salary, and other stable income a lender is permitted to consider and can document. If your income changes from month to month, use a careful monthly average for your own planning. A lender may calculate qualifying income under more specific rules, so your estimate and the lender's final number may differ.",
+      },
+      {
+        type: "heading",
+        content: "What Is a Good Debt-to-Income Ratio?",
+      },
+      {
+        type: "paragraph",
+        content: "There is no universal cutoff that applies to every lender or loan. Requirements depend on the product, the lender, and the rest of the application. As a personal financial-health measure, a lower DTI generally creates more flexibility. It can leave more room for saving, variable expenses, and unexpected bills instead of committing most of your income before the month begins.",
+      },
+      {
+        type: "list",
+        content: "A practical way to interpret your result:",
+        items: [
+          "Below 36% often indicates that debt payments take a manageable share of gross income, although approval is never guaranteed.",
+          "From 36% to 43% may still be workable, but a new payment deserves careful stress-testing against your complete budget.",
+          "Above 43% can narrow borrowing options and may signal that debt reduction should come before another major obligation.",
+          "Any ratio can feel unaffordable if rent, childcare, healthcare, or other costs consume the income left after debt payments."
+        ],
+      },
+      {
+        type: "heading",
+        content: "How Lenders Use DTI",
+      },
+      {
+        type: "paragraph",
+        content: "A lender may use DTI to estimate whether your income can support a proposed payment in addition to your existing obligations. Mortgage underwriting sometimes distinguishes between a housing ratio and a total DTI. The housing ratio looks only at the expected housing payment relative to income. Total DTI adds other required debts. Different loan programs can define and evaluate these figures differently.",
+      },
+      {
+        type: "tip",
+        content: "Before applying for a loan, calculate the future version of your DTI by adding the estimated new payment. Then test that payment in your monthly budget. A ratio may satisfy a lender's guideline without making the payment comfortable for your household.",
+      },
+      {
+        type: "heading",
+        content: "How to Lower Your DTI",
+      },
+      {
+        type: "paragraph",
+        content: "Because the formula has only two sides, you can lower DTI by reducing required payments, increasing reliable gross income, or doing both. Begin with accurate numbers rather than an aggressive target. Pull statements, list every required payment, and identify the debts you can realistically change.",
+      },
+      {
+        type: "list",
+        content: "Useful next steps include:",
+        items: [
+          "Pay down a balance enough to eliminate one required monthly payment, while keeping an emergency cushion.",
+          "Direct extra money toward high-interest debt so less of each future payment is lost to interest.",
+          "Avoid financing a new purchase while preparing for an important loan application.",
+          "Ask a creditor about hardship or repayment options if payments are becoming unmanageable; understand any fees and long-term cost before agreeing.",
+          "Increase stable income through additional hours, a raise, or recurring side work, and keep records a future lender may request.",
+          "Recalculate monthly so progress is visible and your plan can adapt when income or minimum payments change."
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "Do not lower a payment merely by stretching a balance over many more years without comparing the total interest cost. A smaller payment can improve the ratio while making the debt more expensive overall. DTI is a useful dashboard metric, not a goal to optimize at any price. Pair it with cash flow, emergency savings, interest rates, and your long-term priorities.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "how-to-stop-impulse-buying": {
+    slug: "how-to-stop-impulse-buying",
+    title: "How to Stop Impulse Buying: 10 Practical Strategies That Work",
+    subtitle: "Build a pause between wanting something and spending money on it.",
+    keyLesson: "Impulse buying becomes easier to control when you identify the situations that trigger it and add a small amount of friction before checkout. The goal is intentional spending, not eliminating every enjoyable purchase.",
+    sections: [
+      {
+        type: "heading",
+        content: "Why Impulse Buying Happens",
+      },
+      {
+        type: "paragraph",
+        content: "An impulse purchase is something you did not plan to buy but decide to purchase in the moment. It might be a small add-on at the grocery store, a limited-time online deal, or an expensive item promoted by an influencer. The purchase can feel harmless because the decision happens quickly and the immediate reward is more noticeable than the future cost.",
+      },
+      {
+        type: "paragraph",
+        content: "Impulse buying is not proof that you are irresponsible. Shopping environments are designed to reduce hesitation through one-click checkout, saved payment details, countdown timers, free-shipping thresholds, and personalized ads. Emotions also matter. Boredom, stress, loneliness, celebration, and the desire for a fresh start can all make buying feel like a fast solution. A practical plan addresses both the environment and the emotion.",
+      },
+      {
+        type: "heading",
+        content: "1. Find Your Spending Triggers",
+      },
+      {
+        type: "paragraph",
+        content: "For two weeks, make a brief note whenever you want to buy something unplanned. Record the item, price, time, place or app, and what you were feeling. You do not need to judge the urge or promise never to buy the item. You are collecting evidence. Patterns may show that you shop late at night, after a difficult workday, when a sale email arrives, or while spending time with a particular group.",
+      },
+      {
+        type: "heading",
+        content: "2. Use a Cooling-Off Rule",
+      },
+      {
+        type: "paragraph",
+        content: "Decide in advance how long you will wait before an unplanned purchase. You might wait 24 hours for items under $100 and seven days for larger purchases. Put the item on a wish list with the date instead of leaving it in your cart. Waiting gives the initial excitement time to fade and lets you compare the purchase with other uses for the money.",
+      },
+      {
+        type: "heading",
+        content: "3. Delete Saved Payment Details",
+      },
+      {
+        type: "paragraph",
+        content: "Remove stored cards from retail sites, shopping apps, and browser autofill. Sign out after each purchase. Typing payment and shipping information creates a deliberate pause. This friction is especially useful on a phone, where shopping and paying can otherwise happen in seconds.",
+      },
+      {
+        type: "heading",
+        content: "4. Unsubscribe and Unfollow",
+      },
+      {
+        type: "paragraph",
+        content: "Retail emails and social accounts create needs you did not have before opening the message. Unsubscribe from promotional lists, disable sale notifications, and unfollow accounts that repeatedly trigger comparison or spending. If you still want updates from a store, create a separate email folder you check only when you already plan to buy something.",
+      },
+      {
+        type: "heading",
+        content: "5. Shop With a Specific List",
+      },
+      {
+        type: "paragraph",
+        content: "Write what you need before entering a store or opening an app. Include quantities and a rough spending limit. If you notice an unlisted item, photograph it or add it to your wish list rather than buying it. Lists work best when they are specific: 'one pair of black work shoes under $90' gives you more protection than 'clothes.'",
+      },
+      {
+        type: "heading",
+        content: "6. Make the Cost More Concrete",
+      },
+      {
+        type: "paragraph",
+        content: "Translate the price into something meaningful. A $120 purchase might equal six hours of take-home pay, two weeks of grocery money, or most of this month's savings goal. You can also calculate cost per use. A durable item used weekly for years may be worthwhile, while a trendy item used once may not be. The point is not guilt; it is making the tradeoff visible.",
+      },
+      {
+        type: "heading",
+        content: "7. Budget for Enjoyment",
+      },
+      {
+        type: "paragraph",
+        content: "A budget that allows no flexibility can be hard to sustain. Set aside a realistic amount for hobbies, treats, dining out, or spontaneous purchases. When the category has money available, you can spend it without guilt. When it reaches zero, add the item to next month's list. This turns 'I am not allowed' into 'I am choosing when.'",
+      },
+      {
+        type: "heading",
+        content: "8. Separate Shopping From Entertainment",
+      },
+      {
+        type: "paragraph",
+        content: "If browsing stores is your default response to boredom or stress, prepare replacements that meet the same need without an automatic checkout. Take a walk, call someone, borrow a book, organize clothes you already own, or build a free wishlist for a future goal. The replacement should be easy enough to use at the moment the urge appears.",
+      },
+      {
+        type: "heading",
+        content: "9. Create Accountability",
+      },
+      {
+        type: "paragraph",
+        content: "Choose a trusted person and agree to message each other before unplanned purchases above a set amount. You are not asking permission. Explaining what you want, why you want it, and how it fits your budget often makes the decision clearer. A weekly five-minute review can also help you celebrate purchases you intentionally skipped.",
+      },
+      {
+        type: "heading",
+        content: "10. Make Returns Promptly",
+      },
+      {
+        type: "paragraph",
+        content: "An impulse purchase does not have to become a permanent expense. Keep receipts, leave tags attached until you are sure, and schedule a return immediately if the item does not fit your plan. Avoid using returns as permission to keep shopping, but do use the policy when a quick decision was a mistake.",
+      },
+      {
+        type: "heading",
+        content: "How to Recover Without Shame",
+      },
+      {
+        type: "paragraph",
+        content: "If you overspend, start with the next decision. Return what you can, pause optional shopping, and adjust the current month's categories instead of ignoring the account. Then identify the trigger and choose one barrier to add. Progress comes from making impulse purchases less frequent and less costly, not from achieving perfection overnight.",
+      },
+      {
+        type: "tip",
+        content: "Start with the single strategy that targets your biggest trigger. If late-night phone shopping is the pattern, delete the apps and saved cards today. A focused barrier is more useful than ten rules you will not maintain.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+
+  "what-is-a-certificate-of-deposit": {
+    slug: "what-is-a-certificate-of-deposit",
+    title: "What Is a Certificate of Deposit (CD)? A Beginner's Guide",
+    subtitle: "Learn when locking your savings for a fixed term may earn a better guaranteed rate.",
+    keyLesson: "A certificate of deposit is a bank or credit-union deposit account with a defined term. In return for leaving the money deposited until maturity, you receive the stated yield, but an early withdrawal can trigger a penalty.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Is a Certificate of Deposit?",
+      },
+      {
+        type: "paragraph",
+        content: "A certificate of deposit, or CD, is a savings product offered by banks and credit unions. You deposit money for a specific period, called the term, and the institution pays interest. At the end of the term, the CD reaches maturity. You can then withdraw the original deposit plus earned interest, move the money, or open another CD.",
+      },
+      {
+        type: "paragraph",
+        content: "Many traditional CDs pay a fixed annual percentage yield, or APY, so the rate does not change during the term. In exchange, access is more limited than with a savings account. If you withdraw before maturity, the institution may charge an early-withdrawal penalty. That tradeoff—less flexibility for a potentially stronger guaranteed yield—is the central feature of a CD.",
+      },
+      {
+        type: "heading",
+        content: "How Does a CD Work?",
+      },
+      {
+        type: "list",
+        content: "A typical CD has five stages:",
+        items: [
+          "Choose a term, such as three months, one year, or five years, and compare the APY, minimum deposit, and penalty.",
+          "Make the opening deposit. Most CDs do not allow ongoing contributions after opening, although add-on CDs are an exception.",
+          "Leave the money deposited while interest accrues under the account terms.",
+          "Receive a maturity notice as the term ends and review the available options.",
+          "Withdraw or transfer the balance during the grace period, or allow it to renew if the new terms still suit your goal."
+        ],
+      },
+      {
+        type: "example",
+        content: "Imagine depositing $5,000 in a 12-month CD with a 4.00% APY. If the money remains for the full term and the APY accurately reflects compounding, the ending balance would be about $5,200 before any tax on interest. Real offers vary, so use the institution's disclosure or calculator rather than assuming a quoted rate produces the same dollar amount in every account.",
+      },
+      {
+        type: "heading",
+        content: "CD Terms, APY, and Maturity",
+      },
+      {
+        type: "paragraph",
+        content: "The term tells you how long the commitment lasts. Longer terms do not always pay higher yields, so compare the actual APY rather than assuming more time means more interest. APY is useful because it reflects the rate and the effect of compounding over a year. A CD may credit interest daily, monthly, quarterly, or on another schedule while still advertising one APY for comparison.",
+      },
+      {
+        type: "paragraph",
+        content: "Maturity is the date the term ends. Banks and credit unions commonly provide a short grace period after maturity. During that window, you can usually withdraw funds or change the term without an early-withdrawal penalty. If you take no action, a CD may automatically renew at the institution's current rate, which can be lower or higher than the original rate. Read the maturity notice rather than letting renewal happen by accident.",
+      },
+      {
+        type: "heading",
+        content: "CDs Versus Savings Accounts",
+      },
+      {
+        type: "paragraph",
+        content: "A high-yield savings account usually lets you add or withdraw money more freely, but its rate can change at any time. A traditional CD generally locks the rate and restricts access for the term. A savings account is often better for an emergency fund or a goal with an uncertain date. A CD can be useful when the date is known and you are confident the money will not be needed sooner.",
+      },
+      {
+        type: "list",
+        content: "Choose based on the job the money needs to do:",
+        items: [
+          "Emergency savings: favor accessible, federally insured savings rather than a CD with a withdrawal penalty.",
+          "A planned expense in 12 months: a 12-month CD may fit if the net yield beats accessible alternatives and the timing is firm.",
+          "A goal with a flexible timeline: compare both, because locking the rate may or may not be worth losing access.",
+          "Money intended for long-term growth: a CD protects principal but may not offer the growth potential of diversified investments; the right choice depends on time horizon and risk."
+        ],
+      },
+      {
+        type: "heading",
+        content: "Early-Withdrawal Penalties",
+      },
+      {
+        type: "paragraph",
+        content: "Penalty formulas vary. An institution might charge a set number of days or months of interest, and some penalties can reduce principal when the CD has not earned enough interest. No-penalty CDs allow earlier access under stated conditions, but they may offer a lower APY. Brokered CDs can have different liquidity rules and may need to be sold at a gain or loss before maturity. Always read the deposit agreement before opening the account.",
+      },
+      {
+        type: "heading",
+        content: "When a CD Makes Sense",
+      },
+      {
+        type: "paragraph",
+        content: "A CD works best when you have a defined goal, a reliable timeline, and separate cash for emergencies. Examples include part of a home down payment needed next year, tuition due at the start of a future semester, or money reserved for a planned vehicle purchase. The fixed term can also create a behavioral barrier that keeps a known future expense separate from everyday spending.",
+      },
+      {
+        type: "paragraph",
+        content: "A CD ladder can provide more frequent access. Instead of placing all your money in one long CD, you divide it among several CDs with staggered maturity dates. As each matures, you can use the cash or renew it. A ladder reduces the risk of locking every dollar at one rate and one date, although it requires more accounts to track.",
+      },
+      {
+        type: "heading",
+        content: "How to Compare CDs Safely",
+      },
+      {
+        type: "list",
+        content: "Before opening a CD, compare:",
+        items: [
+          "APY and term, not just the promotional rate or estimated interest.",
+          "Minimum opening deposit and any maximum amount eligible for the advertised APY.",
+          "Early-withdrawal penalty, grace period, and automatic-renewal policy.",
+          "Whether the bank is FDIC-insured or the credit union is federally insured by the NCUA, and how your total deposits fit coverage limits.",
+          "The after-tax return and the APY available from an accessible high-yield savings account for the same period.",
+          "Whether the offer is a bank CD, credit-union share certificate, brokered CD, callable CD, or market-linked product with different risks and rules."
+        ],
+      },
+      {
+        type: "tip",
+        content: "The best CD is not automatically the one with the highest APY. It is the insured account whose term, penalty, and maturity date match your goal. Keep emergency money separate and set a reminder before the grace period ends.",
+      },
+      {
+        type: "cta",
+        ctaType: "calculator",
+      },
+    ],
+  },
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];

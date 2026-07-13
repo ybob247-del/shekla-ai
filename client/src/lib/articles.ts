@@ -1,11 +1,24 @@
 export interface Article {
+  id?: number;
   slug: string;
   title: string;
+  headline?: string;
   description: string;
+  pillar?: string;
   category: string;
   categoryEmoji: string;
+  readingTime?: number;
   readTime: number;
+  seoTitle?: string;
+  seoDescription?: string;
+  seoKeyword?: string;
+  tableOfContents?: string[];
+  image?: string;
+  tags?: string[];
   isNew?: boolean;
+  isFeatured?: boolean;
+  publishedAt?: string;
+  updatedAt?: string;
   toolkitLink?: string;
   toolkitName?: string;
   content?: string;
@@ -786,6 +799,96 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "🏦",
     readTime: 6,
     isNew: true,
+  },
+
+  // Weekly SEO Articles - July 13, 2026
+  {
+    id: 86,
+    slug: "what-is-debt-to-income-ratio",
+    title: "What Is Debt-to-Income Ratio? How to Calculate and Lower Your DTI",
+    headline: "Understand the number lenders use to measure how comfortably you can manage debt",
+    description: "Learn what debt-to-income ratio means, how to calculate your DTI, what lenders consider a good range, and practical ways to lower it.",
+    pillar: "financial-health",
+    category: "financial-health",
+    categoryEmoji: "💪",
+    readingTime: 8,
+    readTime: 8,
+    seoTitle: "What Is Debt-to-Income Ratio? Calculate Your DTI",
+    seoDescription: "Learn what debt-to-income ratio means, how to calculate DTI step by step, what lenders may consider a good range, and practical ways to lower it.",
+    seoKeyword: "what is debt-to-income ratio",
+    tableOfContents: [
+      "What is a debt-to-income ratio?",
+      "How to calculate your DTI",
+      "What counts as debt and income?",
+      "What is a good debt-to-income ratio?",
+      "How lenders use DTI",
+      "How to lower your DTI",
+    ],
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80",
+    tags: ["debt-to-income ratio", "DTI", "financial health", "borrowing", "debt"],
+    isNew: true,
+    isFeatured: false,
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+  },
+  {
+    id: 87,
+    slug: "how-to-stop-impulse-buying",
+    title: "How to Stop Impulse Buying: 10 Practical Strategies That Work",
+    headline: "Build a pause between wanting something and spending money on it",
+    description: "Discover practical ways to recognize spending triggers, add friction to shopping, and stop impulse purchases from derailing your budget.",
+    pillar: "spending",
+    category: "spending",
+    categoryEmoji: "🛒",
+    readingTime: 8,
+    readTime: 8,
+    seoTitle: "How to Stop Impulse Buying: 10 Practical Strategies",
+    seoDescription: "Learn how to stop impulse buying with 10 realistic strategies that address spending triggers, online shopping, cooling-off periods, and your budget.",
+    seoKeyword: "how to stop impulse buying",
+    tableOfContents: [
+      "Why impulse buying happens",
+      "Find your spending triggers",
+      "Add friction to shopping",
+      "Use a cooling-off rule",
+      "Budget for fun",
+      "Recover after an impulse purchase",
+    ],
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80",
+    tags: ["impulse buying", "spending habits", "budgeting", "online shopping", "money mindset"],
+    isNew: true,
+    isFeatured: false,
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+  },
+  {
+    id: 88,
+    slug: "what-is-a-certificate-of-deposit",
+    title: "What Is a Certificate of Deposit (CD)? A Beginner's Guide",
+    headline: "Learn when locking your savings for a fixed term may earn a better guaranteed rate",
+    description: "Find out how certificates of deposit work, how CD rates and terms compare with savings accounts, and when a CD may fit a short-term goal.",
+    pillar: "savings",
+    category: "savings",
+    categoryEmoji: "🏦",
+    readingTime: 8,
+    readTime: 8,
+    seoTitle: "What Is a Certificate of Deposit (CD)? Beginner Guide",
+    seoDescription: "Learn what a certificate of deposit is, how CDs earn interest, what early-withdrawal penalties mean, and when a CD may fit your savings goal.",
+    seoKeyword: "what is a certificate of deposit",
+    tableOfContents: [
+      "What is a certificate of deposit?",
+      "How does a CD work?",
+      "CD terms, APY, and maturity",
+      "CDs versus savings accounts",
+      "Early-withdrawal penalties",
+      "When a CD makes sense",
+      "How to compare CDs",
+    ],
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80",
+    tags: ["certificate of deposit", "CD account", "savings", "APY", "banking"],
+    isNew: true,
+    isFeatured: false,
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
   },
 ];
 
