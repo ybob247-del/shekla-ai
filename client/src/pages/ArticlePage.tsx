@@ -1,5 +1,7 @@
 import { Link, useParams } from "wouter";
 import { getArticleBySlug, ARTICLES, type Article } from "@/lib/articles";
+import { getArticleContent, type ArticleSection } from "@/lib/articleContent";
+import ArticleCTA from "@/components/ArticleCTA";
 import AssessmentCTA from "@/components/AssessmentCTA";
 import StanStoreCTA from "@/components/StanStoreCTA";
 
@@ -111,6 +113,79 @@ function generateArticleContent(article: Article): React.ReactNode {
   );
 }
 
+function renderArticleSection(section: ArticleSection, index: number, article: Article): React.ReactNode {
+  const key = `${section.type}-${index}`;
+
+  switch (section.type) {
+    case "heading":
+      return <h2 key={key} className="text-2xl font-bold text-gray-900 mt-8 mb-4">{section.content}</h2>;
+    case "subheading":
+      return <h3 key={key} className="text-xl font-bold text-gray-900 mt-6 mb-3">{section.content}</h3>;
+    case "paragraph":
+      return <p key={key} className="text-gray-700 leading-relaxed mb-4">{section.content}</p>;
+    case "keyLesson":
+      return (
+        <aside key={key} className="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-r-xl my-6">
+          <p className="text-sm font-bold text-emerald-800 uppercase tracking-wide mb-1">Key lesson</p>
+          <p className="text-emerald-900 font-medium">{section.content}</p>
+        </aside>
+      );
+    case "tip":
+      return (
+        <aside key={key} className="bg-amber-50 border border-amber-200 rounded-xl p-5 my-6">
+          <p className="text-sm font-bold text-amber-800 uppercase tracking-wide mb-1">Practical tip</p>
+          <p className="text-amber-900 leading-relaxed">{section.content}</p>
+        </aside>
+      );
+    case "example":
+      return (
+        <aside key={key} className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-6">
+          <p className="text-sm font-bold text-blue-800 uppercase tracking-wide mb-1">Example</p>
+          <p className="text-blue-950 leading-relaxed">{section.content}</p>
+        </aside>
+      );
+    case "list":
+      return (
+        <div key={key} className="mb-6">
+          {section.content && <p className="font-semibold text-gray-900 mb-2">{section.content}</p>}
+          <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700">
+            {(section.items ?? []).map((item) => <li key={item} className="leading-relaxed">{item}</li>)}
+          </ul>
+        </div>
+      );
+    case "cta":
+      return (
+        <ArticleCTA
+          key={key}
+          type={section.ctaType ?? "assessment"}
+          toolkitName={article.toolkitName}
+          toolkitLink={article.toolkitLink}
+          className="my-8"
+        />
+      );
+    default:
+      return null;
+  }
+}
+
+function renderArticleContent(article: Article): React.ReactNode {
+  const articleContent = getArticleContent(article.slug);
+
+  if (!articleContent) {
+    return generateArticleContent(article);
+  }
+
+  return (
+    <div className="prose prose-gray max-w-none">
+      <div className="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-r-xl mb-8">
+        <p className="text-sm font-bold text-emerald-800 uppercase tracking-wide mb-1">Key lesson</p>
+        <p className="text-emerald-900 font-medium">{articleContent.keyLesson}</p>
+      </div>
+      {articleContent.sections.map((section, index) => renderArticleSection(section, index, article))}
+    </div>
+  );
+}
+
 export default function ArticlePage() {
   const params = useParams<{ slug: string }>();
   const article = getArticleBySlug(params.slug);
@@ -171,13 +246,13 @@ export default function ArticlePage() {
           </div>
 
           {/* Article Content */}
-          {generateArticleContent(article)}
+          {renderArticleContent(article)}
 
-          {/* Inline CTA - Assessment */}
-          <AssessmentCTA variant="inline" className="my-8" />
+          {/* Fallback CTA for legacy metadata-only articles */}
+          {!getArticleContent(article.slug) && <AssessmentCTA variant="inline" className="my-8" />}
 
           {/* Toolkit CTA if applicable */}
-          {article.toolkitName && article.toolkitLink && (
+          {!getArticleContent(article.slug) && article.toolkitName && article.toolkitLink && (
             <StanStoreCTA
               variant="inline"
               toolkitName={article.toolkitName}

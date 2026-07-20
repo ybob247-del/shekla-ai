@@ -2293,6 +2293,287 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+
+  "what-is-an-index-fund": {
+  slug: "what-is-an-index-fund",
+  title: "What Is an Index Fund? A Beginner's Guide to Passive Investing",
+  subtitle: "Learn how to own a piece of the entire stock market with a single investment.",
+  keyLesson: "An index fund is a type of investment that tracks a specific market index, like the S&P 500. Instead of trying to beat the market by picking individual stocks, an index fund allows you to match the market's performance at a very low cost.",
+  sections: [
+    {
+      type: "heading",
+      content: "What Is an Index Fund?"
+    },
+    {
+      type: "paragraph",
+      content: "When you want to start investing, the idea of picking the 'right' individual stocks can feel overwhelming. What if you choose the wrong company? An index fund solves this problem by allowing you to buy a small piece of many companies all at once. It is a type of mutual fund or exchange-traded fund (ETF) designed to track the performance of a specific financial market index."
+    },
+    {
+      type: "paragraph",
+      content: "Think of a market index as a thermometer for a group of stocks. The most famous example is the S&P 500, which tracks the performance of 500 of the largest companies in the United States. When you buy an S&P 500 index fund, your money is automatically spread across all 500 of those companies. If the overall stock market goes up, your investment goes up with it."
+    },
+    {
+      type: "heading",
+      content: "How Does an Index Fund Work?"
+    },
+    {
+      type: "paragraph",
+      content: "Index funds operate on a strategy called passive investing. Instead of paying a highly compensated fund manager to constantly buy and sell stocks in an attempt to outsmart the market (active management), an index fund simply buys the stocks that make up the index it tracks."
+    },
+    {
+      type: "paragraph",
+      content: "Because the fund is just following a set list of companies, it requires very little human intervention. This passive approach means the fund has significantly lower operating expenses, which translates to lower fees for you. In the investing world, these fees are known as the expense ratio."
+    },
+    {
+      type: "example",
+      content: "If an index fund has an expense ratio of 0.05%, you will pay just $5 a year for every $10,000 you have invested. In contrast, an actively managed fund might charge an expense ratio of 1.00%, costing you $100 a year for the same $10,000 investment. Over decades, those lower fees keep thousands of dollars in your own pocket."
+    },
+    {
+      type: "heading",
+      content: "Why Are Index Funds Good for Beginners?"
+    },
+    {
+      type: "list",
+      content: "Index funds are frequently recommended by financial experts, including legendary investor Warren Buffett, for several compelling reasons:",
+      items: [
+        "Instant Diversification: By holding hundreds or thousands of stocks, your risk is spread out. If one company struggles, it won't wipe out your entire portfolio.",
+        "Low Costs: Because they are passively managed, the fees are a fraction of what traditional mutual funds charge.",
+        "Consistent Returns: While they won't make you rich overnight, index funds have historically provided solid, reliable growth over the long term.",
+        "Simplicity: You don't need to read financial reports or follow daily market news. You just buy the fund and hold it."
+      ]
+    },
+    {
+      type: "heading",
+      content: "Index Funds vs. ETFs and Mutual Funds"
+    },
+    {
+      type: "paragraph",
+      content: "An index fund is an investment strategy, not a single account format. You can buy an index mutual fund or an index ETF. An index mutual fund is normally purchased directly through a fund company or brokerage and trades once each business day at its net asset value. An index ETF trades on an exchange throughout the day, much like a stock. Both can track the same market index, so compare the fund's objective, expense ratio, minimum investment, trading costs, and tax features rather than choosing based on the label alone."
+    },
+    {
+      type: "paragraph",
+      content: "A mutual fund does not have to be an index fund: some mutual funds are actively managed, meaning a manager chooses investments in an effort to outperform a benchmark. Similarly, some ETFs are actively managed. Reading the prospectus or fund page helps you confirm exactly which index the fund follows, how closely it has tracked that index after fees, and what it actually owns."
+    },
+    {
+      type: "heading",
+      content: "Understand the Risks Before You Invest"
+    },
+    {
+      type: "paragraph",
+      content: "Diversification can reduce the damage caused by one company performing poorly, but it cannot remove market risk. A broad stock index fund can fall in value during a market downturn, and a fund focused on one sector, country, or type of company may be less diversified than its name suggests. The right investment mix depends on when you will need the money, your ability to handle losses, and other parts of your financial picture. Money needed soon for an emergency fund, rent, or a near-term goal usually calls for a different level of stability than money intended for a long-term goal."
+    },
+    {
+      type: "heading",
+      content: "How to Start Investing in Index Funds"
+    },
+    {
+      type: "paragraph",
+      content: "Starting is easier than you might think. First, you need to open an investment account, such as a brokerage account or an Individual Retirement Account (IRA), with a reputable firm. Many brokerages now offer index funds with no minimum investment requirement."
+    },
+    {
+      type: "paragraph",
+      content: "Once your account is open and funded, search for broad-market index funds. A total stock market index fund or an S&P 500 index fund is often the foundation of a beginner's portfolio. The most effective strategy is to set up automatic monthly contributions, a practice known as dollar-cost averaging, which allows you to steadily build wealth without worrying about whether the market is up or down on any given day."
+    },
+    {
+      type: "tip",
+      content: "The true power of index funds is revealed over decades, not days. The best approach is to start early, contribute consistently, and resist the urge to sell when the market experiences its normal, temporary declines."
+    },
+    {
+      type: "cta",
+      ctaType: "assessment"
+    }
+  ]
+},
+
+  "how-to-build-credit-from-scratch": {
+  slug: "how-to-build-credit-from-scratch",
+  title: "How to Build Credit from Scratch: A Step-by-Step Guide",
+  subtitle: "Establish a strong credit history safely, even if you have no credit score today.",
+  keyLesson: "Building credit from scratch takes time, but it is not complicated. By using tools designed for beginners—like secured credit cards—and paying your balance in full and on time every single month, you can establish a strong credit score within a year.",
+  sections: [
+    {
+      type: "heading",
+      content: "Why You Need a Credit Score"
+    },
+    {
+      type: "paragraph",
+      content: "When you have no credit history, you are what lenders call 'credit invisible.' This means there is no record of how you borrow and repay money. Without a credit score, it can be incredibly difficult to get a car loan, rent an apartment, set up utility services without a large deposit, or even get certain jobs."
+    },
+    {
+      type: "paragraph",
+      content: "The challenge is the classic catch-22 of personal finance: you need credit to get a loan, but you need a loan to build credit. Fortunately, there are specific financial tools designed to help you break this cycle and establish a solid credit foundation safely."
+    },
+    {
+      type: "heading",
+      content: "1. Become an Authorized User"
+    },
+    {
+      type: "paragraph",
+      content: "One of the fastest ways to establish a credit file is to ask a family member or trusted friend to add you as an authorized user on their credit card. When you are added, the account's history is reported to the credit bureaus under your name as well."
+    },
+    {
+      type: "paragraph",
+      content: "You don't even need to use the physical card or know the account number for this to work. However, the primary cardholder must have a flawless payment history and keep their balance low. If they miss a payment, it will hurt your newly forming credit profile too."
+    },
+    {
+      type: "heading",
+      content: "2. Apply for a Secured Credit Card"
+    },
+    {
+      type: "paragraph",
+      content: "If you cannot become an authorized user, a secured credit card is the best tool for beginners. Unlike a traditional (unsecured) credit card, a secured card requires an upfront cash deposit. This deposit usually becomes your credit limit."
+    },
+    {
+      type: "example",
+      content: "If you deposit $300, you will receive a credit card with a $300 limit. You use the card to make small purchases, and then you pay the bill at the end of the month. Because the bank holds your deposit, they are willing to issue you a card even without a credit history. After several months of responsible use, many banks will upgrade you to a traditional card and return your deposit."
+    },
+    {
+      type: "heading",
+      content: "3. Try a Credit-Builder Loan"
+    },
+    {
+      type: "paragraph",
+      content: "Credit-builder loans are exactly what they sound like: small loans designed specifically to help people build credit. Instead of giving you the money upfront, the lender places the loan amount (often $300 to $1,000) into a locked savings account."
+    },
+    {
+      type: "paragraph",
+      content: "You make fixed monthly payments over a set term, usually 6 to 24 months. The lender reports these on-time payments to the credit bureaus. Once you have made all the payments, the locked funds are released to you. It functions like a forced savings plan that builds your credit score at the same time."
+    },
+    {
+      type: "heading",
+      content: "4. Report Your Rent and Utility Payments"
+    },
+    {
+      type: "paragraph",
+      content: "Historically, paying your rent and utility bills on time did nothing to help your credit score, but missing a payment could hurt it. Today, there are several services and apps that will verify your on-time rent and utility payments and report them to the major credit bureaus."
+    },
+    {
+      type: "paragraph",
+      content: "While this strategy won't build a robust credit profile entirely on its own, it is an excellent way to add positive payment history to a thin credit file using bills you are already paying every month."
+    },
+    {
+      type: "heading",
+      content: "The Golden Rules of Building Credit"
+    },
+    {
+      type: "list",
+      content: "No matter which tools you use to build your credit, the rules for success are always the same:",
+      items: [
+        "Pay on time, every time: Your payment history is the single most important factor in your credit score. Set up autopay so you never miss a due date.",
+        "Keep your balances low: Try to use less than 30% of your available credit limit. If your limit is $300, keep your balance below $90.",
+        "Pay in full: You do not need to carry a balance and pay interest to build credit. Pay your statement balance in full every month.",
+        "Be patient: It typically takes about six months of reported activity to generate your first credit score. Building excellent credit takes years of consistent habits."
+      ]
+    },
+    {
+      type: "tip",
+      content: "Treat your new secured credit card like a debit card. Never use it to buy something if you do not already have the cash in your checking account to pay for it immediately."
+    },
+    {
+      type: "cta",
+      ctaType: "toolkit"
+    }
+  ]
+},
+
+  "what-is-a-debit-card": {
+  slug: "what-is-a-debit-card",
+  title: "What Is a Debit Card? How It Works and How It Differs From a Credit Card",
+  subtitle: "Understand how a debit card spends money already in your checking account—and how to use it safely.",
+  keyLesson: "A debit card is linked to a checking account and uses money you already have rather than money you borrow. It can be a convenient spending tool, but staying aware of your available balance, fees, and security settings is essential.",
+  sections: [
+    {
+      type: "heading",
+      content: "What Is a Debit Card?",
+    },
+    {
+      type: "paragraph",
+      content: "A debit card is a payment card connected to your checking account at a bank or credit union. You can use it to pay at a store, shop online, get cash from an ATM, or sometimes receive cash back at checkout. Although it looks much like a credit card, it works differently: a debit-card purchase uses money already in your account rather than a line of credit you repay later.",
+    },
+    {
+      type: "paragraph",
+      content: "Most checking accounts come with a debit card, but the specific features, ATM network, account alerts, and fees vary by institution. Your card may work with a contactless tap, a chip reader, a digital wallet, or your personal identification number (PIN). The convenience is real, but a debit card is not a substitute for knowing what is available in your account before you spend.",
+    },
+    {
+      type: "heading",
+      content: "How Debit-Card Transactions Work",
+    },
+    {
+      type: "paragraph",
+      content: "When you pay with a debit card, the merchant asks your bank or credit union to approve the transaction. If the purchase is authorized, the available balance in your checking account is usually reduced immediately or a hold is placed for the expected amount. The final transaction can post later, particularly with restaurants, hotels, fuel stations, rental cars, or online orders. A tip, a delayed charge, or a revised total can make the final amount different from the first hold.",
+    },
+    {
+      type: "example",
+      content: "Imagine that you have $120 available and use your debit card to pay $50 at a restaurant. The restaurant may first place a temporary hold for an estimated amount and post the final $60 charge after you add a tip. If you spend the remaining balance before the final amount posts, your account could become overdrawn. Checking your available balance—not only the most recent posted transactions—helps you avoid that surprise.",
+    },
+    {
+      type: "heading",
+      content: "Debit Cards vs. Credit Cards",
+    },
+    {
+      type: "paragraph",
+      content: "The biggest difference is the source of the money. A debit card pulls from your checking account. A credit card lets you borrow up to a limit, and you receive a monthly bill. If you do not pay a credit-card balance in full by the due date, interest may apply. With a debit card, there is no borrowing and no interest charge for the purchase itself, but spending more than you have can result in a declined transaction or an overdraft fee depending on the account settings.",
+    },
+    {
+      type: "list",
+      content: "Use these distinctions to choose intentionally:",
+      items: [
+        "Debit card: spends money already in a linked checking account; regular use does not normally build a credit history.",
+        "Credit card: uses borrowed money that must be repaid; responsible, reported use may help establish credit, but carrying a balance can cost interest.",
+        "Prepaid card: uses money loaded onto the card in advance; it is not usually connected to a checking account and may have different fee rules.",
+      ],
+    },
+    {
+      type: "heading",
+      content: "Overdrafts, Holds, and Fees",
+    },
+    {
+      type: "paragraph",
+      content: "An overdraft happens when a transaction is paid even though there is not enough money in the account. Some institutions decline the charge, while others may cover it through an overdraft program and charge a fee. You may also be able to link a savings account or line of credit for overdraft transfers. Read your account agreement carefully: transfer fees, monthly service fees, foreign-transaction fees, and out-of-network ATM fees can all affect the cost of using an account.",
+    },
+    {
+      type: "paragraph",
+      content: "A simple buffer can help. Keep a small amount of money that you do not count toward routine spending, and review automatic payments before they draft. If money is tight, consider turning on low-balance alerts and choosing an account whose overdraft settings and fee schedule are easy to understand. The best setup is the one that makes an accidental negative balance less likely, not merely one that lets you spend through it.",
+    },
+    {
+      type: "heading",
+      content: "How to Use a Debit Card Safely",
+    },
+    {
+      type: "list",
+      content: "Build a few protective habits into your routine:",
+      items: [
+        "Keep your card number, PIN, and account login private. A bank or credit union will not need your PIN over an unexpected call or text.",
+        "Use the lock or freeze feature in your banking app if your card is lost, then contact the institution promptly for replacement guidance.",
+        "Turn on transaction and low-balance alerts so an unfamiliar charge or a shrinking balance does not go unnoticed.",
+        "Review your account statement and transaction history regularly, including small charges that may signal an unauthorized test transaction.",
+        "Use a secure network for online purchases, and avoid entering your card details through links in unexpected messages.",
+        "Know the official phone number for your bank or credit union before a problem occurs, rather than relying on a number in a suspicious text or email.",
+      ],
+    },
+    {
+      type: "heading",
+      content: "When a Debit Card Can Be Useful",
+    },
+    {
+      type: "paragraph",
+      content: "A debit card can make sense for everyday purchases when you want spending to come directly from your available cash. It can be useful for a weekly grocery limit, cash withdrawals, or a simple account system that separates bills from discretionary spending. It does not automatically make someone better with money, though. The helpful part is the connection between each transaction and a real account balance, which makes tracking and budgeting more concrete.",
+    },
+    {
+      type: "paragraph",
+      content: "Before selecting an account or payment method, compare how it fits your habits, cash-flow timing, fee tolerance, and security preferences. This is general education, not a recommendation for a specific account or card. If you are deciding between products, use the account disclosures and ask the provider how its holds, overdrafts, debit-card controls, and fraud-resolution process work.",
+    },
+    {
+      type: "tip",
+      content: "Set a weekly five-minute debit-card check-in. Review the available balance, upcoming automatic payments, and any unfamiliar charges. That small habit can prevent overdrafts and make your spending plan easier to follow.",
+    },
+    {
+      type: "cta",
+      ctaType: "assessment",
+    },
+  ],
+},
+
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
