@@ -2573,7 +2573,329 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
     },
   ],
 },
-
+  "what-is-a-personal-line-of-credit": {
+    slug: "what-is-a-personal-line-of-credit",
+    title: "What Is a Personal Line of Credit? How It Works and When to Use It",
+    subtitle: "Learn how this flexible borrowing option can provide a financial safety net.",
+    keyLesson: "A personal line of credit offers flexible access to funds up to a set limit. You only pay interest on what you borrow, making it a great safety net for irregular expenses or emergencies.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a personal line of credit?",
+      },
+      {
+        type: "paragraph",
+        content: "A personal line of credit (LOC) is a flexible loan that allows you to borrow money as needed up to a predetermined limit. Unlike a traditional personal loan where you receive a lump sum of cash upfront, a line of credit gives you ongoing access to funds that you can draw from whenever necessary.",
+      },
+      {
+        type: "paragraph",
+        content: "It functions similarly to a credit card: you have a maximum credit limit, you can borrow any amount up to that limit, and as you repay what you've borrowed, those funds become available to use again. This is known as revolving credit.",
+      },
+      {
+        type: "heading",
+        content: "How does a personal line of credit work?",
+      },
+      {
+        type: "paragraph",
+        content: "Personal lines of credit typically have two distinct phases: the draw period and the repayment period.",
+      },
+      {
+        type: "subheading",
+        content: "The Draw Period",
+      },
+      {
+        type: "paragraph",
+        content: "During the draw period, which usually lasts several years, you can access your funds. You can write checks, use a linked debit card, or transfer money directly to your checking account. During this time, you are usually only required to make minimum monthly payments, which may just cover the interest on the amount you've borrowed.",
+      },
+      {
+        type: "subheading",
+        content: "The Repayment Period",
+      },
+      {
+        type: "paragraph",
+        content: "Once the draw period ends, you enter the repayment period. You can no longer borrow money from the line of credit, and your monthly payments will increase to include both principal and interest so that the balance is fully paid off by the end of the term.",
+      },
+      {
+        type: "heading",
+        content: "Pros and cons of a line of credit",
+      },
+      {
+        type: "list",
+        content: "Pros:",
+        items: [
+          "Flexibility: Borrow only what you need, when you need it.",
+          "Pay interest only on what you use: Unlike a lump-sum loan, you don't pay interest on the entire credit limit, only the amount you actually draw.",
+          "Reusable funds: As you pay down your balance, your available credit replenishes.",
+          "Lower interest rates: Typically, LOCs offer lower interest rates than credit cards.",
+        ],
+      },
+      {
+        type: "list",
+        content: "Cons:",
+        items: [
+          "Variable interest rates: Most LOCs have variable rates, meaning your payments can increase if market rates go up.",
+          "Fees: Some lenders charge annual fees or maintenance fees just to keep the line open.",
+          "Temptation to overspend: Easy access to cash can lead to unnecessary debt if not managed carefully.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Line of credit vs. credit card",
+      },
+      {
+        type: "paragraph",
+        content: "While both are forms of revolving credit, there are key differences. Credit cards are better for everyday purchases and often offer rewards or cash back. However, they usually carry much higher interest rates. A personal line of credit typically has a lower interest rate and is better suited for larger, ongoing expenses where you need cash directly in your bank account, such as a home renovation project or covering income gaps for freelancers.",
+      },
+      {
+        type: "heading",
+        content: "Line of credit vs. personal loan",
+      },
+      {
+        type: "paragraph",
+        content: "A personal loan gives you a fixed lump sum that you repay in equal monthly installments over a set term. It is ideal when you know exactly how much money you need and want the predictability of fixed payments. A personal line of credit is better when your borrowing needs are uncertain or ongoing, since you only borrow and pay interest on what you actually use.",
+      },
+      {
+        type: "heading",
+        content: "When to use a personal line of credit",
+      },
+      {
+        type: "paragraph",
+        content: "A personal line of credit is an excellent financial tool when used responsibly. It acts as a safety net for unpredictable situations. Ideal scenarios for using a LOC include:",
+      },
+      {
+        type: "list",
+        content: "Best uses for a LOC:",
+        items: [
+          "Overdraft protection for your checking account",
+          "Managing irregular income if you are a freelancer or commission-based worker",
+          "Funding ongoing projects like home repairs where the final cost is uncertain",
+          "Emergency expenses when your emergency fund isn't quite enough",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "Remember, while AI-assisted budgeting tools can help you track your spending and manage debt, you should always carefully consider the terms and your ability to repay before taking on new credit. This article is for educational purposes only and is not financial advice.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "how-to-calculate-net-worth": {
+    slug: "how-to-calculate-net-worth",
+    title: "How to Calculate Net Worth: The Ultimate Measure of Financial Health",
+    subtitle: "Your net worth is the most important number in personal finance.",
+    keyLesson: "Net worth is simply what you own (assets) minus what you owe (liabilities). It provides a big-picture view of your financial health, helping you track progress toward long-term goals like retirement.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is net worth?",
+      },
+      {
+        type: "paragraph",
+        content: "When people talk about financial success, they often focus on income. But your salary only tells half the story. The true measure of your financial health is your net worth. Simply put, your net worth is the total value of everything you own, minus everything you owe.",
+      },
+      {
+        type: "paragraph",
+        content: "Think of it as a financial report card. While your budget tracks your monthly cash flow, your net worth shows your overall financial progress over time. A positive net worth means your assets exceed your liabilities, while a negative net worth means you owe more than you own.",
+      },
+      {
+        type: "heading",
+        content: "The net worth formula",
+      },
+      {
+        type: "keyLesson",
+        content: "Assets - Liabilities = Net Worth",
+      },
+      {
+        type: "heading",
+        content: "Step 1: Tally your assets (What you own)",
+      },
+      {
+        type: "paragraph",
+        content: "Assets are things you own that have financial value. To calculate your total assets, you need to add up the current value of all your accounts and property.",
+      },
+      {
+        type: "list",
+        content: "Common assets include:",
+        items: [
+          "Cash and cash equivalents: Checking accounts, savings accounts, high-yield savings, and CDs.",
+          "Investments: Brokerage accounts, index funds, mutual funds, and individual stocks.",
+          "Retirement accounts: 401(k)s, IRAs, and pensions.",
+          "Real estate: The current market value of your primary residence and any investment properties.",
+          "Valuable personal property: Vehicles, jewelry, art, or collectibles (though these are often excluded for a more conservative estimate).",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 2: Total your liabilities (What you owe)",
+      },
+      {
+        type: "paragraph",
+        content: "Liabilities are your debts — the money you owe to creditors. You need to find the current outstanding payoff balance for each of your debts.",
+      },
+      {
+        type: "list",
+        content: "Common liabilities include:",
+        items: [
+          "Mortgages: The remaining balance on your home loan.",
+          "Student loans: Both federal and private student debt.",
+          "Auto loans: The remaining balance on your car note.",
+          "Credit card debt: Any balances carried over from month to month.",
+          "Personal loans: Medical debt, personal lines of credit, or payday loans.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 3: Do the math",
+      },
+      {
+        type: "paragraph",
+        content: "Once you have your total assets and total liabilities, subtract the liabilities from the assets. The resulting number is your net worth.",
+      },
+      {
+        type: "example",
+        content: "For example, if you have $50,000 in a 401(k), $10,000 in savings, and a car worth $15,000, your total assets are $75,000. If you have $20,000 in student loans and $5,000 in credit card debt, your total liabilities are $25,000. Your net worth is $75,000 - $25,000 = $50,000.",
+      },
+      {
+        type: "heading",
+        content: "Why tracking net worth matters",
+      },
+      {
+        type: "paragraph",
+        content: "Tracking your net worth is crucial because it keeps you focused on the big picture. It's easy to get discouraged when you're paying off debt, but if you're consistently paying down liabilities, your net worth is growing — even if your bank account balance stays the same.",
+      },
+      {
+        type: "paragraph",
+        content: "Calculating your net worth annually or quarterly helps you see if your financial habits are moving you in the right direction. If your net worth is stagnant or decreasing, it's a clear signal that you need to adjust your budget or spending habits.",
+      },
+      {
+        type: "heading",
+        content: "How AI can help track your wealth",
+      },
+      {
+        type: "paragraph",
+        content: "Modern financial tools leverage AI to make tracking your net worth effortless. By securely connecting your bank accounts, investment portfolios, and loan providers, AI-powered platforms can automatically update your asset and liability balances in real-time. This AI-assisted tracking eliminates the need for manual spreadsheets and provides you with dynamic, personalized insights into your wealth-building journey.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "how-to-use-a-budget-worksheet": {
+    slug: "how-to-use-a-budget-worksheet",
+    title: "How to Use a Monthly Budget Worksheet: A Beginner's Guide",
+    subtitle: "Take control of your money with a simple, effective monthly budget.",
+    keyLesson: "A budget worksheet is a tool to assign every dollar a job before the month begins. By tracking income against fixed and variable expenses, you can stop overspending and reach your goals.",
+    sections: [
+      {
+        type: "heading",
+        content: "Why use a budget worksheet?",
+      },
+      {
+        type: "paragraph",
+        content: "If you often wonder where your money went at the end of the month, you need a budget. A budget isn't about restricting your life; it's about making a plan for your money so you can spend it guilt-free on the things that matter most to you.",
+      },
+      {
+        type: "paragraph",
+        content: "A monthly budget worksheet is a simple, structured template that helps you compare your income against your expenses. Whether you use a digital spreadsheet or a printable PDF, the process is the same. Here is a step-by-step guide to using a budget worksheet effectively.",
+      },
+      {
+        type: "heading",
+        content: "Step 1: Calculate your monthly income",
+      },
+      {
+        type: "paragraph",
+        content: "Start by entering your total expected income for the month. This should be your net income — your take-home pay after taxes, insurance, and retirement contributions have been deducted.",
+      },
+      {
+        type: "paragraph",
+        content: "If you have a salary, this is easy. If your income is irregular (like freelancers or tipped employees), use a conservative estimate based on your lowest-earning months to ensure you can always cover your baseline expenses.",
+      },
+      {
+        type: "heading",
+        content: "Step 2: List fixed expenses",
+      },
+      {
+        type: "paragraph",
+        content: "Fixed expenses are bills that cost the same amount every month and are usually paid on a specific date. Because they don't change, they are the easiest to plan for.",
+      },
+      {
+        type: "list",
+        content: "Examples of fixed expenses:",
+        items: [
+          "Rent or mortgage payments",
+          "Car payments",
+          "Insurance premiums (auto, renters, health)",
+          "Internet and cell phone bills",
+          "Minimum debt payments (student loans, credit cards)",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 3: Estimate variable expenses",
+      },
+      {
+        type: "paragraph",
+        content: "Variable expenses fluctuate from month to month. This is where most overspending happens, so it's crucial to set realistic limits for these categories based on your past spending habits.",
+      },
+      {
+        type: "list",
+        content: "Examples of variable expenses:",
+        items: [
+          "Groceries and dining out",
+          "Gas and transportation",
+          "Utilities (electricity, water, gas)",
+          "Entertainment and hobbies",
+          "Personal care and clothing",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 4: Track your spending",
+      },
+      {
+        type: "paragraph",
+        content: "A budget is useless if you don't track your actual spending against your planned numbers. Throughout the month, log your purchases in your worksheet. This will show you exactly how much money you have left in each category.",
+      },
+      {
+        type: "tip",
+        content: "If you find manual tracking tedious, consider using AI-assisted budgeting apps that automatically categorize your transactions and alert you when you're nearing your limits.",
+      },
+      {
+        type: "heading",
+        content: "Step 5: Review and adjust",
+      },
+      {
+        type: "paragraph",
+        content: "At the end of the month, review your worksheet. Did you overspend on groceries? Did you have money left over in your entertainment budget? Use these insights to adjust your budget for the following month. Budgeting is a skill that takes a few months to perfect, so don't get discouraged if your first attempt isn't flawless.",
+      },
+      {
+        type: "heading",
+        content: "Common budgeting mistakes to avoid",
+      },
+      {
+        type: "list",
+        content: "Watch out for these common pitfalls:",
+        items: [
+          "Forgetting irregular expenses: Annual bills like car registration or holiday gifts can blow your budget if you don't plan for them. Use a sinking fund to save for these in advance.",
+          "Being too restrictive: If your budget is too tight, you'll abandon it. Make sure to budget for fun money so you don't feel deprived.",
+          "Only budgeting once: Your budget should be a living document. Review and update it every month to reflect changes in your income or expenses.",
+          "Not tracking small purchases: Coffee, subscriptions, and impulse buys add up quickly. Track every dollar, no matter how small.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "A budget worksheet is one of the most powerful tools in personal finance. The act of writing down your income and expenses creates awareness and accountability. Combined with AI-assisted financial coaching, you can gain real-time insights into your spending patterns and get personalized recommendations to help you reach your goals faster.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
