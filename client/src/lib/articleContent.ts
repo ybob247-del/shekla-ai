@@ -2896,6 +2896,277 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+
+  "how-do-car-loans-work": {
+    slug: "how-do-car-loans-work",
+    title: "How Do Car Loans Work? A Beginner's Guide to Auto Financing",
+    subtitle: "Understand how car loans work, what affects your monthly payment, and the difference between financing through a bank versus a dealership.",
+    keyLesson: "A car loan is a secured loan where the vehicle is collateral. Your credit score, loan term, and down payment are the three biggest factors that determine your total cost. Always get preapproved before visiting a dealership.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a car loan?",
+      },
+      {
+        type: "paragraph",
+        content: "Buying a car is one of the largest purchases most people make, and very few pay for it entirely in cash. Instead, they rely on auto financing. A car loan is a type of personal loan specifically used to purchase a vehicle. When you take out an auto loan, a financial institution lends you the money to buy the car. In exchange, you agree to pay back the loan amount, plus interest, over a set period of time.",
+      },
+      {
+        type: "paragraph",
+        content: "Unlike some other types of loans, a car loan is a secured loan. This means the vehicle itself serves as collateral. If you fail to make your payments, the lender has the legal right to repossess the car to recover their money. Understanding this is the first step to navigating auto financing wisely.",
+      },
+      {
+        type: "heading",
+        content: "How auto financing works",
+      },
+      {
+        type: "list",
+        content: "The process of financing a car generally follows these steps:",
+        items: [
+          "You choose a vehicle and agree on a purchase price with the seller or dealership.",
+          "You apply for a loan, providing information about your income, employment, and the vehicle you intend to purchase.",
+          "The lender reviews your credit score and credit history to determine how risky it is to lend you money.",
+          "If approved, the lender offers you a loan amount, an interest rate, and a repayment term.",
+          "You make a down payment — a portion of the car's price paid upfront in cash or via a trade-in.",
+          "The lender pays the remaining balance to the dealership or private seller.",
+          "You make monthly payments to the lender until the loan is fully paid off, at which point you receive the title to the car.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Key parts of a car loan",
+      },
+      {
+        type: "subheading",
+        content: "The Loan Principal",
+      },
+      {
+        type: "paragraph",
+        content: "The principal is the total amount of money you are borrowing. This is usually the purchase price of the car, plus any taxes, fees, and optional add-ons (like extended warranties), minus your down payment and the value of any trade-in vehicle.",
+      },
+      {
+        type: "subheading",
+        content: "The Interest Rate (APR)",
+      },
+      {
+        type: "paragraph",
+        content: "The interest rate is the cost of borrowing the money, expressed as a percentage. In auto financing, you will often see the term APR (Annual Percentage Rate), which includes both the interest rate and any fees charged by the lender. A lower APR means you will pay less money over the life of the loan.",
+      },
+      {
+        type: "subheading",
+        content: "The Loan Term",
+      },
+      {
+        type: "paragraph",
+        content: "The term is the length of time you have to repay the loan, usually expressed in months. Common auto loan terms are 36, 48, 60, 72, or even 84 months. While a longer loan term will lower your monthly payment, it also means you will pay more in total interest over the life of the loan. With a long loan term, you also risk becoming upside down — meaning you owe more money than the car is actually worth.",
+      },
+      {
+        type: "heading",
+        content: "Direct lending vs. dealership financing",
+      },
+      {
+        type: "subheading",
+        content: "Direct Lending",
+      },
+      {
+        type: "paragraph",
+        content: "With direct lending, you get a loan directly from a bank, credit union, or online lender before you go to the dealership. This is often called getting preapproved. The main advantage is that you know exactly how much you can borrow and what your interest rate will be before you start shopping. This turns you into a cash buyer at the dealership, allowing you to focus purely on negotiating the price of the car.",
+      },
+      {
+        type: "subheading",
+        content: "Dealership Financing",
+      },
+      {
+        type: "paragraph",
+        content: "With dealership financing, the dealer handles the paperwork and connects you with a network of lenders they partner with. While convenient, it can sometimes be more expensive. Dealerships often act as a middleman and may mark up the interest rate offered by the lender. However, dealerships also occasionally offer special promotional rates (like 0% APR) directly from the car manufacturer, which can be the best deal available if you qualify.",
+      },
+      {
+        type: "heading",
+        content: "How your credit score affects your loan",
+      },
+      {
+        type: "paragraph",
+        content: "Your credit score is the single most important factor in determining the interest rate you will be offered on a car loan. Lenders use your credit score to predict how likely you are to repay the loan on time. Borrowers with excellent credit (720+) get the lowest interest rates, while those with poor credit (below 630) face the highest rates and may need a large down payment or a co-signer to get approved.",
+      },
+      {
+        type: "heading",
+        content: "Tips for getting the best car loan",
+      },
+      {
+        type: "list",
+        content: "To ensure you get the best possible deal on your auto financing:",
+        items: [
+          "Check your credit report first: Before you apply for a loan, check your credit report for any errors and see where your score stands.",
+          "Get preapproved: Always get preapproved for a loan from a bank or credit union before visiting the dealership. Use this offer as leverage to negotiate a better rate.",
+          "Make a larger down payment: Putting more money down reduces the amount you need to borrow. Aim for at least 20% down if possible.",
+          "Keep the loan term short: Try to finance the car for 60 months or less. A longer term means more interest paid overall.",
+          "Focus on the total price, not the monthly payment: Always negotiate the total purchase price of the vehicle first, not the monthly payment.",
+        ],
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "what-is-a-payday-loan": {
+    slug: "what-is-a-payday-loan",
+    title: "What Is a Payday Loan and How Does It Work?",
+    subtitle: "Learn what a payday loan is, how the cycle of debt starts, and safer alternatives to cover unexpected expenses before your next paycheck.",
+    keyLesson: "A payday loan is a short-term, high-cost loan that can carry an APR of nearly 400%. The fees and two-week repayment window trap many borrowers in a cycle of debt. Safer alternatives almost always exist.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a payday loan?",
+      },
+      {
+        type: "paragraph",
+        content: "A payday loan is a short-term, high-cost loan typically designed to be repaid on your next payday. These loans are usually for small amounts, often $500 or less. Unlike traditional personal loans from a bank or credit union, payday loans do not usually require a thorough credit check. Instead, the lender primarily looks at your income and requires proof that you have a checking account. This makes them easy to get, but that convenience comes at an incredibly high price.",
+      },
+      {
+        type: "heading",
+        content: "How do payday loans work?",
+      },
+      {
+        type: "list",
+        content: "The process of getting a payday loan is relatively simple:",
+        items: [
+          "You apply for the loan by visiting a payday lending storefront or applying online, providing your ID, a pay stub, and your bank account information.",
+          "You write a post-dated check or authorize an electronic withdrawal for the full amount of the loan plus fees.",
+          "You receive the cash (or a deposit into your account) immediately.",
+          "On your next payday (usually two to four weeks later), the lender cashes your check or initiates the electronic withdrawal.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "The true cost of a payday loan",
+      },
+      {
+        type: "paragraph",
+        content: "The biggest danger of a payday loan is the exorbitant cost. A common fee is $15 for every $100 borrowed. If you borrow $300, you will owe $345 on your next payday. While $45 might not sound like a massive amount, because the loan is only for two weeks, that fee equates to an Annual Percentage Rate (APR) of nearly 400%. By comparison, a typical credit card might have an APR of 18% to 25%, and a personal loan might be 10% to 15%.",
+      },
+      {
+        type: "heading",
+        content: "The payday loan debt trap",
+      },
+      {
+        type: "paragraph",
+        content: "The real problem with payday loans is not just the initial fee, but what happens when the loan comes due. If you were already short on cash when you took out the loan, it is highly likely that you will still be short on cash two weeks later when the lender withdraws the full amount from your account. This sudden drop in your bank balance often leaves borrowers unable to pay for their basic living expenses, like rent or groceries.",
+      },
+      {
+        type: "paragraph",
+        content: "To survive until the next paycheck, the borrower is forced to take out another payday loan, incurring another round of fees. This is known as rolling over or renewing the loan. Many borrowers end up paying more in fees over several months than the original amount they borrowed, all while the principal balance remains unpaid.",
+      },
+      {
+        type: "heading",
+        content: "Safer alternatives to payday loans",
+      },
+      {
+        type: "list",
+        content: "If you find yourself in a financial emergency, there are almost always better options:",
+        items: [
+          "Ask for a payment plan: Contact your medical provider or utility company directly. Most will work with you to set up a payment plan without charging 400% interest.",
+          "Payday Alternative Loans (PALs): Many credit unions offer PALs — small-dollar loans with capped interest rates and longer repayment terms (usually one to six months).",
+          "Credit card cash advance: While expensive, a credit card cash advance (APR often around 25-30%) is vastly cheaper than a payday loan.",
+          "Borrow from family or friends: Borrowing from a loved one with a clear repayment agreement is much safer than visiting a payday lender.",
+          "Employer advances: Some employers offer payroll advances or there are reputable apps that allow you to access earned wages before payday for a small flat fee.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How to break the cycle of debt",
+      },
+      {
+        type: "paragraph",
+        content: "If you are already caught in the payday loan trap, the most important step is to stop borrowing. Look for a non-profit credit counseling agency in your area. They can help you negotiate with lenders, set up a debt management plan, and create a realistic budget to regain control of your cash flow. Building an emergency fund — even a small one of just $500 — is the ultimate defense against the payday loan industry.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "what-is-a-foreclosure": {
+    slug: "what-is-a-foreclosure",
+    title: "What Is a Foreclosure? How It Works and How to Avoid It",
+    subtitle: "Discover the definition of foreclosure, the legal process involved, and the steps you can take to avoid losing your home if you fall behind on payments.",
+    keyLesson: "Foreclosure is the legal process a lender uses to recover a mortgage debt by seizing and selling the home. It can be avoided by contacting your lender early and exploring options like forbearance, loan modification, or a repayment plan.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a foreclosure?",
+      },
+      {
+        type: "paragraph",
+        content: "Foreclosure is the legal process by which a lender attempts to recover the balance of a loan from a borrower who has stopped making payments. The lender achieves this by forcing the sale of the asset used as collateral for the loan — in this case, the home. When you sign a mortgage agreement, you agree that the home serves as security for the loan. If you breach that contract by failing to make your monthly payments, the lender has the right to seize the property, evict the occupants, and sell the home to pay off the remaining debt.",
+      },
+      {
+        type: "heading",
+        content: "How does the foreclosure process work?",
+      },
+      {
+        type: "paragraph",
+        content: "The specific rules and timeline for foreclosure vary significantly depending on the state where you live. Some states require a judicial foreclosure, meaning the lender must file a lawsuit and go through the court system. Other states allow non-judicial foreclosure, which is a faster process that does not require court approval. Regardless of the state, foreclosure does not happen overnight — it generally unfolds in several distinct phases.",
+      },
+      {
+        type: "heading",
+        content: "The 6 phases of foreclosure",
+      },
+      {
+        type: "list",
+        content: "A typical foreclosure process follows these steps:",
+        items: [
+          "Payment Default: The process begins when you miss a mortgage payment. Most lenders offer a grace period of 10 to 15 days before charging a late fee.",
+          "Notice of Default (NOD): If you miss multiple payments (usually 90 to 180 days past due), the lender issues a formal Notice of Default recorded with the county.",
+          "Pre-Foreclosure: After the NOD is issued, you have an opportunity to cure the default by paying the past-due amount, plus any late fees and legal costs.",
+          "Notice of Sale: If you cannot catch up on payments, the lender issues a Notice of Sale stating the property will be sold at public auction.",
+          "Public Auction: The home is sold to the highest bidder at a public auction, often held at the county courthouse.",
+          "Eviction: If you are still living in the home after the auction, the new owner will initiate an eviction process to remove you from the property.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "The impact of foreclosure on your credit",
+      },
+      {
+        type: "paragraph",
+        content: "A foreclosure is one of the most damaging events that can happen to your credit score. It will remain on your credit report for seven years from the date of the first missed payment that led to the foreclosure. Having a foreclosure on your record will cause your credit score to drop significantly, making it extremely difficult to buy another home, rent an apartment, or secure any type of credit at a reasonable interest rate for several years.",
+      },
+      {
+        type: "heading",
+        content: "How to avoid foreclosure",
+      },
+      {
+        type: "paragraph",
+        content: "If you are struggling to make your mortgage payments, the most important thing you can do is act immediately. Do not ignore letters or phone calls from your lender. Lenders generally do not want to foreclose on your home — the process is expensive and time-consuming for them. They would much rather work out a solution.",
+      },
+      {
+        type: "list",
+        content: "If you contact your lender early, you may have several options to avoid foreclosure:",
+        items: [
+          "Forbearance: If your hardship is temporary, the lender may temporarily pause or reduce your payments for a set period. You will eventually have to repay the missed amounts.",
+          "Repayment Plan: If your income has stabilized, the lender may allow you to add a portion of the past-due amount to your regular monthly payment until you are caught up.",
+          "Loan Modification: The lender may permanently change the terms of your loan — lowering the interest rate, extending the loan term, or adding the past-due balance to the principal.",
+          "Short Sale: If you owe more than the home is worth, the lender may agree to let you sell the home for less than the outstanding balance and accept the proceeds as full satisfaction of the debt.",
+          "Deed in Lieu of Foreclosure: As a last resort, you can voluntarily transfer the deed of the property to the lender in exchange for being released from the mortgage obligation.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "When to ask for help",
+      },
+      {
+        type: "paragraph",
+        content: "If you are facing the threat of foreclosure, you do not have to navigate the process alone. Contact a housing counselor approved by the Department of Housing and Urban Development (HUD). These professionals offer free, expert advice and can help you communicate with your lender to explore your options. The key to surviving a mortgage crisis is proactive communication — by understanding the foreclosure process and exploring all available alternatives, you can make the best possible decision for your financial future.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
