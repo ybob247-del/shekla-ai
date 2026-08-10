@@ -3167,6 +3167,212 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+  "what-is-compound-interest": {
+    slug: "what-is-compound-interest",
+    title: "What Is Compound Interest? A Beginner's Guide to Wealth Building",
+    subtitle: "Learn how earning interest on your interest can multiply your savings over time.",
+    keyLesson: "Compound interest is when you earn interest on both the money you saved and the interest it has already earned. Starting early is the most powerful way to make your money grow.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is compound interest?",
+      },
+      {
+        type: "paragraph",
+        content: "Albert Einstein reportedly called compound interest the eighth wonder of the world, adding that he who understands it earns it and he who does not pays it. Simply put, compound interest is the interest you earn on both your original money and on the interest you keep accumulating.",
+      },
+      {
+        type: "paragraph",
+        content: "When you put money in a savings account or an investment, it earns a return. If you leave that return in the account, it gets added to your principal balance. The next time interest is calculated, it is based on that new, larger balance. Over time, this creates a snowball effect where your money grows faster and faster.",
+      },
+      {
+        type: "heading",
+        content: "Simple interest vs. compound interest",
+      },
+      {
+        type: "paragraph",
+        content: "Simple interest is calculated only on the principal amount you deposited. If you invest $1,000 at a 5% simple interest rate, you earn $50 every single year, regardless of how long you leave the money there.",
+      },
+      {
+        type: "paragraph",
+        content: "Compound interest is calculated on the principal and the accumulated interest of previous periods. If you invest $1,000 at a 5% compound interest rate, you earn $50 in year one. In year two, you earn 5% on $1,050, which is $52.50. In year three, you earn 5% on $1,102.50, which is $55.13. Over decades, the difference becomes massive.",
+      },
+      {
+        type: "heading",
+        content: "The Rule of 72",
+      },
+      {
+        type: "paragraph",
+        content: "The Rule of 72 is a quick way to estimate how fast your money will double at a given annual rate of return. Simply divide 72 by your expected annual interest rate. For example, if you expect an 8% return, 72 divided by 8 equals 9. That means your money will double approximately every 9 years.",
+      },
+      {
+        type: "heading",
+        content: "Why time is your best asset",
+      },
+      {
+        type: "paragraph",
+        content: "When it comes to compound interest, time is far more important than the amount of money you start with. Because your money grows exponentially, the longest period of growth happens at the very end of your investment timeline. This is why starting to save and invest in your 20s gives you a massive advantage over someone who starts in their 30s or 40s.",
+      },
+      {
+        type: "heading",
+        content: "How to make compound interest work for you",
+      },
+      {
+        type: "list",
+        content: "Here are the best ways to take advantage of compound interest:",
+        items: [
+          "Start as early as possible, even with small amounts.",
+          "Reinvest all your earnings, dividends, and interest.",
+          "Contribute consistently by setting up automatic transfers.",
+          "Leave the money alone to let it grow uninterrupted.",
+        ],
+      },
+      {
+        type: "cta",
+        ctaType: "calculator",
+      },
+    ],
+  },
+
+  "how-to-create-a-financial-plan": {
+    slug: "how-to-create-a-financial-plan",
+    title: "How to Create a Financial Plan: A Step-by-Step Guide",
+    subtitle: "Take control of your money with a clear roadmap for your financial future.",
+    keyLesson: "A financial plan is simply a roadmap for your money. By setting clear goals, understanding your current situation, and creating a step-by-step strategy, you can take control of your financial future.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a financial plan?",
+      },
+      {
+        type: "paragraph",
+        content: "A financial plan is a comprehensive picture of your current finances, your financial goals, and any strategies you have set to achieve those goals. Good financial planning should include details about your cash flow, savings, debt, investments, insurance, and any other elements of your financial life.",
+      },
+      {
+        type: "paragraph",
+        content: "While it might sound like something only wealthy people need, a financial plan is actually essential for everyone. It helps you make the most of the money you have, prepare for emergencies, and build a secure future.",
+      },
+      {
+        type: "heading",
+        content: "Step 1: Set clear financial goals",
+      },
+      {
+        type: "paragraph",
+        content: "You cannot create a roadmap if you do not know where you are going. Start by writing down what you want to achieve with your money. Break your goals into short-term (0-2 years), medium-term (2-5 years), and long-term (5+ years) categories.",
+      },
+      {
+        type: "list",
+        content: "Examples of financial goals by time horizon:",
+        items: [
+          "Short-term: Build an emergency fund, pay off a credit card, or save for a vacation.",
+          "Medium-term: Save for a down payment on a house, a wedding, or a new car.",
+          "Long-term: Retire comfortably, pay off your mortgage, or fund your children's education.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 2: Calculate your net worth",
+      },
+      {
+        type: "paragraph",
+        content: "Before you can move forward, you need to know exactly where you stand today. Your net worth is the total of all your assets (what you own) minus all your liabilities (what you owe). List your account balances, retirement funds, and property values, then subtract your debts. Do not worry if the number is negative right now — the goal is to establish a baseline.",
+      },
+      {
+        type: "heading",
+        content: "Step 3: Create a budget you can stick to",
+      },
+      {
+        type: "paragraph",
+        content: "A budget is the engine that drives your financial plan. Track your income and expenses for a month to see your spending habits, then create a realistic budget. Many people find success with the 50/30/20 rule: allocating 50% of take-home pay to needs, 30% to wants, and 20% to savings and debt repayment.",
+      },
+      {
+        type: "heading",
+        content: "Step 4: Build an emergency fund",
+      },
+      {
+        type: "paragraph",
+        content: "Life is unpredictable. An emergency fund is your financial shock absorber. Start by saving $1,000 as quickly as possible, then work your way up to covering 3 to 6 months of essential living expenses in a dedicated high-yield savings account.",
+      },
+      {
+        type: "heading",
+        content: "Step 5: Tackle high-interest debt",
+      },
+      {
+        type: "paragraph",
+        content: "High-interest debt, like credit card balances, acts like a heavy weight pulling down your financial progress. Once you have a basic emergency fund in place, aggressively target your high-interest debt using either the debt snowball method (paying off the smallest balances first) or the debt avalanche method (paying off the highest interest rates first).",
+      },
+      {
+        type: "heading",
+        content: "Step 6: Start investing for the future",
+      },
+      {
+        type: "paragraph",
+        content: "You cannot save your way to wealth — you have to invest. Once your high-interest debt is gone and your emergency fund is fully stocked, start putting money into retirement accounts like a 401(k) or an IRA. If your employer offers a 401(k) match, contribute at least enough to get the full match — it is free money.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+
+  "what-is-a-balance-transfer-credit-card": {
+    slug: "what-is-a-balance-transfer-credit-card",
+    title: "What Is a Balance Transfer Credit Card? How It Works",
+    subtitle: "Learn how moving high-interest debt to a 0% APR card can save you money.",
+    keyLesson: "A balance transfer allows you to move debt from a high-interest credit card to a new card with a lower interest rate, often 0% for an introductory period. It is a powerful tool to pay off debt faster, but you must avoid adding new debt.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a balance transfer credit card?",
+      },
+      {
+        type: "paragraph",
+        content: "If you are carrying a balance on a credit card with a high interest rate, a large portion of your monthly payment goes toward interest rather than paying down the actual debt. A balance transfer credit card offers a way to stop the bleeding.",
+      },
+      {
+        type: "paragraph",
+        content: "A balance transfer involves moving debt from one or more accounts to a new credit card that offers a significantly lower interest rate. Many balance transfer cards offer a 0% introductory APR for a set period, typically ranging from 12 to 21 months.",
+      },
+      {
+        type: "heading",
+        content: "How does a balance transfer work?",
+      },
+      {
+        type: "paragraph",
+        content: "The process is straightforward. First, you apply for a new credit card that offers a balance transfer promotion. Once approved, you request a transfer from your old, high-interest card to the new one. The new credit card company pays off the balance on your old card, and that debt is moved to your new account at a much lower interest rate.",
+      },
+      {
+        type: "heading",
+        content: "Watch out for balance transfer fees",
+      },
+      {
+        type: "paragraph",
+        content: "While a 0% APR sounds like a free lunch, balance transfers usually come with a fee of 3% to 5% of the total amount transferred. For example, if you transfer $5,000 to a card with a 3% fee, you will be charged $150, which is added to your new balance. Even with the fee, a balance transfer usually saves significant money compared to paying 20% or more in interest on the old card.",
+      },
+      {
+        type: "heading",
+        content: "The 0% APR introductory period",
+      },
+      {
+        type: "paragraph",
+        content: "The most crucial detail of a balance transfer card is the length of the introductory 0% APR period. Once this period ends, any remaining balance will be subject to the card's standard interest rate, which can be quite high. To make the most of a balance transfer, divide the total balance by the number of months in the promotional period to find the monthly payment you need to make to become debt-free before interest kicks in.",
+      },
+      {
+        type: "heading",
+        content: "Is a balance transfer right for you?",
+      },
+      {
+        type: "paragraph",
+        content: "A balance transfer can be an excellent strategy if you have a solid plan to pay off the debt and the discipline not to rack up new charges on your old cards. However, if you use the transfer to free up credit on your old cards and start spending again, you will end up in twice as much debt as before. Remember, a balance transfer does not eliminate your debt — it just moves it to a new location to give you a temporary break from interest charges.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
