@@ -1249,6 +1249,114 @@ export const ARTICLES: Article[] = [
     publishedAt: "2026-08-10",
     updatedAt: "2026-08-10",
   },
+  {
+    "id": 101,
+    "slug": "what-is-a-checking-account",
+    "title": "What Is a Checking Account? How It Works and How to Choose One",
+    "headline": "Learn how a checking account handles everyday money and the features worth comparing.",
+    "description": "Learn what a checking account is, how deposits, debit cards, and payments work, and which fees and features to compare before opening one.",
+    "pillar": "savings",
+    "category": "savings",
+    "categoryEmoji": "🏦",
+    "readingTime": 8,
+    "readTime": 8,
+    "seoTitle": "What Is a Checking Account? How It Works",
+    "seoDescription": "Learn what a checking account is, how it works, what fees to watch for, and how to choose an account for everyday spending and bills.",
+    "seoKeyword": "what is a checking account",
+    "tableOfContents": [
+      "What is a checking account?",
+      "How checking accounts work",
+      "Checking vs. savings accounts",
+      "Common checking-account features",
+      "Fees and overdrafts to understand",
+      "How to choose a checking account",
+      "A simple setup checklist"
+    ],
+    "image": "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1600&q=80",
+    "tags": [
+      "checking account",
+      "banking basics",
+      "debit card",
+      "overdraft fees",
+      "money management"
+    ],
+    "isNew": true,
+    "isFeatured": false,
+    "publishedAt": "2026-08-17",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": 102,
+    "slug": "what-is-a-secured-credit-card",
+    "title": "What Is a Secured Credit Card? How It Works and When It Can Help",
+    "headline": "Understand the deposit-backed card that may help you establish credit with responsible use.",
+    "description": "Learn what a secured credit card is, how the security deposit and credit limit work, which fees to compare, and how to use one to build credit carefully.",
+    "pillar": "debt",
+    "category": "debt",
+    "categoryEmoji": "📉",
+    "readingTime": 9,
+    "readTime": 9,
+    "seoTitle": "What Is a Secured Credit Card? How It Works",
+    "seoDescription": "Learn what a secured credit card is, how it differs from an unsecured card, what fees to compare, and how responsible use can help build credit.",
+    "seoKeyword": "what is a secured credit card",
+    "tableOfContents": [
+      "What is a secured credit card?",
+      "How a secured card works",
+      "Secured vs. unsecured credit cards",
+      "How secured cards may build credit",
+      "Fees and terms to compare",
+      "How to use a secured card responsibly",
+      "When a secured card may not be the best fit"
+    ],
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80",
+    "tags": [
+      "secured credit card",
+      "build credit",
+      "credit score",
+      "credit card basics",
+      "financial health"
+    ],
+    "isNew": true,
+    "isFeatured": false,
+    "publishedAt": "2026-08-17",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": 103,
+    "slug": "how-to-make-a-grocery-budget",
+    "title": "How to Make a Grocery Budget: A Practical Step-by-Step Guide",
+    "headline": "Create a realistic grocery plan that lowers surprise spending without turning meals into a chore.",
+    "description": "Learn how to make a grocery budget by reviewing your spending, setting a realistic target, planning meals, building a flexible list, and tracking results.",
+    "pillar": "spending",
+    "category": "spending",
+    "categoryEmoji": "🛒",
+    "readingTime": 9,
+    "readTime": 9,
+    "seoTitle": "How to Make a Grocery Budget: Step-by-Step Guide",
+    "seoDescription": "Learn how to make a grocery budget that fits your household. Use this step-by-step method to set a target, plan meals, shop strategically, and stay flexible.",
+    "seoKeyword": "how to make a grocery budget",
+    "tableOfContents": [
+      "Why a grocery budget helps",
+      "Step 1: Find your current grocery baseline",
+      "Step 2: Set a realistic target",
+      "Step 3: Plan meals before shopping",
+      "Step 4: Build a flexible grocery list",
+      "Step 5: Shop with a simple strategy",
+      "Step 6: Review and improve each month"
+    ],
+    "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80",
+    "tags": [
+      "grocery budget",
+      "meal planning",
+      "food spending",
+      "budgeting",
+      "saving money"
+    ],
+    "isNew": true,
+    "isFeatured": false,
+    "publishedAt": "2026-08-17",
+    "updatedAt": "2026-08-17"
+  }
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

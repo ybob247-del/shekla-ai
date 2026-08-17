@@ -3372,6 +3372,289 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+  "what-is-a-checking-account": {
+      "slug": "what-is-a-checking-account",
+      "title": "What Is a Checking Account? How It Works and How to Choose One",
+      "subtitle": "Learn how a checking account handles everyday money and the features worth comparing.",
+      "keyLesson": "A checking account is designed for day-to-day money movement. The right account makes spending, bills, and transfers easy while keeping fees and overdraft risk under control.",
+      "sections": [
+        {
+          "type": "heading",
+          "content": "What is a checking account?"
+        },
+        {
+          "type": "paragraph",
+          "content": "A checking account is a bank or credit-union account built for everyday money movement. It is where many people receive paychecks, pay bills, use a debit card, move money to savings, and withdraw cash. Unlike a long-term savings or investment account, a checking account prioritizes access and transactions. You can usually spend from it by debit card, check, online bill payment, bank transfer, or ATM withdrawal."
+        },
+        {
+          "type": "paragraph",
+          "content": "Opening a checking account does not automatically create a budget, but it can give your money a useful home base. When income lands in one place and recurring payments leave from that same place, you can see what is available before you spend. That visibility is especially valuable when you are working to stop overdrafts or make a first monthly spending plan."
+        },
+        {
+          "type": "heading",
+          "content": "How does a checking account work?"
+        },
+        {
+          "type": "paragraph",
+          "content": "Money enters a checking account through direct deposit, cash or check deposits, transfers, or payments you receive. Your available balance then changes as transactions post. Some activity appears immediately, while a deposit, card hold, check, or automatic payment can take time to fully settle. That is why the number you see at a moment in time is helpful but not always the whole story."
+        },
+        {
+          "type": "paragraph",
+          "content": "A simple routine keeps the account manageable: know your starting balance, note the bills scheduled before the next payday, and leave a small buffer for timing differences. Turn on low-balance alerts in your banking app if they are available. The Consumer Financial Protection Bureau notes that transaction timing can be unpredictable, even for people who track closely, so alerts and a regular review can be more reliable than memory alone."
+        },
+        {
+          "type": "heading",
+          "content": "Checking account vs. savings account"
+        },
+        {
+          "type": "paragraph",
+          "content": "A checking account is generally for money you expect to use soon. A savings account is generally for money you want to set aside for a goal, emergency fund, or future expense. Both may be insured up to applicable limits when offered by an insured institution, but their roles are different. Keeping spending money and savings money separate can make it easier to see whether a purchase fits today’s plan without accidentally using money reserved for later."
+        },
+        {
+          "type": "list",
+          "content": "A practical split for beginners:",
+          "items": [
+            "Use checking for paychecks, bills, debit-card purchases, and routine transfers.",
+            "Use savings for an emergency cushion and defined goals such as travel, repairs, or a future move.",
+            "Set automatic transfers after payday so saving does not depend on what happens to be left at month-end."
+          ]
+        },
+        {
+          "type": "heading",
+          "content": "Common features to look for"
+        },
+        {
+          "type": "paragraph",
+          "content": "Most checking accounts include a debit card, online or mobile banking, electronic transfers, direct deposit, and account alerts. Some also offer early direct-deposit access, bill pay, check writing, ATM reimbursement, or connected savings features. None of these is universally best. A feature matters only if it solves a real problem in your routine. For example, a broad ATM network may matter if you use cash often, while dependable bill-pay reminders may matter more if you are organizing due dates."
+        },
+        {
+          "type": "heading",
+          "content": "Fees and overdrafts to understand"
+        },
+        {
+          "type": "paragraph",
+          "content": "Before opening an account, read the fee schedule rather than relying on a marketing headline. Common charges can include monthly maintenance fees, out-of-network ATM fees, paper-statement fees, overdraft fees, and fees for certain transfers. Many accounts offer ways to waive a monthly fee, such as maintaining a qualifying direct deposit or minimum balance. Compare the requirements with your normal habits instead of choosing an account based only on a promotional offer."
+        },
+        {
+          "type": "paragraph",
+          "content": "An overdraft happens when there is not enough money in the account for a transaction but the institution pays it anyway. Depending on your choices and the institution’s policies, you may be charged a fee. You can ask about declining one-time debit and ATM transactions when funds are not available, linking a savings account, or using another coverage option. Each approach has tradeoffs, so ask what it costs and how quickly you must repay any shortfall."
+        },
+        {
+          "type": "heading",
+          "content": "How to choose a checking account"
+        },
+        {
+          "type": "paragraph",
+          "content": "Start with a short comparison list. Check whether the institution is insured, whether the account has a monthly fee and a realistic way to waive it, where you can use ATMs, and how overdrafts are handled. Review the opening-deposit requirement, mobile-app ratings, customer support options, and any rules for cash deposits or transfers. If you receive irregular income, a low or no minimum-balance requirement may be more useful than a premium feature you will not use."
+        },
+        {
+          "type": "paragraph",
+          "content": "Once you open the account, make it work with your system. Route income there, list recurring bills, create alerts, and schedule a weekly five-minute balance check. Then move goal money to a separate savings account. This setup is not about being perfect with every purchase. It is about giving each dollar a clear job before it disappears."
+        },
+        {
+          "type": "cta",
+          "ctaType": "assessment"
+        }
+      ]
+    },
+  "what-is-a-secured-credit-card": {
+      "slug": "what-is-a-secured-credit-card",
+      "title": "What Is a Secured Credit Card? How It Works and When It Can Help",
+      "subtitle": "Understand the deposit-backed card that may help you establish credit with responsible use.",
+      "keyLesson": "A secured credit card requires a refundable security deposit, but it is still a credit card. It can support credit building when the issuer reports to credit bureaus and you pay on time, keep the balance manageable, and understand the fees.",
+      "sections": [
+        {
+          "type": "heading",
+          "content": "What is a secured credit card?"
+        },
+        {
+          "type": "paragraph",
+          "content": "A secured credit card is a credit card that requires you to put down a cash security deposit when you open the account. The deposit lowers the issuer’s risk if you do not pay what you borrow. In many cases, the deposit helps set your credit limit. For example, a $300 deposit may result in a $300 credit limit, although the exact terms vary by issuer."
+        },
+        {
+          "type": "paragraph",
+          "content": "The word secured can be confusing because you still borrow money every time you use the card. The deposit is not a prepaid balance you spend down. You make purchases on the card, receive a monthly statement, and must pay at least the required amount by the due date. If you do not pay the statement in full, interest may apply just as it would with an unsecured credit card."
+        },
+        {
+          "type": "heading",
+          "content": "How does a secured card work?"
+        },
+        {
+          "type": "paragraph",
+          "content": "After you are approved and fund the deposit, you can use the card where its payment network is accepted, up to your credit limit. Each month, the issuer reports a balance and a payment due. The healthiest habit is to treat the card like a payment tool, not extra income: only charge an amount you already have set aside in checking, then pay the full statement balance by the due date."
+        },
+        {
+          "type": "paragraph",
+          "content": "The Federal Trade Commission explains that many secured-card issuers report account activity to credit reporting agencies. If an issuer reports and you make payments on time, stay within the limit, and meet the card terms, responsible use may help establish or improve your credit history. Confirm the reporting policy before applying; it should be a clear part of the card’s disclosures, not an assumption."
+        },
+        {
+          "type": "heading",
+          "content": "Secured cards vs. unsecured cards"
+        },
+        {
+          "type": "paragraph",
+          "content": "An unsecured card does not require a security deposit. Approval for one often depends more heavily on income, credit history, and the issuer’s underwriting rules. A secured card may be an option for someone with limited credit history, a past credit problem, or a desire to start with a smaller limit. Both types can charge interest, late fees, and annual fees, and both require careful use."
+        },
+        {
+          "type": "list",
+          "content": "The key difference is simple:",
+          "items": [
+            "A secured card requires a refundable deposit under the card agreement.",
+            "An unsecured card generally does not require a deposit.",
+            "Neither card is a substitute for cash in your budget; both create a bill you must repay."
+          ]
+        },
+        {
+          "type": "heading",
+          "content": "How a secured card may build credit"
+        },
+        {
+          "type": "paragraph",
+          "content": "Credit building is usually quiet and repetitive. Make a small planned purchase, keep the account in good standing, and pay on time every month. A low balance relative to the credit limit can make the account easier to manage, but the most important move is not missing the due date. Consider setting an automatic payment for the full statement balance, then confirm you have enough money in checking before the payment runs."
+        },
+        {
+          "type": "paragraph",
+          "content": "Do not open a secured card because you expect an instant score change. Credit reports reflect many details over time, and scoring systems are not identical. Instead, view the card as one tool for demonstrating a consistent repayment pattern. Check your statements, monitor your credit reports through authorized sources, and correct errors promptly if you find them."
+        },
+        {
+          "type": "heading",
+          "content": "Fees and terms to compare"
+        },
+        {
+          "type": "paragraph",
+          "content": "Compare the full cost before sending an application. Look for the required deposit, annual fee, APR, late-payment fee, foreign-transaction fee, and any monthly maintenance or activation fee. Also ask whether the issuer reports to all three major credit bureaus, whether there is a path to graduate to an unsecured card, and how the deposit is returned when you close or convert the account in good standing."
+        },
+        {
+          "type": "paragraph",
+          "content": "A low deposit does not automatically mean a low-cost card. A card with a modest deposit but several recurring fees can consume money that would be more useful in your emergency fund. Read the rates-and-fees disclosure line by line and compare at least two options. If the terms are hard to understand, pause before applying."
+        },
+        {
+          "type": "heading",
+          "content": "How to use a secured card responsibly"
+        },
+        {
+          "type": "paragraph",
+          "content": "Choose one predictable expense, such as a streaming subscription or a tank of gas, and put only that expense on the card. Keep the cash for it in your checking account. Set payment reminders, pay the statement in full, and avoid cash advances, which can be costly. This small system gives you practice with credit without giving a large purchase the chance to upset your budget."
+        },
+        {
+          "type": "heading",
+          "content": "When a secured card may not be the best fit"
+        },
+        {
+          "type": "paragraph",
+          "content": "A secured card is not the only route to a credit history, and it is not ideal if the deposit would leave you unable to cover essentials or a basic emergency. Some people may consider an authorized-user arrangement with a trusted person or another credit-building product, but each choice has risks and terms to evaluate. If you are already carrying high-interest card debt, focus first on making a repayment plan rather than opening more credit just to improve a score."
+        },
+        {
+          "type": "paragraph",
+          "content": "This article is educational, not individualized credit advice. The right next step depends on your cash flow, debt, and the card agreement. The goal is sustainable: use only the credit you can repay, pay on time, and give the habit time to work."
+        },
+        {
+          "type": "cta",
+          "ctaType": "assessment"
+        }
+      ]
+    },
+  "how-to-make-a-grocery-budget": {
+      "slug": "how-to-make-a-grocery-budget",
+      "title": "How to Make a Grocery Budget: A Practical Step-by-Step Guide",
+      "subtitle": "Create a realistic grocery plan that lowers surprise spending without turning meals into a chore.",
+      "keyLesson": "A grocery budget works best when it starts with your real spending, includes a flexible meal plan, and gets reviewed after each shopping trip. The target should support your household, not punish it.",
+      "sections": [
+        {
+          "type": "heading",
+          "content": "Why a grocery budget helps"
+        },
+        {
+          "type": "paragraph",
+          "content": "Groceries are a frequent expense, which makes them easy to underestimate. A few small trips, convenience items, and duplicate purchases can quietly turn into a larger monthly total than you expected. A grocery budget does not mean buying the cheapest item every time. It means deciding what your household can spend on food at home, then using a repeatable plan to make that number more predictable."
+        },
+        {
+          "type": "paragraph",
+          "content": "A useful grocery plan also creates room for real life. Dietary needs, cultural foods, changing work schedules, and a surprise guest all matter. The goal is not a perfectly identical cart each week. The goal is to build enough structure that a busy Tuesday does not force you to guess whether you can afford another unplanned store run."
+        },
+        {
+          "type": "heading",
+          "content": "Step 1: Find your current grocery baseline"
+        },
+        {
+          "type": "paragraph",
+          "content": "Start with evidence, not a random target. Review the previous four to eight weeks of bank and card transactions. Add purchases from supermarkets, warehouse clubs, online grocery orders, and quick fill-in trips. Separate restaurant meals and delivery if you can, because they belong in a dining-out category rather than groceries. Divide the total by the number of weeks to find a starting weekly average."
+        },
+        {
+          "type": "paragraph",
+          "content": "This baseline is simply information, not a grade. If it is higher than you expected, look for patterns: repeated convenience purchases, food waste, expensive prepared meals, or a store run when the pantry already had a workable option. The USDA publishes food-cost plans that can provide broad context, but household costs vary by location, family size, dietary needs, and cooking time. Your actual transactions are the best first data point."
+        },
+        {
+          "type": "heading",
+          "content": "Step 2: Set a realistic target"
+        },
+        {
+          "type": "paragraph",
+          "content": "Choose a first target that feels achievable. If your recent average is $180 a week, cutting immediately to $90 will probably create frustration and rebound spending. Instead, try a modest change, such as reducing the weekly average by 5% to 10%, and review after a month. Convert the target into a weekly amount so you have a simple number to use before each shopping trip."
+        },
+        {
+          "type": "list",
+          "content": "Build your target around these three buckets:",
+          "items": [
+            "Core meals: ingredients for breakfasts, lunches, dinners, and household staples.",
+            "Flexible items: snacks, treats, seasonal produce, or a convenience meal for a particularly busy week.",
+            "Household essentials: paper goods and cleaning supplies, if you prefer to buy them with groceries."
+          ]
+        },
+        {
+          "type": "heading",
+          "content": "Step 3: Plan meals before shopping"
+        },
+        {
+          "type": "paragraph",
+          "content": "Meal planning is the bridge between a spending limit and a realistic cart. Before making a list, look in your pantry, freezer, and refrigerator. Choose a few meals that use what you already have, then plan the missing ingredients. Aim for a mix of quick meals, leftovers, and one or two flexible meals that can change if your week does."
+        },
+        {
+          "type": "paragraph",
+          "content": "You do not need to plan 21 unique meals. Repeating a low-effort breakfast, making enough dinner for leftovers, and reserving one freezer meal can reduce decision fatigue. Include ingredients that work in more than one meal. For example, a package of tortillas might cover tacos one night and wraps for lunch later in the week. This reduces both waste and the temptation to order food when the plan falls apart."
+        },
+        {
+          "type": "heading",
+          "content": "Step 4: Build a flexible grocery list"
+        },
+        {
+          "type": "paragraph",
+          "content": "Organize the list by store section and label each item as a need, a useful extra, or a want. That makes it easier to adjust in the aisle if the total starts climbing. If an item is expensive, consider a substitute rather than automatically removing the whole meal. Frozen vegetables can replace fresh ones in many dishes, a store brand may work as well as a name brand, and a different protein can keep the same recipe idea intact."
+        },
+        {
+          "type": "paragraph",
+          "content": "Leave a small buffer rather than assigning every dollar before you shop. Prices move, a staple runs out, and some weeks require more. A planned $10 or $15 cushion can prevent one surprise from making the entire budget feel broken. If you do not use the buffer, let it roll into next week or move it toward another food-related goal."
+        },
+        {
+          "type": "heading",
+          "content": "Step 5: Shop with a simple strategy"
+        },
+        {
+          "type": "paragraph",
+          "content": "Pick one main shopping trip when possible and limit fill-in trips to genuine needs. Shop from a list, compare unit prices when package sizes differ, and check what you already own before buying a duplicate. Digital coupons can be useful if they match food you were already planning to buy, but a discount is not a saving when it adds an unplanned item to the cart."
+        },
+        {
+          "type": "paragraph",
+          "content": "For online orders, use the cart total as a checkpoint before checkout. For in-store trips, keep a running total on your phone or wait to add nonessential items until the end. Neither tactic has to be perfect. The point is to notice the tradeoff while you still have a chance to choose, rather than after the receipt is printed."
+        },
+        {
+          "type": "heading",
+          "content": "Step 6: Review and improve each month"
+        },
+        {
+          "type": "paragraph",
+          "content": "At month-end, compare your target with what you actually spent. Then ask two practical questions: What did we use completely, and what did we throw away or forget? Keep the habits that made the week easier, such as cooking a double batch or placing an order after checking the pantry. Adjust the budget when circumstances change instead of treating a changing household as a failure."
+        },
+        {
+          "type": "paragraph",
+          "content": "A grocery budget becomes powerful when it connects to the rest of your money system. Put the weekly amount in your spending plan, track it with the same tool you use for other categories, and celebrate predictable progress—not just the lowest receipt. A plan you can repeat is usually worth more than an extreme plan you abandon after two weeks."
+        },
+        {
+          "type": "cta",
+          "ctaType": "toolkit"
+        }
+      ]
+    }
 
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
