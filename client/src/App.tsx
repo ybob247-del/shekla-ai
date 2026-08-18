@@ -11,6 +11,7 @@ import Resources from "@/pages/Resources";
 import Insights from "@/pages/Insights";
 import TermsOfService from "@/pages/TermsOfService";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import SeoHead from "@/components/SeoHead";
 
 function Header() {
   const [location] = useLocation();
@@ -182,8 +183,8 @@ function Footer() {
             © {new Date().getFullYear()} Shekla AI. For educational purposes only. Not financial advice.
           </p>
           <div className="flex gap-4 text-xs">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
@@ -208,6 +209,7 @@ function NotFound() {
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <SeoHead />
       <Header />
       <main className="flex-1">
         <Switch>
@@ -219,8 +221,8 @@ export default function App() {
           <Route path="/learn/:slug" component={ArticlePage} />
           <Route path="/insights" component={Insights} />
           <Route path="/resources" component={Resources} />
-          <Route path="/terms" component={TermsOfService} />
-          <Route path="/privacy" component={PrivacyPolicy} />
+          <Route path="/terms-of-service" component={TermsOfService} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route component={NotFound} />
         </Switch>
       </main>

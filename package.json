@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && tsx scripts/generate-static-seo.ts",
     "preview": "vite preview",
     "server": "tsx server/index.ts"
   },
