@@ -3654,7 +3654,304 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
           "ctaType": "toolkit"
         }
       ]
-    }
+    },
+  "what-is-a-cash-advance": {
+    slug: "what-is-a-cash-advance",
+    title: "What Is a Cash Advance? How It Works, Costs, and Safer Alternatives",
+    subtitle: "Understand how credit-card cash advances work before using one during a cash shortfall.",
+    keyLesson: "A cash advance is borrowed money from your credit-card line, not cash you already own. Its separate fee, APR, and repayment terms can make it far more expensive than it first appears.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a cash advance?",
+      },
+      {
+        type: "paragraph",
+        content: "A cash advance is a way to get cash by borrowing against a credit card’s available credit line. Depending on your card, you may be able to take one out at an ATM, a bank branch, or through a convenience check. It can look like a quick fix when an unexpected expense arrives before payday. But it is still borrowed money, and its costs often work differently from the cost of a regular card purchase.",
+      },
+      {
+        type: "paragraph",
+        content: "A cash advance is not the same as withdrawing money that already belongs to you. When you use a debit card at an ATM, you are spending funds in your checking account. When you use a credit-card cash advance, you add a debt to your card balance. Your available credit goes down, and you will need to repay the amount under your card agreement.",
+      },
+      {
+        type: "heading",
+        content: "How a credit-card cash advance works",
+      },
+      {
+        type: "paragraph",
+        content: "The process is usually simple. You request cash using your card and a PIN at an ATM, or you use another method your issuer offers. The transaction appears on your card statement as a cash advance. Your card may set a cash-advance limit that is lower than your total credit limit, so having $3,000 of available credit does not mean you can withdraw all $3,000 as cash.",
+      },
+      {
+        type: "paragraph",
+        content: "The important work happens before you take the cash: read the cash-advance section of your card’s rates and fees. It should tell you the advance fee, annual percentage rate (APR), and whether interest begins immediately. The Consumer Financial Protection Bureau reports that cash advances can involve both a transaction fee and an APR that differs from a purchase APR. Exact terms vary by card, so do not rely on a rule of thumb or advertisement.",
+      },
+      {
+        type: "heading",
+        content: "Why cash advances can cost more than expected",
+      },
+      {
+        type: "paragraph",
+        content: "A cash advance can be expensive for three reasons. First, an issuer may charge a flat fee or a percentage of the amount withdrawn, often whichever is greater. Second, the cash-advance APR can be higher than the rate for purchases. Third, cash advances commonly do not receive the grace period that may apply to purchases you pay in full by the due date. That means interest can begin accruing as soon as the advance posts.",
+      },
+      {
+        type: "example",
+        content: "Imagine withdrawing $200 to cover an urgent repair. If your agreement charges a fee plus daily interest, the amount you owe begins above $200 before you have even used the cash. If you carry the balance for several billing cycles, the total cost rises further. The exact numbers depend on your agreement, but the lesson is universal: calculate the cost before treating the advance as a small, harmless withdrawal.",
+      },
+      {
+        type: "heading",
+        content: "Cash advance, payday loan, and personal loan: not the same thing",
+      },
+      {
+        type: "paragraph",
+        content: "These products all provide borrowed money, but they work differently. A credit-card cash advance uses an existing card account. A payday loan is generally a separate, short-term, high-cost loan scheduled around a future paycheck. A personal loan is typically a separate installment loan with a set repayment schedule. One is not automatically better in every situation; the terms, fees, repayment timeline, and effect on your overall budget all matter.",
+      },
+      {
+        type: "paragraph",
+        content: "Earned-wage and paycheck-advance products have their own terms and possible charges. Treat every borrowing product as a separate agreement. Before accepting one, ask four plain questions: How much cash will I receive? What will I repay in dollars? When is repayment due? What happens if I cannot repay on time? Those questions can prevent a moment of pressure from becoming a long-term debt pattern.",
+      },
+      {
+        type: "heading",
+        content: "Alternatives to consider before borrowing",
+      },
+      {
+        type: "paragraph",
+        content: "Urgent needs are real. A medication copay, car problem, or utility bill can create pressure when your account balance is low. Before taking a cash advance, pause long enough to list alternatives that may cost less or create less debt. The goal is not to pretend an emergency is easy; it is to compare the full consequences before choosing the fastest source of cash.",
+      },
+      {
+        type: "list",
+        content: "Possible options to explore first:",
+        items: [
+          "Ask the provider about a due-date extension or payment arrangement, and get any agreement in writing.",
+          "Review your budget for a temporary shift that does not create a larger problem next month.",
+          "Use emergency savings deliberately if you have them, then make a realistic replenishment plan.",
+          "Contact a reputable nonprofit credit counselor if debt is becoming difficult to manage.",
+          "Check local community resources for food, utility, or emergency assistance that may solve the immediate need without another loan.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "If you decide to take a cash advance",
+      },
+      {
+        type: "paragraph",
+        content: "If a cash advance is your least-bad short-term option, reduce the chance that it turns into a long-term balance. Borrow only the specific amount needed, not the full available amount. Save the transaction receipt and note the fee, APR, and date. Make a payoff plan based on the actual cash-advance balance, and avoid adding new card purchases if that will make the statement harder to manage.",
+      },
+      {
+        type: "paragraph",
+        content: "Set a reminder before the next statement closes. Look for the cash-advance line item, confirm the fee, and make a payment as soon as your cash flow allows. A plan is not a guarantee that the advance will be inexpensive, but it can prevent a vague “I’ll handle it later” decision from becoming recurring debt.",
+      },
+      {
+        type: "heading",
+        content: "Build a less expensive backup plan",
+      },
+      {
+        type: "paragraph",
+        content: "The best long-term replacement for a cash advance is a modest financial buffer paired with a clear bill plan. Start with a small emergency target, such as one essential expense, and automate a manageable transfer after payday. If cash shortages happen regularly, review the timing of bills and income. Moving a due date, spreading an annual bill into monthly savings, or creating a separate category for car repairs can reduce the number of emergencies that reach your credit card.",
+      },
+      {
+        type: "keyLesson",
+        content: "A cash advance is a borrowing tool, not extra income. Understanding its fee, interest, and repayment rules can help you make a deliberate decision when money is tight. This article is educational, not individualized credit advice.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "what-is-a-brokerage-account": {
+    slug: "what-is-a-brokerage-account",
+    title: "What Is a Brokerage Account? How It Works and How to Choose One",
+    subtitle: "Learn what an investment account does and the questions to ask before you open one.",
+    keyLesson: "A brokerage account is a container for investment decisions, not an investment itself. The account type, fees, available investments, and risks all deserve careful attention before you fund it.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a brokerage account?",
+      },
+      {
+        type: "paragraph",
+        content: "A brokerage account is an investment account that lets you buy and sell investments such as stocks, bonds, mutual funds, and exchange-traded funds (ETFs). You open it with a brokerage firm, deposit money, and choose investments that fit your goals and comfort with risk. It is a gateway to investing, but the account itself is not an investment and does not guarantee a return.",
+      },
+      {
+        type: "paragraph",
+        content: "That distinction matters for beginners. A savings account holds cash for near-term needs and may pay interest. A brokerage account is designed to hold investments whose values can rise or fall. The amount in the account can change daily, and you may lose money. That is why investment money should usually have a longer time horizon than rent, groceries, an emergency fund, or a goal you expect to use soon.",
+      },
+      {
+        type: "heading",
+        content: "How a brokerage account works",
+      },
+      {
+        type: "paragraph",
+        content: "After opening an account, you link a bank account and transfer cash in. The money initially sits as cash or a cash-equivalent balance. You can then place an order to buy an investment. You might buy shares of an ETF, a mutual fund, or an individual company’s stock. When you sell an investment, the proceeds return to your brokerage account, where you can reinvest them or transfer cash back to your bank after the trade settles.",
+      },
+      {
+        type: "paragraph",
+        content: "A brokerage firm generally accepts and carries out buy and sell orders. Some firms also offer research, education, recommendations, or managed services. FINRA explains that fees and services depend on the agreement you sign; a low or zero trading commission does not mean every cost has disappeared. Funds may have operating expenses, certain account activity can have separate charges, and a managed account can have an ongoing advisory fee.",
+      },
+      {
+        type: "heading",
+        content: "Cash accounts vs. margin accounts",
+      },
+      {
+        type: "paragraph",
+        content: "Most new investors should understand this difference before opening anything. In a cash account, you buy investments using money you have deposited. In a margin account, the firm can lend you money against the account, subject to its terms and eligibility rules. Borrowing can magnify gains, but it can also magnify losses and may require you to add money or sell investments quickly if values fall.",
+      },
+      {
+        type: "paragraph",
+        content: "Many applications present margin features prominently, so read each choice rather than accepting a default. You do not need margin to begin learning about long-term investing. A plain cash account can keep early decisions simpler because you are working only with the money you deposited. If a feature is unclear, pause and read the disclosure before you opt in.",
+      },
+      {
+        type: "heading",
+        content: "Taxable brokerage accounts vs. retirement accounts",
+      },
+      {
+        type: "paragraph",
+        content: "“Brokerage account” describes how you invest, but an account can have different tax treatment. A regular taxable brokerage account generally offers flexibility: you can deposit and withdraw money without the age-based withdrawal rules that apply to many retirement accounts. However, selling an investment for a gain can have tax consequences, and dividends may be taxable.",
+      },
+      {
+        type: "paragraph",
+        content: "A retirement account such as an IRA can also be held at a brokerage firm. It has different contribution rules, withdrawal rules, and potential tax advantages. The investments available may look similar, but the account rules are not interchangeable. If you are unsure which account type fits a goal, review official information and consider a qualified professional who can discuss your circumstances.",
+      },
+      {
+        type: "heading",
+        content: "What to compare before choosing a provider",
+      },
+      {
+        type: "paragraph",
+        content: "A good first comparison is more useful than hunting for a single “best” brokerage. Start with safety and legitimacy: check that the firm is registered and research it through FINRA BrokerCheck. Then read the account disclosures and compare the features you will actually use. Clear disclosures, appropriate features, and a plan you understand matter more than a promotion or flashy app.",
+      },
+      {
+        type: "list",
+        content: "Compare these practical details:",
+        items: [
+          "Account minimums and funding rules, including any initial deposit or minimum-balance requirement.",
+          "Available investments, so you know the fund types or securities you want to research are accessible.",
+          "Fees and expenses beyond commissions, including fund expense ratios, account fees, transfer fees, and assisted-trade charges.",
+          "Tools and support, including educational resources, statements, customer service, and mobile features.",
+          "Cash versus margin settings, plus the process and timing for transfers and withdrawals.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "A simple first-account checklist",
+      },
+      {
+        type: "paragraph",
+        content: "Before you fund an account, write down the goal for the money, the earliest date you may need it, and how you would react if its value fell. If the money is for an emergency or a purchase next year, a brokerage account may not match the goal. If the goal is long-term and you have handled essentials, high-interest debt, and a basic cash buffer, you can begin learning about diversified investments and their risks.",
+      },
+      {
+        type: "paragraph",
+        content: "Start small enough that market movement will not derail your budget. Use a recurring review—perhaps quarterly rather than daily—to see whether your holdings still fit the goal. Automatic contributions can be helpful if they fit your budget, but they should not cause missed bills or reduce your emergency cushion. A brokerage account is one part of a larger money system that includes spending, saving, debt management, and risk awareness.",
+      },
+      {
+        type: "keyLesson",
+        content: "A brokerage account is not a shortcut to wealth. Treat it as a long-term tool, understand the agreement before opening it, and never invest money you may need for near-term essentials. This article is educational, not individualized investment advice.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "what-is-credit-utilization": {
+    slug: "what-is-credit-utilization",
+    title: "What Is Credit Utilization? How It Affects Your Credit Score",
+    subtitle: "Understand the ratio between your revolving balances and credit limits—and use it as a planning tool.",
+    keyLesson: "Credit utilization compares your revolving balances with available credit. It is useful for understanding your debt, but there is no universal percentage that guarantees a particular score result.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is credit utilization?",
+      },
+      {
+        type: "paragraph",
+        content: "Credit utilization is the percentage of your available revolving credit that you are currently using. In everyday terms, it compares your credit-card and line-of-credit balances with their limits. If one card has a $1,000 limit and a $200 balance, that card’s utilization is 20%. The basic calculation is balance divided by credit limit, multiplied by 100.",
+      },
+      {
+        type: "paragraph",
+        content: "Credit utilization is different from whether you pay on time. On-time payments and utilization are separate ideas, although both can be relevant to credit reports and scoring models. A person can pay every bill by the due date and still show a high reported balance if the balance is large relative to the available limit when the issuer reports account information.",
+      },
+      {
+        type: "heading",
+        content: "How to calculate your utilization",
+      },
+      {
+        type: "paragraph",
+        content: "You can calculate utilization for each revolving account and across all revolving accounts. For a single card, divide the reported balance by that card’s credit limit. For overall utilization, add all revolving balances and divide by the sum of all revolving limits. Looking at both views can help you understand whether one account is carrying most of the balance.",
+      },
+      {
+        type: "example",
+        content: "Suppose you have two cards. Card A has a $500 balance and a $2,000 limit. Card B has a $100 balance and a $1,000 limit. Your total balance is $600 and total limit is $3,000, so your overall utilization is 20%. You would also notice that Card A individually is at 25%, while Card B is at 10%.",
+      },
+      {
+        type: "paragraph",
+        content: "The number in your online banking app may not be the exact number that appears on a credit report. Issuers report at different times, often around a statement closing date, and scoring models use their own calculations. Treat the calculation as a way to understand your credit picture, not as a promise that a particular percentage will create a particular score.",
+      },
+      {
+        type: "heading",
+        content: "Why utilization can matter",
+      },
+      {
+        type: "paragraph",
+        content: "Credit-scoring models use information from credit reports to estimate risk. Revolving balances relative to limits can be one signal in that picture. Experian defines credit utilization as the percentage of available revolving credit you are using and notes that scoring models are not identical. A high reported balance may suggest that you are relying heavily on available credit, but it does not tell the complete story of your finances or character.",
+      },
+      {
+        type: "paragraph",
+        content: "That is why advice about a universal “perfect” utilization number can be misleading. You may hear a fixed threshold repeated online, but lenders and scoring models do not all use the same formula, and credit reports include more than one number. The most durable habits are paying on time, keeping balances affordable for your budget, and avoiding borrowing simply to manipulate a score.",
+      },
+      {
+        type: "heading",
+        content: "Statement balance vs. current balance",
+      },
+      {
+        type: "paragraph",
+        content: "Three numbers can cause confusion. Your current balance is the amount charged but not yet fully paid at this moment. Your statement balance is the amount listed at the end of a billing cycle. Your credit limit is the maximum the issuer allows you to borrow under the agreement. The balance reported to credit bureaus may align with a statement date or another point in the cycle, so it may not match the balance you see after making a payment.",
+      },
+      {
+        type: "paragraph",
+        content: "Paying the full statement balance by the due date can help you avoid purchase interest when your card has a grace period and you meet its terms. It also keeps debt from carrying forward. If you are focused on what gets reported, review the statement closing date and the issuer’s reporting practices. Do not make payment timing so complicated that you risk a late payment; the due date is the non-negotiable calendar item.",
+      },
+      {
+        type: "heading",
+        content: "Ways to manage utilization responsibly",
+      },
+      {
+        type: "paragraph",
+        content: "Start with your real spending plan. If a card balance is growing because everyday costs exceed your income, utilization is a symptom—not the entire problem. Review transactions, separate essentials from discretionary spending, and make a payoff plan that fits the cash you actually have. The objective is a sustainable debt reduction plan, not a number that looks good for one day.",
+      },
+      {
+        type: "list",
+        content: "Practical habits that can support responsible credit use:",
+        items: [
+          "Pay on or before the due date, because consistent on-time payments are the foundation of healthy credit use.",
+          "Make an additional payment only if it fits your budget and does not crowd out rent, groceries, or other essentials.",
+          "Avoid maxing out a card for routine purchases, which can make repayment harder even when you intend to pay later.",
+          "Keep older accounts open only when they remain safe and useful; a fee-heavy or tempting account may not suit your situation.",
+          "Be cautious about requesting new credit. A larger limit is not a reason to take on more debt or submit repeated applications.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "What to do if your utilization is high",
+      },
+      {
+        type: "paragraph",
+        content: "High utilization is a reason to make a plan, not to panic. List each account’s balance, limit, APR, due date, and minimum payment. Make all required payments on time, then direct any extra amount toward the balance strategy you have chosen. If minimum payments are becoming unmanageable, contact the creditor before falling behind and explore reputable nonprofit credit counseling.",
+      },
+      {
+        type: "paragraph",
+        content: "Avoid closing an account in the middle of a stressful payoff effort without checking the consequences. Also avoid moving balances or opening a new card without comparing fees, promotional terms, and your ability to repay before any special rate ends. The best solution is typically the one that reduces the underlying debt sustainably.",
+      },
+      {
+        type: "keyLesson",
+        content: "Credit utilization turns an abstract credit limit into a visible ratio. Use it to understand your accounts, support a repayment plan, and make spending decisions you can afford to repay. This article is educational and not a guarantee of any credit-score outcome.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
 
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
