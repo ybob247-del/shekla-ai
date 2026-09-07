@@ -3953,6 +3953,319 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
     ],
   },
 
+  "what-is-apy": {
+    slug: "what-is-apy",
+    title: "What Is APY? Annual Percentage Yield Explained for Beginners",
+    subtitle: "Learn how APY shows what your savings can earn over a year, including the effect of compounding.",
+    keyLesson: "APY, or annual percentage yield, shows the interest a deposit can earn in one year with compounding included. It is useful for comparing deposit accounts, but it is only one part of the account's full cost and access picture.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is APY?",
+      },
+      {
+        type: "paragraph",
+        content: "APY stands for annual percentage yield. It is the percentage return a bank or credit union says a deposit account can earn over one year, with the effect of compounding included. You may see APY next to a savings, money market, or CD account. It helps you compare deposit yields.",
+      },
+      {
+        type: "paragraph",
+        content: "The word yield matters because it looks beyond the basic interest rate. If an account adds earned interest to your balance during the year, later interest can be calculated on that slightly larger balance. That process is called compounding. APY rolls that effect into one annual percentage, making it easier to compare accounts that may compound on different schedules.",
+      },
+      {
+        type: "heading",
+        content: "How APY works",
+      },
+      {
+        type: "paragraph",
+        content: "Compounding is simply interest earning interest. Imagine money in a savings account earns interest at the end of a month. The next month, the account may calculate interest on the original deposit plus the small amount already earned. The difference can be modest over a short period, but it becomes more meaningful when money stays saved and interest keeps being added over time.",
+      },
+      {
+        type: "example",
+        content: "Suppose you keep $1,000 in an account that pays 4.00% APY for a full year. If the balance, rate, and account terms stay the same, it would earn about $40 over that year. The actual result can differ if you add or withdraw money, the account has a tiered rate, or the APY changes. The point of the example is comparison: 4.00% APY tells you the expected yearly yield with compounding already reflected.",
+      },
+      {
+        type: "heading",
+        content: "APY vs. interest rate vs. APR",
+      },
+      {
+        type: "paragraph",
+        content: "An interest rate is the stated rate used to calculate interest. APY is the annual percentage you earn after the account's compounding frequency is factored in. Two accounts can have the same stated rate but slightly different APYs if they compound on different schedules. When you are comparing deposit accounts, APY is usually the more useful number because it puts those accounts on a more equal basis.",
+      },
+      {
+        type: "paragraph",
+        content: "APR, or annual percentage rate, belongs on the borrowing side of personal finance. It describes the yearly cost of borrowing and can include certain fees, depending on the product. APY generally describes money you earn on deposits; APR generally describes money you pay to borrow. They sound similar, but they answer different questions. Review the full account or loan disclosure instead of assuming a percentage has the same meaning everywhere.",
+      },
+      {
+        type: "heading",
+        content: "Fixed vs. variable APY",
+      },
+      {
+        type: "paragraph",
+        content: "A fixed APY stays the same for a stated period under the account agreement. Certificates of deposit commonly advertise a fixed rate for a specific term, such as several months or a year. In exchange, the institution may limit access to the money until the term ends, and an early withdrawal can trigger a penalty. Read how the term, renewal, and early-withdrawal rules work before treating a higher rate as automatically better.",
+      },
+      {
+        type: "paragraph",
+        content: "A variable APY can change. Savings and money market deposit accounts commonly have variable rates because the institution can adjust them as market conditions or its own pricing changes. A high displayed APY can be useful today without being a promise about next month or next year. Check whether a rate is introductory, whether it applies only to a certain balance range, and whether you must complete an activity requirement to receive it.",
+      },
+      {
+        type: "heading",
+        content: "How to compare accounts beyond APY",
+      },
+      {
+        type: "paragraph",
+        content: "A higher APY generally means more interest when every other detail is equal. In real life, the other details are rarely equal. An account with a slightly lower APY may fit better if it has no monthly fee, a smaller minimum balance, easy transfers, or access rules that match your goal. The best comparison starts with the money's job: an emergency cushion needs dependable access, while money set aside for a known future date may have different needs.",
+      },
+      {
+        type: "list",
+        content: "Before opening or moving money, compare these details:",
+        items: [
+          "Whether the advertised APY is fixed, variable, introductory, or tiered by balance.",
+          "Minimum opening and ongoing balance requirements, plus any monthly service fee.",
+          "How you can add, withdraw, or transfer money and how quickly those transactions settle.",
+          "Any CD term, renewal rule, or early-withdrawal penalty that could limit access.",
+          "Whether the institution and account have applicable federal deposit-insurance coverage and what the ownership limits mean for your situation.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "What APY does not tell you",
+      },
+      {
+        type: "paragraph",
+        content: "APY does not show every cost or constraint. A monthly fee can offset interest on a small balance. A rate may apply only to part of your balance, and an account can have transaction limits or a long transfer process. APY also does not measure purchasing power. Inflation can affect what your money can buy, even while the balance earns interest. That is why a rate is a useful comparison tool, not a complete financial plan.",
+      },
+      {
+        type: "paragraph",
+        content: "It is also not a forecast of investment returns. Deposit APY applies to the account agreement, while investments can rise or fall and do not work the same way. Keep short-term cash decisions separate from long-term investing decisions. A clear savings goal, a realistic timeline, and an account's written disclosures matter more than chasing the most eye-catching number in an advertisement.",
+      },
+      {
+        type: "heading",
+        content: "A simple next step",
+      },
+      {
+        type: "paragraph",
+        content: "Pick one savings goal and note the amount you want available, the date you may need it, and how often you expect to add or use the money. Then compare APY alongside fees, access, and account rules. An AI-assisted spending review can help you identify a realistic transfer amount, but the account choice should always be based on the current disclosures and your own cash-flow needs. This article is general education, not individualized financial advice.",
+      },
+      {
+        type: "keyLesson",
+        content: "APY makes it easier to compare deposit yields because it includes compounding. Use it with the fee schedule, balance rules, access terms, and your savings timeline—not in isolation.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "what-is-a-credit-report": {
+    slug: "what-is-a-credit-report",
+    title: "What Is a Credit Report? How to Read and Check Yours",
+    subtitle: "Understand the detailed record behind your credit history—and how to review it for accuracy.",
+    keyLesson: "A credit report is a detailed record of information reported about your credit history. It is not the same thing as a credit score, and reviewing it regularly can help you spot errors or unfamiliar activity.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is a credit report?",
+      },
+      {
+        type: "paragraph",
+        content: "A credit report is a record of your credit-related information compiled by a credit reporting company. It can include identifying information, accounts reported by lenders, payment history, balances, collection information, and requests to view your credit. Lenders may review a report when deciding whether to offer credit and under what terms. Other uses can exist where permitted by law, which is one reason accuracy matters.",
+      },
+      {
+        type: "paragraph",
+        content: "In the United States, the three nationwide credit reporting companies most people hear about are Equifax, Experian, and TransUnion. Their reports can be similar, but they are not necessarily identical. A lender may report to one, two, or all three companies, and each company can receive information at a different time. Seeing an account on one report but not another is not automatically an error, but it is worth understanding.",
+      },
+      {
+        type: "heading",
+        content: "Credit report vs. credit score",
+      },
+      {
+        type: "paragraph",
+        content: "A credit report is the detailed file. A credit score is a number generated from information in a credit report by a scoring model. Think of the report as the ingredients and the score as one possible summary of those ingredients. Scores can vary because the bureau, the date, and the model may differ. A score does not replace reading the report that supports it.",
+      },
+      {
+        type: "paragraph",
+        content: "The distinction is practical. A score can alert you that something changed, but it may not tell you exactly which account or date caused the change. A report lets you review the underlying details. If you are working on credit health, start with accurate account information and reliable payment habits instead of reacting to every score movement.",
+      },
+      {
+        type: "heading",
+        content: "What is on a credit report?",
+      },
+      {
+        type: "paragraph",
+        content: "The exact layout varies, but most reports group information into predictable sections. Personal information can include your name, addresses, and employers reported by creditors. Account information can list credit cards, loans, account status, balances, limits, payment history, and the dates an account was opened or updated. You may also see collection accounts, public-record information where applicable, and inquiries from businesses that requested your report.",
+      },
+      {
+        type: "list",
+        content: "When you review a report, look for these categories:",
+        items: [
+          "Personal details that belong to you, such as your name, address history, and identifying information.",
+          "Open and closed accounts, including the lender, account type, balance, limit or original amount, and status.",
+          "Payment history details, especially late payments or account statuses you do not recognize.",
+          "Collection information or public-record entries that may need follow-up.",
+          "Credit inquiries, paying attention to unfamiliar hard inquiries rather than routine account-review activity.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How to get your credit reports safely",
+      },
+      {
+        type: "paragraph",
+        content: "Use AnnualCreditReport.com, the authorized website for free credit reports from the nationwide companies, rather than searching for a look-alike free-report offer. The site explains the reports currently available and guides you through requests. You can also review Consumer Financial Protection Bureau and Federal Trade Commission education pages if you need help understanding the process or avoiding scams.",
+      },
+      {
+        type: "paragraph",
+        content: "Requesting your own report is a consumer review, not the same as a lender making a credit decision. Still, use a private connection, avoid sharing information through unexpected links or messages, and save a copy in a secure place. If you have a major application coming up, reviewing your reports in advance can give you time to understand the information before someone else relies on it.",
+      },
+      {
+        type: "heading",
+        content: "How to read a credit report",
+      },
+      {
+        type: "paragraph",
+        content: "First, confirm the personal information. A misspelling or an old address can be harmless, but an unfamiliar name or address deserves attention. Next, read every account line by line. Confirm the creditor, whether the account is yours, the opening date, the current status, and the balance or limit. Check any reported late payment against your own records. A report is easier to review when you keep a short list of your real accounts and their approximate balances.",
+      },
+      {
+        type: "paragraph",
+        content: "Then review the inquiries and negative-information sections. A hard inquiry usually reflects an application for new credit, while a soft inquiry can happen when you check your own credit or an existing creditor reviews your account. The labels on the report should help distinguish them. Do not assume every unfamiliar line is fraud, but do not ignore it either. Make a note of what looks different and compare it with your statements or lender correspondence.",
+      },
+      {
+        type: "heading",
+        content: "What to do if something looks wrong",
+      },
+      {
+        type: "paragraph",
+        content: "Start by separating an unfamiliar item from a confirmed error. Some account names differ from the brand you recognize, and a paid account can remain on a report for a period of time. If you believe information is inaccurate, gather records such as statements, payment confirmations, or correspondence. You can dispute information with the credit reporting company and with the company that supplied the information. Keep copies of what you submit and read the responses carefully.",
+      },
+      {
+        type: "paragraph",
+        content: "If you suspect identity theft, move quickly. Contact the relevant financial institution through a verified phone number or website, review your report, and use IdentityTheft.gov for a recovery plan. Do not rely on a social-media message, an unsolicited caller, or a link in a surprise email to handle account security. This article provides general education; a specific dispute or identity-theft situation may require official guidance or professional help.",
+      },
+      {
+        type: "heading",
+        content: "Build a simple review routine",
+      },
+      {
+        type: "paragraph",
+        content: "Set a repeating reminder to review your reports, and also review them before a major credit application or after a suspected data incident. Compare all available reports, note accounts you need to clarify, and store your notes safely. A short routine can turn credit reports from a stressful mystery into a record you understand. If you use an AI-assisted financial dashboard, treat it as an organizer—not a substitute for the official reports and disclosures.",
+      },
+      {
+        type: "keyLesson",
+        content: "Your credit report is the detailed record behind your credit history. Check it through an authorized source, read each section calmly, and address confirmed errors with documentation.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
+  "how-to-use-a-credit-card": {
+    slug: "how-to-use-a-credit-card",
+    title: "How to Use a Credit Card Responsibly: A Beginner's Guide",
+    subtitle: "Build a simple credit-card routine that protects your budget, due date, and peace of mind.",
+    keyLesson: "A credit card can be useful when it supports planned spending and is repaid on time. The safest beginner system is simple: charge only what your budget already covers, read every statement, and make a payment you can afford by the due date.",
+    sections: [
+      {
+        type: "heading",
+        content: "What a credit card actually does",
+      },
+      {
+        type: "paragraph",
+        content: "Learning how to use a credit card starts with one important idea: a credit card is borrowed money, not extra income. Each purchase uses part of a revolving credit limit, which is the maximum the issuer allows you to borrow under the card agreement. At the end of a billing cycle, the issuer sends a statement showing what you charged, what you owe, the minimum payment, and the due date.",
+      },
+      {
+        type: "paragraph",
+        content: "Your current balance is what you have charged so far, while your statement balance is the amount shown when the last billing cycle closed. The minimum payment is the smallest amount required to keep the account current under the agreement, but it may leave much of the balance unpaid. Carrying a balance adds interest; a recurring shortfall is costly.",
+      },
+      {
+        type: "heading",
+        content: "Set a safe spending rule before the first purchase",
+      },
+      {
+        type: "paragraph",
+        content: "Give the card a narrow job. A beginner-friendly rule is to charge only purchases that you could already pay for with money in checking. For example, you might put one planned grocery trip, transit pass, or recurring subscription on the card and leave the same amount in your spending plan. This creates a clear link between the purchase and the repayment money instead of letting the balance become a surprise.",
+      },
+      {
+        type: "paragraph",
+        content: "Rewards, discounts, and a high credit limit can make spending feel less immediate. They do not make a purchase affordable. Before you tap or click, ask whether the item is already inside your monthly plan and whether you could pay the statement balance when it arrives. If the answer is no, pause. A card is most useful when it helps you organize planned spending, not when it stretches a budget past its limit.",
+      },
+      {
+        type: "heading",
+        content: "Read your statement and understand your payment choices",
+      },
+      {
+        type: "paragraph",
+        content: "Open every statement, even if you think you know what you spent. Check the statement balance, due date, minimum payment, new charges, credits, fees, and interest. Look for transactions you do not recognize while the details are still fresh. The statement also explains your annual percentage rate, or APR, and important account terms. Keep the due date on your calendar; it matters more than trying to optimize an exact payment date.",
+      },
+      {
+        type: "example",
+        content: "Imagine a card has a $2,000 limit. At the end of the billing cycle, the statement balance is $120 and the minimum payment is $30. Paying $30 by the due date may keep the account current, but it leaves $90 to carry forward and can lead to interest. Paying the $120 statement balance by the due date generally avoids purchase interest when the card provides a grace period and you meet its terms. Always confirm the details in your own card agreement.",
+      },
+      {
+        type: "heading",
+        content: "Build habits that protect your cash flow",
+      },
+      {
+        type: "paragraph",
+        content: "On-time payment is the foundation. Set an alert several days before the due date, and consider automatic payments only after confirming that the checking account will have enough money. Some people schedule autopay for the full statement balance; others choose at least the minimum as a backup and make an additional planned payment. The right setup is the one you can fund consistently without causing an overdraft or neglecting essential bills.",
+      },
+      {
+        type: "paragraph",
+        content: "Keep the process visible. Record card purchases in the same budget or transaction tracker you use for debit spending, then compare the running total with the cash set aside for payment. A weekly two-minute check can prevent a balance from quietly growing. If you already carry a balance, stop adding new discretionary charges while you create a repayment plan. Credit use should support your cash flow, not hide a cash-flow problem.",
+      },
+      {
+        type: "heading",
+        content: "Manage utilization without chasing a magic number",
+      },
+      {
+        type: "paragraph",
+        content: "Credit utilization compares reported revolving balances with available credit. If your card has a $2,000 limit and a $500 reported balance, that card is using 25% of its limit. High reported balances can matter to some scoring models, but there is no universal percentage that guarantees a particular score. The durable habit is to keep borrowing at an amount you can repay—not to make complicated payment moves just to chase a number.",
+      },
+      {
+        type: "paragraph",
+        content: "Statement closing dates, due dates, and reporting dates can differ. Prioritize on-time payment, then read your statement dates and issuer's disclosures. Do not seek more credit merely to change a ratio.",
+      },
+      {
+        type: "heading",
+        content: "Avoid common beginner traps",
+      },
+      {
+        type: "list",
+        content: "Protect your account and budget by watching for these traps:",
+        items: [
+          "Treating the minimum payment as a payoff plan instead of the smallest required payment.",
+          "Using a cash advance, which can have fees and interest rules that differ from ordinary purchases.",
+          "Forgetting when a promotional APR ends or assuming it applies to every type of transaction.",
+          "Paying a fee without understanding what benefit you actually receive from the account.",
+          "Ignoring a suspicious charge or waiting too long to contact the card issuer through an official channel.",
+          "Using the card for impulse purchases because the payment feels far away.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "A five-minute monthly routine",
+      },
+      {
+        type: "paragraph",
+        content: "Once a month, open the statement, verify every charge, note the statement balance and due date, and schedule the payment from money you already planned to use. Check for interest or fees, then ask whether the card's activity still fits your budget. If you think you may miss a payment, contact the issuer early through a verified number or website and ask what options are available. Do not wait for the due date to pass before looking for help.",
+      },
+      {
+        type: "paragraph",
+        content: "Responsible use is a repeatable system that keeps spending, repayment, and account security connected. This article is general education, not individualized financial or credit advice.",
+      },
+      {
+        type: "keyLesson",
+        content: "Use a credit card as a payment tool for planned purchases, not as extra income. Review the statement, protect the due date, and keep repayment money in your budget from the start.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
