@@ -1,9 +1,15 @@
 import express from "express";
 import Stripe from "stripe";
 import { createServer } from "http";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const staticDir = path.join(rootDir, "dist", "public");
 
 // Stripe setup
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
@@ -147,6 +153,50 @@ app.get("/api/session/:sessionId", async (req, res) => {
     res.status(404).json({ error: "Session not found" });
   }
 });
+
+// ─── Static Site ──────────────────────────────────────────────────────────────
+// The build prerenders every public route to dist/public/<route>/index.html.
+// Those files carry the per-page title, description, canonical, and the fully
+// rendered markup, so they must be served in preference to the SPA shell.
+// Serving the shell for every path is what made all pages look identical to
+// crawlers.
+if (fs.existsSync(staticDir)) {
+  // Hashed build assets never change contents, so they can be cached hard.
+  app.use(
+    "/assets",
+    express.static(path.join(staticDir, "assets"), {
+      immutable: true,
+      maxAge: "1y",
+    }),
+  );
+
+  // Everything else (logo.png, manifest.json, robots.txt, sitemap.xml …).
+  // `index: false` plus `redirect: false` keeps directory requests flowing to
+  // the handler below instead of being answered with a trailing-slash
+  // redirect, so prerendered pages are resolved consistently and each route
+  // keeps a single canonical URL.
+  app.use(express.static(staticDir, { index: false, redirect: false, maxAge: "1h" }));
+
+  const shell = path.join(staticDir, "index.html");
+
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api/")) return next();
+
+    // Resolve inside staticDir only — never let "../" escape the build output.
+    const requested = path.join(staticDir, req.path, "index.html");
+    const resolved = path.resolve(requested);
+    const withinStaticDir =
+      resolved === path.resolve(staticDir) || resolved.startsWith(path.resolve(staticDir) + path.sep);
+
+    if (withinStaticDir && fs.existsSync(resolved)) {
+      return res.sendFile(resolved);
+    }
+
+    // Unknown route: fall back to the shell so the client router can render
+    // its 404. The shell is marked noindex by the client on unmatched routes.
+    return res.status(404).sendFile(shell);
+  });
+}
 
 // ─── Start Server ─────────────────────────────────────────────────────────────
 const httpServer = createServer(app);

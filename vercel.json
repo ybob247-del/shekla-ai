@@ -1,20 +1,40 @@
 {
+  "trailingSlash": false,
   "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/privacy", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/terms", "destination": "/terms-of-service", "permanent": true },
+
+    { "source": "/learn/2-paycheck-budget", "destination": "/learn/2-paycheck-budget-system", "permanent": true },
+    { "source": "/learn/52-week-savings", "destination": "/learn/52-week-savings-challenge", "permanent": true },
+    { "source": "/learn/automate-savings", "destination": "/learn/automating-savings", "permanent": true },
+    { "source": "/learn/bill-catch-up", "destination": "/learn/bill-catch-up-plan", "permanent": true },
+    { "source": "/learn/budget-autopilot", "destination": "/learn/budget-on-autopilot", "permanent": true },
+    { "source": "/learn/budget-categories", "destination": "/learn/essential-budget-categories", "permanent": true },
+    { "source": "/learn/budget-mistakes", "destination": "/learn/budgeting-mistakes", "permanent": true },
+    { "source": "/learn/complete-budget-toolkit", "destination": "/learn/budget-toolkit-bundle", "permanent": true },
+    { "source": "/learn/credit-score", "destination": "/learn/understanding-credit-score", "permanent": true },
+    { "source": "/learn/data-encryption", "destination": "/learn/data-protection", "permanent": true },
+    { "source": "/learn/good-vs-bad-debt", "destination": "/learn/good-debt-vs-bad-debt", "permanent": true },
+    { "source": "/learn/how-to-invest-money", "destination": "/learn/how-to-invest", "permanent": true },
     {
-      "source": "/index.html",
-      "destination": "/",
+      "source": "/learn/how-to-stop-living-paycheck-to-paycheck",
+      "destination": "/learn/stop-living-paycheck-to-paycheck",
       "permanent": true
     },
-    {
-      "source": "/privacy",
-      "destination": "/privacy-policy",
-      "permanent": true
-    },
-    {
-      "source": "/terms",
-      "destination": "/terms-of-service",
-      "permanent": true
-    }
+    { "source": "/learn/insurance-basics", "destination": "/learn/insurance-coverage", "permanent": true },
+    { "source": "/learn/paycheck-breakdown", "destination": "/learn/paycheck-breakdown-toolkit", "permanent": true },
+    { "source": "/learn/retirement-planning", "destination": "/learn/retirement-savings", "permanent": true },
+    { "source": "/learn/savings-goals", "destination": "/learn/smart-savings-goals", "permanent": true },
+    { "source": "/learn/secure-bank-connection", "destination": "/learn/bank-connection-guide", "permanent": true },
+    { "source": "/learn/student-loans", "destination": "/learn/student-loan-debt", "permanent": true },
+    { "source": "/learn/tax-strategies", "destination": "/learn/tax-planning", "permanent": true },
+    { "source": "/learn/tracking-expenses", "destination": "/learn/track-expenses", "permanent": true },
+    { "source": "/learn/what-is-a-good-credit-score", "destination": "/learn/what-is-good-credit-score", "permanent": true },
+
+    { "source": "/ai-coach", "destination": "/assessment", "permanent": true },
+    { "source": "/budget", "destination": "/calculators?tab=budget", "permanent": true },
+    { "source": "/goals", "destination": "/learn/financial-goals", "permanent": true }
   ],
   "rewrites": [
     {
