@@ -121,7 +121,7 @@ function calculateScore(answers: Record<string, string>): ScoreResult {
   return { score, grade, color, summary, recommendations, toolkits: uniqueToolkits };
 }
 
-const STAN_STORE_BASE = "https://stan.store/sheklaai";
+const STAN_STORE_BASE = "https://stan.store/moneyresetlab";
 
 export default function MoneyResetScore() {
   const [answers, setAnswers] = useState<Record<string, string>>({});

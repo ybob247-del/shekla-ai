@@ -283,7 +283,7 @@ export default function ArticlePage() {
                 Done-for-you spreadsheet systems. Instant download.
               </p>
               <a
-                href="https://stan.store/sheklaai"
+                href="https://stan.store/moneyresetlab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-amber-500 text-white hover:bg-amber-600 text-sm font-semibold px-5 py-2 rounded-lg transition-colors"

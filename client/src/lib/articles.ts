@@ -94,7 +94,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "💰",
     readTime: 7,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Paycheck Breakdown Toolkit",
   },
   {
@@ -105,7 +105,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "💰",
     readTime: 7,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "2-Paycheck Budget System",
   },
   {
@@ -116,7 +116,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "💰",
     readTime: 8,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Irregular Income Budget Kit",
   },
   {
@@ -127,7 +127,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "💰",
     readTime: 6,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Annual Bills Planner",
   },
   {
@@ -255,7 +255,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "📉",
     readTime: 7,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Bill Catch-Up Plan",
   },
   {
@@ -326,7 +326,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "🏦",
     readTime: 7,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Sinking Funds Kit",
   },
   {
@@ -390,7 +390,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "🛒",
     readTime: 7,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Food Budget Reset Kit",
   },
   {
@@ -401,7 +401,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "🛒",
     readTime: 7,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Spending Cuts That Don't Hurt",
   },
   {
@@ -412,7 +412,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "🛒",
     readTime: 6,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "No-Overdraft System",
   },
 
@@ -505,7 +505,7 @@ export const ARTICLES: Article[] = [
     categoryEmoji: "💪",
     readTime: 8,
     isNew: true,
-    toolkitLink: "https://stan.store/sheklaai",
+    toolkitLink: "https://stan.store/moneyresetlab",
     toolkitName: "Budget Toolkit Bundle (All 10)",
   },
   {

@@ -48,7 +48,7 @@ const PLANS = [
       "Lifetime access",
     ],
     cta: "Get All 10 Toolkits",
-    href: "https://stan.store/sheklaai",
+    href: "https://stan.store/moneyresetlab",
     highlighted: true,
     badge: "Best Value — Save $130",
     isExternal: true,

@@ -166,7 +166,7 @@ function Footer() {
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               <li>
                 <a
-                  href="https://stan.store/sheklaai"
+                  href="https://stan.store/moneyresetlab"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"

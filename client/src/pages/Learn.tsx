@@ -194,7 +194,7 @@ export default function Learn() {
               Every article links to a hands-on toolkit. Get the complete bundle of all 10 systems for $79.
             </p>
             <a
-              href="https://stan.store/sheklaai"
+              href="https://stan.store/moneyresetlab"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-amber-600 hover:bg-amber-50 font-semibold px-6 py-2.5 rounded-xl transition-colors text-sm"

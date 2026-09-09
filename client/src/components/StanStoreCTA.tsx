@@ -5,7 +5,7 @@ interface StanStoreCTAProps {
   className?: string;
 }
 
-const STAN_STORE_BASE = "https://stan.store/sheklaai";
+const STAN_STORE_BASE = "https://stan.store/moneyresetlab";
 
 const TOOLKITS = [
   {
