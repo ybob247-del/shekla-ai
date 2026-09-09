@@ -72,6 +72,26 @@ function makePageHtml(template: string, routePath: string, body: string): string
   return html.replace(ROOT_DIV, () => `<div id="root">${body}</div>`);
 }
 
+// Vercel serves this for any path with no matching file, with a real 404
+// status. Without it the catch-all rewrite answers unknown URLs with the shell
+// and a 200, which search engines read as a soft 404.
+function makeNotFoundHtml(template: string, body: string): string {
+  const metadata = getSeoMetadata("/__not-found__");
+
+  let html = template.replace(/<title>[^<]*<\/title>/i, () => `<title>${escapeTitle(metadata.title)}</title>`);
+  html = replaceMeta(html, "name", "description", metadata.description);
+  html = replaceMeta(html, "name", "keywords", "");
+  html = replaceMeta(html, "name", "robots", "noindex, nofollow");
+  html = replaceMeta(html, "property", "og:title", metadata.title);
+  html = replaceMeta(html, "property", "og:description", metadata.description);
+  html = replaceMeta(html, "name", "twitter:title", metadata.title);
+  html = replaceMeta(html, "name", "twitter:description", metadata.description);
+
+  // A 404 has no canonical URL of its own.
+  html = html.replace(CANONICAL_LINK, () => "");
+  return html.replace(ROOT_DIV, () => `<div id="root">${body}</div>`);
+}
+
 function makeSitemap(routePaths: string[]): string {
   const today = new Date().toISOString().slice(0, 10);
   const urls = routePaths
@@ -116,6 +136,8 @@ async function main(): Promise<void> {
     await mkdir(destinationDirectory, { recursive: true });
     await writeFile(path.join(destinationDirectory, "index.html"), makePageHtml(template, routePath, body));
   }
+
+  await writeFile(path.join(outputDir, "404.html"), makeNotFoundHtml(template, render("/__not-found__")));
 
   await writeFile(path.join(outputDir, "sitemap.xml"), makeSitemap(uniquePaths));
   await writeFile(

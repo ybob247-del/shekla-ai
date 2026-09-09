@@ -35,11 +35,5 @@
     { "source": "/ai-coach", "destination": "/assessment", "permanent": true },
     { "source": "/budget", "destination": "/calculators?tab=budget", "permanent": true },
     { "source": "/goals", "destination": "/learn/financial-goals", "permanent": true }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
   ]
 }

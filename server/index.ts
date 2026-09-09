@@ -177,7 +177,7 @@ if (fs.existsSync(staticDir)) {
   // keeps a single canonical URL.
   app.use(express.static(staticDir, { index: false, redirect: false, maxAge: "1h" }));
 
-  const shell = path.join(staticDir, "index.html");
+  const notFoundPage = path.join(staticDir, "404.html");
 
   app.get("*", (req, res, next) => {
     if (req.path.startsWith("/api/")) return next();
@@ -192,9 +192,9 @@ if (fs.existsSync(staticDir)) {
       return res.sendFile(resolved);
     }
 
-    // Unknown route: fall back to the shell so the client router can render
-    // its 404. The shell is marked noindex by the client on unmatched routes.
-    return res.status(404).sendFile(shell);
+    // Unknown route: serve the prerendered, noindexed 404 page with a real
+    // 404 status. Matches what Vercel does with 404.html.
+    return res.status(404).sendFile(notFoundPage);
   });
 }
 
