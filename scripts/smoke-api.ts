@@ -1,6 +1,6 @@
 import checkout from "../api/checkout";
 import download from "../api/download";
-import { TOOLKITS, BUNDLE_ID, SEPARATE_TOTAL_CENTS, BUNDLE_SAVING_CENTS, filesFor } from "../shared/catalog";
+import { TOOLKITS, BUNDLE_ID, SEPARATE_TOTAL_CENTS, BUNDLE_SAVING_CENTS, filesFor } from "../api/_catalog";
 
 function mockRes() {
   const out: any = { code: 0, body: null, headers: {} as Record<string, string> };

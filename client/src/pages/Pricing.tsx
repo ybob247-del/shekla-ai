@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ARTICLES } from "@/lib/articles";
 import { startCheckout } from "@/lib/checkout";
-import { BUNDLE_ID } from "@shared/catalog";
+import { BUNDLE_ID } from "@catalog";
 
 // Single source of truth for the offer, so the headline price, the badge and
 // the copy can never drift apart the way "Save $130" did.

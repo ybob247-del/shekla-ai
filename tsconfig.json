@@ -18,9 +18,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./client/src/*"],
-      "@shared/*": ["./shared/*"]
+      "@catalog": ["./api/_catalog.ts"]
     }
   },
-  "include": ["client/src", "shared", "server"],
+  "include": ["client/src", "api", "server"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

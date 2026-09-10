@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 import fs from "node:fs";
 import path from "node:path";
-import { filesFor, getToolkit } from "../shared/catalog";
+import { filesFor, getToolkit } from "./_catalog";
 
 // Entitlement is decided by asking Stripe whether the session was actually
 // paid, and by reading the product id off the session's own metadata. Nothing

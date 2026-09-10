@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client/src"),
-      "@shared": path.resolve(__dirname, "./shared"),
+      "@catalog": path.resolve(__dirname, "./api/_catalog.ts"),
     },
   },
   root: path.resolve(__dirname, "client"),

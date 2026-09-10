@@ -1,8 +1,8 @@
 import Stripe from "stripe";
-import { BUNDLE_ID, displayName, isPurchasable, priceCentsFor } from "../shared/catalog";
+import { BUNDLE_ID, displayName, isPurchasable, priceCentsFor } from "./_catalog";
 
 // Prices are sent inline as price_data rather than referencing Stripe Product
-// objects. The catalogue in shared/catalog.ts stays the single source of truth,
+// objects. The catalogue in api/_catalog.ts stays the single source of truth,
 // and changing a price needs no dashboard work — just a deploy.
 
 interface ApiRequest {
