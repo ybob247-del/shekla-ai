@@ -12,6 +12,7 @@ import Insights from "@/pages/Insights";
 import TermsOfService from "@/pages/TermsOfService";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Success from "@/pages/Success";
+import Patterns from "@/pages/Patterns";
 import SeoHead from "@/components/SeoHead";
 
 function Header() {
@@ -166,6 +167,17 @@ function Footer() {
               <li><Link href="/resources" className="hover:text-white transition-colors">All Toolkits</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/learn" className="hover:text-white transition-colors">Toolkit Guides</Link></li>
+              <li><Link href="/patterns" className="hover:text-white transition-colors">Money Pattern Checklist</Link></li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@HiddenPatterns77"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Hidden Patterns on YouTube →
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -216,6 +228,7 @@ export default function App() {
           <Route path="/terms-of-service" component={TermsOfService} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/success" component={Success} />
+          <Route path="/patterns" component={Patterns} />
           <Route component={NotFound} />
         </Switch>
       </main>

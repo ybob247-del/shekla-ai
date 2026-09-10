@@ -71,6 +71,14 @@ const CORE_METADATA: Record<string, SeoMetadata> = {
       "personal finance app pricing, free budgeting app, personal finance tools, Shekla AI pricing",
     canonical: "/pricing",
   },
+  "/patterns": {
+    title: "The Money Pattern Checklist — Decide Before You Feel | Shekla AI",
+    description:
+      "Seven rules you set once, while calm, so they run when you are not. The free checklist from Hidden Patterns — plus a 3-minute score that finds where your money is leaking.",
+    keywords:
+      "money pattern checklist, psychology of money, impulse spending rules, FOMO investing, pre-commitment money rules",
+    canonical: "/patterns",
+  },
   "/success": {
     title: "Your Toolkits Are Ready | Shekla AI",
     description: "Download the toolkits you just purchased.",
