@@ -25,7 +25,7 @@ const FEATURES = [
   {
     emoji: "📚",
     title: "Learning Center",
-    description: "67 free articles across 7 financial pillars — from budgeting basics to financial security.",
+    description: `${ARTICLES.length} free articles across 7 financial pillars — from budgeting basics to financial security.`,
     cta: "Start Learning",
     href: "/learn",
     color: "purple",
@@ -218,7 +218,7 @@ export default function Home() {
             </div>
             <Link href="/learn">
               <button className="text-emerald-600 font-semibold text-sm hover:underline hidden sm:block">
-                View all 67 articles →
+                View all {ARTICLES.length} articles →
               </button>
             </Link>
           </div>
@@ -240,7 +240,7 @@ export default function Home() {
           <div className="text-center sm:hidden">
             <Link href="/learn">
               <button className="text-emerald-600 font-semibold text-sm hover:underline">
-                View all 67 articles →
+                View all {ARTICLES.length} articles →
               </button>
             </Link>
           </div>

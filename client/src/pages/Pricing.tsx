@@ -1,11 +1,19 @@
 import { useState } from "react";
 import { Link } from "wouter";
+import { ARTICLES } from "@/lib/articles";
 
 // Stripe Price IDs — replace with your actual Stripe price IDs from the dashboard
 const STRIPE_PRICE_IDS = {
   bundle: "price_bundle_all_toolkits", // Replace with real Stripe price ID
   individual: "price_individual_toolkit", // Replace with real Stripe price ID
 };
+
+// Single source of truth for the offer, so the headline price, the badge and
+// the copy can never drift apart the way "Save $130" did.
+const TOOLKIT_COUNT = 10;
+const TOOLKIT_PRICE = 19;
+const BUNDLE_PRICE = 79;
+const BUNDLE_SAVING = TOOLKIT_COUNT * TOOLKIT_PRICE - BUNDLE_PRICE;
 
 const PLANS = [
   {
@@ -16,7 +24,7 @@ const PLANS = [
     features: [
       "Money Reset Score assessment",
       "All budget calculators",
-      "67 free learning articles",
+      `${ARTICLES.length} free learning articles`,
       "Financial insights dashboard",
       "No sign-up required",
     ],
@@ -29,11 +37,11 @@ const PLANS = [
   },
   {
     name: "Money Reset Lab",
-    price: "$79",
+    price: `$${BUNDLE_PRICE}`,
     period: "one-time",
-    description: "All 10 done-for-you spreadsheet toolkits in one complete bundle.",
+    description: `All ${TOOLKIT_COUNT} done-for-you spreadsheet toolkits in one complete bundle.`,
     features: [
-      "All 10 financial toolkits",
+      `All ${TOOLKIT_COUNT} financial toolkits`,
       "Paycheck Breakdown Toolkit",
       "Debt Payoff Plan",
       "No-Overdraft System",
@@ -47,16 +55,16 @@ const PLANS = [
       "Instant download",
       "Lifetime access",
     ],
-    cta: "Get All 10 Toolkits",
+    cta: `Get All ${TOOLKIT_COUNT} Toolkits`,
     href: "https://stan.store/moneyresetlab",
     highlighted: true,
-    badge: "Best Value — Save $130",
+    badge: `Best Value — Save $${BUNDLE_SAVING}`,
     isExternal: true,
     stripePrice: STRIPE_PRICE_IDS.bundle,
   },
   {
     name: "Individual Toolkits",
-    price: "$19",
+    price: `$${TOOLKIT_PRICE}`,
     period: "each",
     description: "Pick the specific toolkit that matches your biggest financial challenge.",
     features: [

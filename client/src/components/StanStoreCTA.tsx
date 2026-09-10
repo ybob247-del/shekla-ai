@@ -7,14 +7,22 @@ interface StanStoreCTAProps {
 
 const STAN_STORE_BASE = "https://stan.store/moneyresetlab";
 
+// Ten toolkits at $19 each is $190, so the bundle saves $111. The page
+// previously anchored against $209 and claimed $130, neither of which a buyer
+// could reproduce from the individual prices listed right below it.
+const TOOLKIT_COUNT = 10;
+const TOOLKIT_PRICE = 19;
+const BUNDLE_PRICE = 79;
+const SEPARATE_TOTAL = TOOLKIT_COUNT * TOOLKIT_PRICE;
+
 const TOOLKITS = [
   {
     emoji: "📦",
     name: "Budget Toolkit Bundle",
-    description: "Get all 10 toolkits and trackers in one complete bundle. The ultimate financial reset package.",
-    price: "$79",
-    originalPrice: "$209 if bought separately",
-    savings: "Save $130",
+    description: `Get all ${TOOLKIT_COUNT} toolkits and trackers in one complete bundle. The ultimate financial reset package.`,
+    price: `$${BUNDLE_PRICE}`,
+    originalPrice: `$${SEPARATE_TOTAL} if bought separately`,
+    savings: `Save $${SEPARATE_TOTAL - BUNDLE_PRICE}`,
     isBestValue: true,
     link: STAN_STORE_BASE,
   },
