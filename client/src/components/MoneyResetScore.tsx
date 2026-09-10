@@ -121,7 +121,7 @@ function calculateScore(answers: Record<string, string>): ScoreResult {
   return { score, grade, color, summary, recommendations, toolkits: uniqueToolkits };
 }
 
-const STAN_STORE_BASE = "https://stan.store/moneyresetlab";
+const TOOLKITS_PATH = "/resources";
 
 export default function MoneyResetScore() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -189,7 +189,7 @@ export default function MoneyResetScore() {
               {result.toolkits.map((toolkit, i) => (
                 <a
                   key={i}
-                  href={STAN_STORE_BASE}
+                  href={TOOLKITS_PATH}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-amber-100 text-amber-800 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-amber-200 transition-colors"
@@ -203,7 +203,7 @@ export default function MoneyResetScore() {
 
         <div className="flex flex-col sm:flex-row gap-3">
           <a
-            href={STAN_STORE_BASE}
+            href={TOOLKITS_PATH}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-xl text-center text-sm transition-colors"

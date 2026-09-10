@@ -71,6 +71,14 @@ const CORE_METADATA: Record<string, SeoMetadata> = {
       "personal finance app pricing, free budgeting app, personal finance tools, Shekla AI pricing",
     canonical: "/pricing",
   },
+  "/success": {
+    title: "Your Toolkits Are Ready | Shekla AI",
+    description: "Download the toolkits you just purchased.",
+    keywords: "",
+    canonical: "/success",
+    // A receipt page. It must be served and rendered, but never indexed.
+    noIndex: true,
+  },
   "/privacy-policy": {
     title: "Privacy Policy | Shekla AI",
     description:

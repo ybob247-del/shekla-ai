@@ -35,7 +35,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-gray-900 mb-3">4. Purchases and Refunds</h2>
             <p className="text-gray-700 leading-relaxed">
-              Digital toolkit purchases are processed through Stan Store. All purchases come with a
+              Digital toolkit purchases are processed through Stripe. All purchases come with a
               30-day money-back guarantee. Refund requests should be submitted within 30 days of purchase.
             </p>
           </section>

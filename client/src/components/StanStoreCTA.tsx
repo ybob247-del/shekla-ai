@@ -5,7 +5,7 @@ interface StanStoreCTAProps {
   className?: string;
 }
 
-const STAN_STORE_BASE = "https://stan.store/moneyresetlab";
+const TOOLKITS_PATH = "/resources";
 
 // Ten toolkits at $19 each is $190, so the bundle saves $111. The page
 // previously anchored against $209 and claimed $130, neither of which a buyer
@@ -18,91 +18,102 @@ const SEPARATE_TOTAL = TOOLKIT_COUNT * TOOLKIT_PRICE;
 const TOOLKITS = [
   {
     emoji: "📦",
+    id: "budget-toolkit-bundle",
     name: "Budget Toolkit Bundle",
     description: `Get all ${TOOLKIT_COUNT} toolkits and trackers in one complete bundle. The ultimate financial reset package.`,
     price: `$${BUNDLE_PRICE}`,
     originalPrice: `$${SEPARATE_TOTAL} if bought separately`,
     savings: `Save $${SEPARATE_TOTAL - BUNDLE_PRICE}`,
     isBestValue: true,
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "💵",
+    id: "paycheck-breakdown-toolkit",
     name: "Paycheck Breakdown Toolkit",
     description: "See exactly where every dollar goes each paycheck. Stop wondering, start knowing.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "🛡️",
+    id: "no-overdraft-system",
     name: "No-Overdraft System",
     description: "Never pay another overdraft fee. Know exactly what is safe to spend at all times.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "📅",
+    id: "2-paycheck-budget-system",
     name: "2-Paycheck Budget System",
     description: "A complete system for managing your money across two paychecks per month.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "📋",
+    id: "bill-catch-up-plan",
     name: "Bill Catch-Up Plan",
     description: "A step-by-step plan to catch up on overdue bills and stop late fees for good.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "🛒",
+    id: "food-budget-reset-kit",
     name: "Food Budget Reset Kit",
     description: "Take control of your grocery and dining spending with this proven reset system.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "⛄",
+    id: "debt-payoff-plan",
     name: "Debt Payoff Plan",
     description: "Track and crush your debt using the proven snowball or avalanche method.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "✂️",
+    id: "spending-cuts-that-dont-hurt",
     name: "Spending Cuts Habit Tracker",
     description: "Find painless ways to cut spending and build better money habits that stick.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "📊",
+    id: "irregular-income-budget-kit",
     name: "Irregular Income Budget Kit",
     description: "Budget confidently even when your income changes month to month.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "🪣",
+    id: "sinking-funds-kit",
     name: "Sinking Funds Kit",
     description: "Build targeted savings buckets so unexpected expenses never derail your budget.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
   {
     emoji: "🗓️",
+    id: "annual-bills-planner",
     name: "Annual Bills Planner",
     description: "Plan ahead for yearly expenses so they never catch you off guard.",
     price: "$19",
-    link: STAN_STORE_BASE,
+    link: TOOLKITS_PATH,
   },
 ];
 
-export { TOOLKITS, STAN_STORE_BASE };
+export { TOOLKITS, TOOLKITS_PATH };
 
 export default function StanStoreCTA({
   toolkitName,
-  toolkitLink = STAN_STORE_BASE,
+  toolkitLink = TOOLKITS_PATH,
   variant = "card",
   className = "",
 }: StanStoreCTAProps) {
@@ -116,12 +127,10 @@ export default function StanStoreCTA({
               {toolkitName ? `Get the ${toolkitName}` : "Get the Full Toolkit"}
             </p>
             <p className="text-amber-800 text-xs mb-3">
-              Instant download spreadsheet system — start in 10 minutes.
+              Instant download toolkit — start in 10 minutes.
             </p>
             <a
               href={toolkitLink}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-amber-500 hover:bg-amber-600 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors"
             >
               Get the Toolkit →
@@ -143,9 +152,7 @@ export default function StanStoreCTA({
             </p>
           </div>
           <a
-            href={STAN_STORE_BASE}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={TOOLKITS_PATH}
             className="bg-white text-amber-600 hover:bg-amber-50 font-semibold px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap text-sm"
           >
             Browse All Toolkits →
@@ -164,12 +171,10 @@ export default function StanStoreCTA({
           {toolkitName ? toolkitName : "Money Reset Lab Toolkits"}
         </h3>
         <p className="text-amber-800 text-sm mb-4">
-          Practical, done-for-you spreadsheet systems. Instant download, start in 10 minutes.
+          Practical, done-for-you toolkits. Instant download, start in 10 minutes.
         </p>
         <a
           href={toolkitLink}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm"
         >
           Get the Toolkit →

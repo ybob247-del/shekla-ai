@@ -1,5 +1,37 @@
+import { useState } from "react";
 import { Link } from "wouter";
-import { TOOLKITS, STAN_STORE_BASE } from "@/components/StanStoreCTA";
+import { TOOLKITS } from "@/components/StanStoreCTA";
+import { startCheckout } from "@/lib/checkout";
+
+// Buying happens here now, on our own domain, rather than by handing the
+// reader off to a third-party storefront.
+function BuyButton({ productId, label, className }: { productId: string; label: string; className: string }) {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  return (
+    <div className="flex flex-col items-end gap-1">
+      <button
+        type="button"
+        disabled={loading}
+        onClick={async () => {
+          setLoading(true);
+          setError("");
+          try {
+            await startCheckout(productId);
+          } catch (err) {
+            setError(err instanceof Error ? err.message : "Could not start checkout.");
+            setLoading(false);
+          }
+        }}
+        className={`${className} disabled:opacity-60`}
+      >
+        {loading ? "Loading…" : label}
+      </button>
+      {error && <span className="text-xs text-red-600">{error}</span>}
+    </div>
+  );
+}
 
 export default function Resources() {
   const bundleToolkit = TOOLKITS.find((t) => t.isBestValue);
@@ -17,7 +49,7 @@ export default function Resources() {
             Done-For-You Financial Toolkits
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Practical spreadsheet systems to reset your finances. Instant download.
+            Practical, done-for-you toolkits to reset your finances. Instant download.
             Start in 10 minutes. No subscription required.
           </p>
         </div>
@@ -38,14 +70,11 @@ export default function Resources() {
                 <span className="text-4xl font-extrabold">{bundleToolkit.price}</span>
                 <span className="text-emerald-200 text-sm line-through">{bundleToolkit.originalPrice}</span>
               </div>
-              <a
-                href={bundleToolkit.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BuyButton
+                productId={bundleToolkit.id}
+                label="Get All 10 Toolkits →"
                 className="inline-flex items-center gap-2 bg-white text-emerald-600 hover:bg-emerald-50 font-bold px-8 py-3.5 rounded-xl transition-colors text-sm"
-              >
-                Get All 10 Toolkits →
-              </a>
+              />
             </div>
           </div>
         )}
@@ -64,14 +93,11 @@ export default function Resources() {
                 <p className="text-gray-600 text-sm mb-4 flex-1">{toolkit.description}</p>
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                   <span className="text-xl font-bold text-gray-900">{toolkit.price}</span>
-                  <a
-                    href={toolkit.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <BuyButton
+                    productId={toolkit.id}
+                    label="Get Toolkit →"
                     className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
-                  >
-                    Get Toolkit →
-                  </a>
+                  />
                 </div>
               </div>
             ))}
@@ -83,7 +109,7 @@ export default function Resources() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">How It Works</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { step: "1", title: "Purchase Instantly", desc: "Secure checkout via Stan Store. Instant access after payment." },
+              { step: "1", title: "Purchase Instantly", desc: "Secure checkout via Stripe. Instant download the moment payment clears." },
               { step: "2", title: "Download Your Toolkit", desc: "Google Sheets or Excel file — works on any device, any platform." },
               { step: "3", title: "Start in 10 Minutes", desc: "Each toolkit includes step-by-step instructions to get started fast." },
             ].map((item) => (
@@ -140,14 +166,11 @@ export default function Resources() {
                 Get My Free Score →
               </button>
             </Link>
-            <a
-              href={STAN_STORE_BASE}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3 rounded-xl transition-colors"
-            >
-              Browse All Toolkits
-            </a>
+            <Link href="/pricing">
+              <button className="border border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3 rounded-xl transition-colors">
+                Compare Options
+              </button>
+            </Link>
           </div>
         </div>
       </div>

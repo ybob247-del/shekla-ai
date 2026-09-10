@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
                 interact with the site (page views, general usage patterns).
               </li>
               <li>
-                <strong>Purchase data:</strong> Toolkit purchases are handled by Stan Store. We receive
+                <strong>Purchase data:</strong> Toolkit purchases are handled by Stripe. We receive
                 confirmation of purchases but not payment details.
               </li>
             </ul>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
               We use the following third-party services:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mt-3">
-              <li><strong>Stan Store:</strong> For processing toolkit purchases</li>
+              <li><strong>Stripe:</strong> For processing toolkit purchases</li>
               <li><strong>Vercel:</strong> For website hosting</li>
               <li><strong>Cloudflare:</strong> For CDN and security</li>
             </ul>

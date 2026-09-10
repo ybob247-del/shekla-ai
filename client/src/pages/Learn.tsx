@@ -133,7 +133,7 @@ export default function Learn() {
             {/* New Toolkit Articles */}
             <div className="mb-10">
               <div className="flex items-center gap-3 mb-5">
-                <h2 className="text-xl font-bold text-gray-900">New: Stan Store Toolkit Articles</h2>
+                <h2 className="text-xl font-bold text-gray-900">New: Toolkit Guides</h2>
                 <span className="bg-emerald-100 text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-full">
                   {newToolkitArticles.length} New
                 </span>
@@ -194,7 +194,7 @@ export default function Learn() {
               Every article links to a hands-on toolkit. Get the complete bundle of all 10 systems for $79.
             </p>
             <a
-              href="https://stan.store/moneyresetlab"
+              href="/resources"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-amber-600 hover:bg-amber-50 font-semibold px-6 py-2.5 rounded-xl transition-colors text-sm"

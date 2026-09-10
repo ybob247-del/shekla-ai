@@ -37,8 +37,8 @@ function replaceMeta(html: string, attribute: "name" | "property", key: string, 
 
 function makePageHtml(template: string, routePath: string, body: string): string {
   const metadata = getSeoMetadata(routePath);
-  if (!metadata.canonical || metadata.noIndex) {
-    throw new Error(`Cannot generate an indexable static HTML page for ${routePath}.`);
+  if (!metadata.canonical) {
+    throw new Error(`Cannot generate a static HTML page for ${routePath} without a canonical path.`);
   }
 
   const canonicalUrl = toAbsoluteUrl(metadata.canonical);
@@ -50,7 +50,9 @@ function makePageHtml(template: string, routePath: string, body: string): string
     html,
     "name",
     "robots",
-    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    metadata.noIndex
+      ? "noindex, nofollow"
+      : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   );
   html = replaceMeta(html, "property", "og:type", metadata.ogType || "website");
   html = replaceMeta(html, "property", "og:title", metadata.title);
@@ -64,7 +66,10 @@ function makePageHtml(template: string, routePath: string, body: string): string
   if (!CANONICAL_LINK.test(html)) {
     throw new Error("Missing canonical link in the Vite HTML template.");
   }
-  html = html.replace(CANONICAL_LINK, () => `<link rel="canonical" href="${canonicalUrl}" />`);
+  // A noindexed page claims no canonical URL of its own.
+  html = html.replace(CANONICAL_LINK, () =>
+    metadata.noIndex ? "" : `<link rel="canonical" href="${canonicalUrl}" />`,
+  );
 
   if (!ROOT_DIV.test(html)) {
     throw new Error("Missing #root container in the Vite HTML template.");
@@ -139,7 +144,9 @@ async function main(): Promise<void> {
 
   await writeFile(path.join(outputDir, "404.html"), makeNotFoundHtml(template, render("/__not-found__")));
 
-  await writeFile(path.join(outputDir, "sitemap.xml"), makeSitemap(uniquePaths));
+  // Prerendered but noindexed pages (the purchase receipt) are served, not listed.
+  const indexablePaths = uniquePaths.filter((routePath) => !getSeoMetadata(routePath).noIndex);
+  await writeFile(path.join(outputDir, "sitemap.xml"), makeSitemap(indexablePaths));
   await writeFile(
     path.join(outputDir, "robots.txt"),
     "User-agent: *\nAllow: /\n\nDisallow: /api/\n\nSitemap: https://www.shekla.ai/sitemap.xml\n",

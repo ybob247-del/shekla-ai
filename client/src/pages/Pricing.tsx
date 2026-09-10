@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { ARTICLES } from "@/lib/articles";
-
-// Stripe Price IDs — replace with your actual Stripe price IDs from the dashboard
-const STRIPE_PRICE_IDS = {
-  bundle: "price_bundle_all_toolkits", // Replace with real Stripe price ID
-  individual: "price_individual_toolkit", // Replace with real Stripe price ID
-};
+import { startCheckout } from "@/lib/checkout";
+import { BUNDLE_ID } from "@shared/catalog";
 
 // Single source of truth for the offer, so the headline price, the badge and
 // the copy can never drift apart the way "Save $130" did.
@@ -32,14 +28,13 @@ const PLANS = [
     href: "/assessment",
     highlighted: false,
     badge: null,
-    isExternal: false,
-    stripePrice: null,
+    productId: null,
   },
   {
     name: "Money Reset Lab",
     price: `$${BUNDLE_PRICE}`,
     period: "one-time",
-    description: `All ${TOOLKIT_COUNT} done-for-you spreadsheet toolkits in one complete bundle.`,
+    description: `All ${TOOLKIT_COUNT} done-for-you toolkits in one complete bundle.`,
     features: [
       `All ${TOOLKIT_COUNT} financial toolkits`,
       "Paycheck Breakdown Toolkit",
@@ -56,11 +51,10 @@ const PLANS = [
       "Lifetime access",
     ],
     cta: `Get All ${TOOLKIT_COUNT} Toolkits`,
-    href: "https://stan.store/moneyresetlab",
+    href: "/resources",
     highlighted: true,
     badge: `Best Value — Save $${BUNDLE_SAVING}`,
-    isExternal: true,
-    stripePrice: STRIPE_PRICE_IDS.bundle,
+    productId: BUNDLE_ID,
   },
   {
     name: "Individual Toolkits",
@@ -71,26 +65,25 @@ const PLANS = [
       "Choose any single toolkit",
       "Instant download",
       "Lifetime access",
-      "Works with any spreadsheet app",
+      "Works on any device",
       "Step-by-step instructions included",
     ],
     cta: "Browse Toolkits",
     href: "/resources",
     highlighted: false,
     badge: null,
-    isExternal: false,
-    stripePrice: null,
+    productId: null,
   },
 ];
 
 const FAQS = [
   {
     q: "What format are the toolkits in?",
-    a: "All toolkits are Google Sheets / Excel-compatible spreadsheet files. They work in Google Sheets (free), Microsoft Excel, or Apple Numbers.",
+    a: "Each toolkit is a PDF workbook you download instantly. Print it or fill it in on any device — no special software needed.",
   },
   {
     q: "Do I need to create an account?",
-    a: "No account needed for the free tools (calculators, articles, Money Reset Score). For toolkit purchases, you'll check out through Stan Store.",
+    a: "No account needed. The free tools stay free, and toolkit purchases check out securely through Stripe — you just need an email address to receive your download link.",
   },
   {
     q: "Is there a refund policy?",
@@ -102,41 +95,27 @@ const FAQS = [
   },
   {
     q: "Can I use the toolkits on my phone?",
-    a: "Yes — Google Sheets works on iOS and Android, so you can access your toolkits anywhere.",
+    a: "Yes — the PDFs open on iOS and Android, so you can use your toolkits anywhere.",
   },
 ];
 
 function PlanCard({ plan }: { plan: typeof PLANS[0] }) {
   const [loading, setLoading] = useState(false);
 
+  const [error, setError] = useState("");
+
   const handleCheckout = async () => {
-    if (plan.isExternal) {
-      window.open(plan.href, "_blank");
-      return;
-    }
-    if (!plan.stripePrice) {
+    if (!plan.productId) {
       window.location.href = plan.href;
       return;
     }
 
     setLoading(true);
+    setError("");
     try {
-      const res = await fetch("/api/create-checkout-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          priceId: plan.stripePrice,
-          successUrl: `${window.location.origin}/success`,
-          cancelUrl: `${window.location.origin}/pricing`,
-        }),
-      });
-      const data = await res.json();
-      if (data.url) {
-        window.location.href = data.url;
-      }
+      await startCheckout(plan.productId);
     } catch (err) {
-      console.error("Checkout error:", err);
-    } finally {
+      setError(err instanceof Error ? err.message : "Could not start checkout.");
       setLoading(false);
     }
   };
@@ -204,8 +183,14 @@ function PlanCard({ plan }: { plan: typeof PLANS[0] }) {
             : "bg-emerald-500 text-white hover:bg-emerald-600"
         } disabled:opacity-60`}
       >
-        {loading ? "Loading..." : plan.cta}
+        {loading ? "Loading…" : plan.cta}
       </button>
+
+      {error && (
+        <p className={`mt-3 text-xs text-center ${plan.highlighted ? "text-white" : "text-red-600"}`}>
+          {error}
+        </p>
+      )}
     </div>
   );
 }

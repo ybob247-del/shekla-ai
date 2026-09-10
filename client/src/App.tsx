@@ -11,6 +11,7 @@ import Resources from "@/pages/Resources";
 import Insights from "@/pages/Insights";
 import TermsOfService from "@/pages/TermsOfService";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import Success from "@/pages/Success";
 import SeoHead from "@/components/SeoHead";
 
 function Header() {
@@ -164,16 +165,7 @@ function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/resources" className="hover:text-white transition-colors">All Toolkits</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-              <li>
-                <a
-                  href="https://stan.store/moneyresetlab"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  Stan Store →
-                </a>
-              </li>
+              <li><Link href="/learn" className="hover:text-white transition-colors">Toolkit Guides</Link></li>
             </ul>
           </div>
         </div>
@@ -223,6 +215,7 @@ export default function App() {
           <Route path="/resources" component={Resources} />
           <Route path="/terms-of-service" component={TermsOfService} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/success" component={Success} />
           <Route component={NotFound} />
         </Switch>
       </main>
