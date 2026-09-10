@@ -3,6 +3,9 @@
   "functions": {
     "api/download.ts": {
       "includeFiles": "assets/toolkits/**"
+    },
+    "api/checklist.ts": {
+      "includeFiles": "assets/lead-magnets/**"
     }
   },
   "redirects": [
