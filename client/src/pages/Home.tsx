@@ -33,7 +33,7 @@ const FEATURES = [
   {
     emoji: "🧪",
     title: "Money Reset Lab",
-    description: "Done-for-you spreadsheet toolkits to reset your finances. Instant download, start in 10 minutes.",
+    description: "Done-for-you PDF toolkits to reset your finances. Instant download, start in 10 minutes.",
     cta: "Browse Toolkits",
     href: "/resources",
     color: "amber",
@@ -41,31 +41,10 @@ const FEATURES = [
 ];
 
 const STATS = [
-  { value: "67", label: "Free Articles" },
-  { value: "10+", label: "Budget Calculators" },
+  { value: String(ARTICLES.length), label: "Free Articles" },
+  { value: "5", label: "Free Calculators" },
   { value: "10", label: "Downloadable Toolkits" },
   { value: "3 min", label: "Money Reset Score" },
-];
-
-const TESTIMONIALS = [
-  {
-    quote: "I finally understand where my money goes every month. The budget calculator alone saved me $400 in the first month.",
-    name: "Sarah M.",
-    role: "Teacher, Atlanta GA",
-    avatar: "SM",
-  },
-  {
-    quote: "The Money Reset Score was eye-opening. I scored a 42 and now I know exactly what to fix first.",
-    name: "James T.",
-    role: "Freelancer, Chicago IL",
-    avatar: "JT",
-  },
-  {
-    quote: "The debt payoff toolkit is incredible. I paid off $8,000 in credit card debt in 14 months following the plan.",
-    name: "Maria L.",
-    role: "Nurse, Houston TX",
-    avatar: "ML",
-  },
 ];
 
 const fadeUp = {
@@ -84,7 +63,7 @@ export default function Home() {
       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900 text-white py-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <motion.div
-            initial="hidden"
+            initial={false}
             animate="visible"
             variants={stagger}
           >
@@ -247,32 +226,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-3">Real Results</h2>
-            <p className="text-gray-600">From people who used Shekla AI to reset their finances.</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="bg-white border border-gray-200 rounded-2xl p-6">
-                <p className="text-gray-700 text-sm leading-relaxed mb-5">"{t.quote}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-xs font-bold shrink-0">
-                    {t.avatar}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm">{t.name}</p>
-                    <p className="text-gray-500 text-xs">{t.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA */}
       <section className="py-16 px-4 bg-emerald-500">
