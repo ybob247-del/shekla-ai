@@ -4265,6 +4265,310 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+  "how-much-should-i-save-each-month": {
+    slug: "how-much-should-i-save-each-month",
+    title: "How Much Should I Save Each Month? A Beginner's Flexible Plan",
+    subtitle: "Build a monthly savings habit around your priorities, not a one-size-fits-all number.",
+    keyLesson: "A useful monthly savings amount is one you can repeat. Start with your essential bills, give each savings dollar a purpose, and raise the amount gradually as your cash flow improves.",
+    sections: [
+      {
+        type: "heading",
+        content: "Is there one right monthly savings amount?",
+      },
+      {
+        type: "paragraph",
+        content: "When people ask how much should I save each month, they often want one simple percentage. A common guideline is to direct 20% of take-home pay toward saving, investing, and extra debt payments. It is a useful starting point, not a pass-or-fail rule. The best number supports your next priority without causing missed bills or new debt.",
+      },
+      {
+        type: "paragraph",
+        content: "Think of savings as a set of jobs, not one giant pile. An emergency cushion, an annual bill, a car replacement, and a long-term goal each need a different timeline and level of access. Naming the job helps you decide how much to set aside.",
+      },
+      {
+        type: "heading",
+        content: "Start with your cash flow",
+      },
+      {
+        type: "paragraph",
+        content: "Before picking a percentage, find out what your month can support. Use net, or take-home, income. List fixed bills, basic groceries, transportation, minimum debt payments, and necessary costs. Then review several weeks of transactions to see how much cash is already committed and where a transfer could fit consistently.",
+      },
+      {
+        type: "example",
+        content: "Suppose your take-home pay is $3,000 per month. After essential bills, planned spending, and minimum debt payments, you typically have $180 unassigned. You might begin by saving $100 each month and leaving $80 as a buffer for fluctuating costs. A $100 transfer is not less meaningful because it is below 20%. It creates a repeatable system, and it can grow when your expenses or income change.",
+      },
+      {
+        type: "heading",
+        content: "Choose the job for each savings dollar",
+      },
+      {
+        type: "paragraph",
+        content: "Give your first savings dollars the clearest, most urgent job. For many beginners, that means a small emergency reserve for an unexpected copay, repair, or short income gap. After a basic cushion, you may divide money among a larger emergency fund, irregular expenses, and longer-term goals. A sinking fund is a separate category for a predictable future expense, such as car maintenance or annual insurance.",
+      },
+      {
+        type: "paragraph",
+        content: "Do not overlook high-cost debt when setting priorities. If you carry a balance with a high annual percentage rate, an extra payment may be an important part of your monthly plan. The right sequence depends on your situation, so treat general guidelines as education rather than a personal recommendation. What matters is that you decide deliberately where the next dollar should go instead of allowing it to disappear by default.",
+      },
+      {
+        type: "heading",
+        content: "Use a percentage as a flexible guide",
+      },
+      {
+        type: "paragraph",
+        content: "Percentages can turn a vague goal into a number. Saving 5% of $3,000 in take-home pay is $150 each month. Saving 10% is $300. Saving 20% is $600. You can use those numbers as planning scenarios, then choose the amount that leaves room for essential costs. If your income changes, a percentage can scale with it more naturally than a fixed transfer.",
+      },
+      {
+        type: "paragraph",
+        content: "The 50/30/20 framework is one way to think about needs, wants, and savings or extra debt payments. It is a framework, not a command. Make the target visible, but do not abandon the plan when a high-cost month changes the math.",
+      },
+      {
+        type: "heading",
+        content: "What to do when 20% is not realistic",
+      },
+      {
+        type: "paragraph",
+        content: "If 20% is not possible right now, start smaller and protect the habit. A transfer of $10, $25, or $50 after each payday can prove that your system works. Review the amount after one or two months. You may be able to raise it after paying off a bill, reducing an expense, receiving a raise, or completing a short-term goal. Progress is not only measured by the size of the account; it is also measured by having a plan you understand and use.",
+      },
+      {
+        type: "list",
+        content: "Ways to create room for a first savings transfer:",
+        items: [
+          "Redirect a payment after a small debt or subscription ends instead of absorbing the extra cash into routine spending.",
+          "Split an irregular expense into a monthly sinking-fund amount so it no longer surprises your budget.",
+          "Choose one spending category to review for a limited period rather than trying to cut everything at once.",
+          "Save part of a windfall, refund, bonus, or extra-income payment after covering immediate essentials.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Set up a monthly savings system",
+      },
+      {
+        type: "paragraph",
+        content: "Make the transfer easy to repeat. Schedule it for just after payday, when money is available and before unplanned spending competes for it. Read the savings account's fees, transfer timing, and balance rules. If income varies, start with a reminder and move a percentage of each deposit manually.",
+      },
+      {
+        type: "paragraph",
+        content: "An AI-assisted spending review can help you spot recurring costs and test a realistic transfer amount, but it should be an organizer—not a substitute for checking your account balance, bills, and goals. Use the tool to make your decision easier to see, then stay in control of the final amount and timing.",
+      },
+      {
+        type: "heading",
+        content: "Review your progress without guilt",
+      },
+      {
+        type: "paragraph",
+        content: "At month-end, compare what you planned to save with what happened. If you missed the target, identify the reason and adjust the plan instead of labeling the month a failure. Savings improves through small corrections.",
+      },
+      {
+        type: "keyLesson",
+        content: "There is no universal monthly savings amount that fits every budget. Pick a number that is safe to repeat, assign it a clear purpose, automate it when appropriate, and increase it gradually as your cash flow allows. This article is general education, not individualized financial advice.",
+      },
+      {
+        type: "cta",
+        ctaType: "assessment",
+      },
+    ],
+  },
+  "what-is-an-overdraft": {
+    slug: "what-is-an-overdraft",
+    title: "What Is an Overdraft? How It Works, Fees, and Ways to Avoid It",
+    subtitle: "Learn what happens when a transaction is larger than the available money in your account.",
+    keyLesson: "An overdraft happens when an account does not have enough available money for a transaction and the bank or credit union pays it anyway. Understanding your institution's terms and using simple alerts can help you avoid unnecessary fees.",
+    sections: [
+      {
+        type: "heading",
+        content: "What is an overdraft?",
+      },
+      {
+        type: "paragraph",
+        content: "An overdraft occurs when you do not have enough available money in checking to cover a transaction, but the bank or credit union pays it anyway. You must repay the shortfall, and the institution may charge an overdraft fee under its account agreement. An overdraft is not extra income; it is short-term account coverage that can be expensive.",
+      },
+      {
+        type: "paragraph",
+        content: "The available balance matters more than a number you saw earlier. Deposits may not be available immediately, while pending card transactions or scheduled payments can reduce the money available to spend.",
+      },
+      {
+        type: "heading",
+        content: "How overdrafts happen",
+      },
+      {
+        type: "paragraph",
+        content: "Overdrafts often result from timing rather than one dramatic purchase. A bill may be scheduled before a deposit clears, a subscription may renew, or a temporary card authorization may change the available balance. Several small debit-card purchases can also add up before transactions settle.",
+      },
+      {
+        type: "example",
+        content: "Imagine you have $65 available. A $50 utility payment is scheduled for tomorrow, but it has not posted yet. You use your debit card for $30 of groceries today. If the grocery purchase and utility payment are both paid before new money reaches the account, the account could be short even though you saw $65 earlier. The exact order and timing depend on the institution and transaction types, which is why checking pending items matters.",
+      },
+      {
+        type: "heading",
+        content: "Paid overdraft versus a declined transaction",
+      },
+      {
+        type: "paragraph",
+        content: "When there is not enough money, an institution may pay the transaction and create an overdraft or decline it. A declined debit-card purchase can be inconvenient, but it may prevent a fee. Rules can differ by transaction type and the service choices you made, so do not assume one experience applies to every payment.",
+      },
+      {
+        type: "paragraph",
+        content: "For everyday one-time debit-card and ATM transactions, U.S. institutions generally need your consent before charging an overdraft fee for paying those transactions. Other transaction types may be treated differently under the account agreement. Read your bank or credit union's current disclosures, and ask directly how it handles each transaction category if the language is unclear.",
+      },
+      {
+        type: "heading",
+        content: "Overdraft fees and account terms",
+      },
+      {
+        type: "paragraph",
+        content: "Overdraft fees vary. Some institutions charge for each paid transaction, and more than one fee may occur in a day. Others set lower fees, daily limits, grace periods, or no-overdraft-fee policies. Your account agreement and fee schedule are the right source for the amount and timing.",
+      },
+      {
+        type: "paragraph",
+        content: "An overdraft can also make the rest of a tight week harder. A fee reduces the money left for the next bill, which can create another shortfall. That cycle is a cash-flow problem to solve, not a character flaw. The useful response is to understand the account terms, stabilize the immediate balance, and make one practical change that lowers the chance of a repeat.",
+      },
+      {
+        type: "heading",
+        content: "Overdraft coverage options",
+      },
+      {
+        type: "paragraph",
+        content: "Banks and credit unions may offer different ways to handle a shortfall. You can opt out of certain coverage so a debit-card purchase or ATM withdrawal is generally declined. Another option is linking checking to savings, although a transfer fee can apply. A linked credit line or credit card involves borrowing and may carry interest and fees.",
+      },
+      {
+        type: "paragraph",
+        content: "There is no universally best choice. Compare the fee schedule, the time it takes to transfer funds, the risk of borrowing, and how each option fits your spending habits. You can usually change an overdraft preference by contacting the financial institution. Ask for the change in writing or save confirmation details for your records.",
+      },
+      {
+        type: "heading",
+        content: "How to avoid overdrafts",
+      },
+      {
+        type: "list",
+        content: "Build a simple no-overdraft routine:",
+        items: [
+          "Turn on low-balance and transaction alerts, choosing a threshold that gives you time to act before bills are due.",
+          "Keep a small checking buffer for timing differences rather than treating every visible dollar as spendable.",
+          "List automatic payments, their due dates, and expected amounts in the same calendar or budget you use for other bills.",
+          "Review pending purchases and when new deposits will actually become available before making a discretionary purchase.",
+          "Move recurring savings or bill transfers to dates that align with your pay schedule when the institution permits it.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "What to do after an overdraft",
+      },
+      {
+        type: "paragraph",
+        content: "First, confirm the balance, transaction, and fee in your account history. Bring the account positive as soon as you reasonably can, then check whether essential payments will still clear. If a transaction or fee looks unfamiliar, contact the institution through an official channel. If a valid fee creates hardship, ask whether it offers a waiver or payment option; early communication is better than ignoring the account.",
+      },
+      {
+        type: "keyLesson",
+        content: "An overdraft is a paid transaction when your account lacks enough available funds, not a cushion to rely on. Learn your account terms, choose coverage deliberately, and use alerts plus a small buffer to reduce surprises. This article is general education, not individualized banking advice.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+  "gross-pay-vs-net-pay": {
+    slug: "gross-pay-vs-net-pay",
+    title: "Gross Pay vs. Net Pay: How to Read Your Paycheck",
+    subtitle: "Use your pay stub to understand what you earned, what was withheld, and what is available for your plan.",
+    keyLesson: "Gross pay is what you earn before payroll deductions. Net pay is the amount that reaches you after those deductions, and it is the more useful starting number for a day-to-day budget.",
+    sections: [
+      {
+        type: "heading",
+        content: "Gross pay vs. net pay at a glance",
+      },
+      {
+        type: "paragraph",
+        content: "Gross pay is what you earned before taxes, insurance premiums, retirement contributions, and other payroll deductions. Net pay is what remains after those deductions. It is often called take-home pay because it is the amount deposited into your account. This explains why a job-offer salary does not match the amount you can spend each pay period.",
+      },
+      {
+        type: "paragraph",
+        content: "For everyday budgeting, net pay is usually the number that matters most. Bills, savings transfers, and debt payments must fit the cash that arrives in your account. Gross pay still matters for comparing jobs, tax documents, some loan applications, and benefits.",
+      },
+      {
+        type: "heading",
+        content: "What gross pay includes",
+      },
+      {
+        type: "paragraph",
+        content: "Gross pay begins with your agreed compensation for the pay period. For an hourly employee, it may include regular hours, overtime, commissions, tips, or bonuses. For a salaried employee, it is commonly annual salary divided across pay periods, plus any additional eligible pay. Your pay stub may show current-period and year-to-date gross pay.",
+      },
+      {
+        type: "paragraph",
+        content: "A job listing's annual salary is also a gross figure. For example, a $60,000 annual salary is not $5,000 of spendable money every month. The final take-home amount depends on taxes, where you live, benefit elections, retirement contributions, pay frequency, and other details. Treat online paycheck calculators as estimates, then use your actual pay stub to build the first version of your budget.",
+      },
+      {
+        type: "heading",
+        content: "Common deductions on a paycheck",
+      },
+      {
+        type: "paragraph",
+        content: "Deductions are amounts subtracted from gross pay. Some are required, while others reflect choices you made during enrollment. Common entries include income-tax withholding, Social Security and Medicare taxes, health insurance premiums, retirement contributions, other benefit coverage, commuter benefits, and wage garnishments. Labels and amounts vary by employer and jurisdiction.",
+      },
+      {
+        type: "paragraph",
+        content: "Not every deduction is bad news. A retirement contribution or health insurance premium reduces today’s net pay, but it may support a benefit you chose. The important part is recognizing the deduction and knowing whether it is expected. If you see a label you do not understand, use your employer's payroll portal or human-resources contact to ask for an explanation. Do not assume a confusing deduction is necessarily an error, but do not ignore it either.",
+      },
+      {
+        type: "heading",
+        content: "How to find your net pay",
+      },
+      {
+        type: "paragraph",
+        content: "Look for a line called net pay, net earnings, amount paid, or take-home pay near the bottom of the pay stub. If you use direct deposit, compare that figure with the deposit that reaches your account. A pay stub usually lists gross earnings, individual deductions, and net pay in one place. Keep copies of pay stubs in a secure location so you can compare a later amount if something changes.",
+      },
+      {
+        type: "example",
+        content: "Suppose a biweekly pay stub shows $2,400 in gross pay. It then lists taxes of $430, health coverage of $120, and a retirement contribution of $120. The net pay is $1,730. When you plan the next two weeks of bills and spending, use $1,730—not $2,400—as the starting amount. The deduction details still matter because they explain the difference and may affect your longer-term plans.",
+      },
+      {
+        type: "heading",
+        content: "Why pay frequency matters",
+      },
+      {
+        type: "paragraph",
+        content: "Pay frequency changes the rhythm of your budget. Weekly, biweekly, semimonthly, and monthly schedules produce different deposit dates. Biweekly means every two weeks and can create two months with a third paycheck. Semimonthly means twice per month, often on set dates. Do not treat the terms as interchangeable.",
+      },
+      {
+        type: "paragraph",
+        content: "Match bills to the deposits that will fund them. If rent is due near the first of the month but your income arrives throughout the prior month, set aside the rent portion from each paycheck rather than waiting for one large transfer. A paycheck calendar can make this visible. It does not need to be complicated: list paydays, bill due dates, expected net pay, and the amount assigned to each priority.",
+      },
+      {
+        type: "heading",
+        content: "How to budget with take-home pay",
+      },
+      {
+        type: "paragraph",
+        content: "Build your spending plan from reliable net income. Start with the lowest normal take-home amount if pay varies, then assign essential bills, minimum debt payments, groceries, transportation, and a small buffer. Next, decide how much to direct to savings, extra debt payments, or flexible spending. This order prevents a gross-pay estimate from making the budget look healthier than the cash in your account.",
+      },
+      {
+        type: "paragraph",
+        content: "If your net pay changes because of a benefit election, tax withholding update, unpaid time off, or overtime, update the next paycheck plan rather than abandoning the whole budget. An AI-assisted paycheck review can help categorize recurring transactions and display a cash-flow forecast, but your pay stub, payroll records, and account balance remain the source of truth for decisions about your money.",
+      },
+      {
+        type: "heading",
+        content: "A simple paycheck review routine",
+      },
+      {
+        type: "list",
+        content: "Spend five minutes after each paycheck to:",
+        items: [
+          "Confirm the net deposit and compare it with the pay stub.",
+          "Scan gross pay, hours, overtime, and bonuses for amounts you expected.",
+          "Review deductions and ask about unfamiliar entries through an official employer channel.",
+          "Assign the next bills, savings transfer, and flexible-spending amount before the money is spent elsewhere.",
+          "Keep the pay stub securely in case you need to review year-to-date totals later.",
+        ],
+      },
+      {
+        type: "keyLesson",
+        content: "Gross pay shows earnings before deductions; net pay shows the money available after them. Use your actual net pay for regular budgeting, and review each pay stub so changes do not become surprises. This article is general education, not tax, legal, or individualized financial advice.",
+      },
+      {
+        type: "cta",
+        ctaType: "calculator",
+      },
+    ],
+  },
 
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
