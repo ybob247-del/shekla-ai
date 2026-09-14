@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import BudgetCalculator from "@/components/calculators/BudgetCalculator";
+import CalculatorUpsell from "@/components/CalculatorUpsell";
 import { formatCurrency } from "@/lib/utils";
 
 // Debt Payoff Calculator
@@ -104,6 +105,11 @@ function DebtPayoffCalculator() {
             <p className="text-sm text-gray-700">Total Amount Paid</p>
             <p className="font-bold text-gray-900">{formatCurrency(result.totalPaid)}</p>
           </div>
+          <CalculatorUpsell
+            calculator="debt"
+            toolkitId="debt-payoff-plan"
+            headline="Turn this payoff date into a month-by-month plan"
+          />
         </div>
       )}
     </div>
@@ -216,6 +222,11 @@ function EmergencyFundCalculator() {
               <p className="font-bold text-purple-800">{result.monthsToGoal} months</p>
             </div>
           )}
+          <CalculatorUpsell
+            calculator="emergency"
+            toolkitId="sinking-funds-kit"
+            headline="Stop surprise costs from draining this fund"
+          />
         </div>
       )}
     </div>
@@ -307,6 +318,15 @@ function NetWorthCalculator() {
               {formatCurrency(result.netWorth)}
             </p>
           </div>
+          <CalculatorUpsell
+            calculator="networth"
+            toolkitId={result.netWorth < 0 ? "debt-payoff-plan" : "sinking-funds-kit"}
+            headline={
+              result.netWorth < 0
+                ? "Debt is what is pulling this number below zero"
+                : "Protect this number with a savings bucket for every known cost"
+            }
+          />
         </div>
       )}
     </div>
@@ -394,6 +414,11 @@ function SavingsGoalCalculator() {
             <p className="text-sm text-blue-700">Amount Still to Save</p>
             <p className="font-bold text-blue-800">{formatCurrency(result.gap)}</p>
           </div>
+          <CalculatorUpsell
+            calculator="savings"
+            toolkitId="paycheck-breakdown-toolkit"
+            headline="Find this monthly amount inside your paycheck"
+          />
         </div>
       )}
     </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
+import { track } from "@/lib/analytics";
 
 // The landing page for Hidden Patterns viewers. It opens in the channel's
 // charcoal and gold rather than Shekla's emerald, so arriving from an
@@ -34,6 +35,7 @@ export default function Patterns() {
       });
       const data = (await response.json().catch(() => ({}))) as { error?: string };
       if (!response.ok) throw new Error(data.error || "Something went wrong. Try again?");
+      track("generate_lead", { source: "patterns" });
       setState("done");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong.");

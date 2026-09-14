@@ -63,7 +63,19 @@ export default function Resources() {
               </span>
             </div>
             <div className="max-w-2xl">
-              <div className="text-4xl mb-3">{bundleToolkit.emoji}</div>
+              <div className="flex -space-x-6 mb-5" aria-hidden="true">
+                {["debt-payoff-plan", "paycheck-breakdown-toolkit", "sinking-funds-kit", "bill-catch-up-plan"].map((id) => (
+                  <img
+                    key={id}
+                    src={`/toolkit-previews/${id}-cover.jpg`}
+                    alt=""
+                    width={640}
+                    height={828}
+                    loading="lazy"
+                    className="w-20 h-auto rounded-md border-2 border-white shadow-lg"
+                  />
+                ))}
+              </div>
               <h2 className="text-2xl font-bold mb-2">{bundleToolkit.name}</h2>
               <p className="text-emerald-100 mb-4">{bundleToolkit.description}</p>
               <div className="flex items-baseline gap-3 mb-6">
@@ -88,7 +100,22 @@ export default function Resources() {
                 key={toolkit.name}
                 className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow flex flex-col"
               >
-                <div className="text-3xl mb-3">{toolkit.emoji}</div>
+                <img
+                  src={`/toolkit-previews/${toolkit.id}-cover.jpg`}
+                  alt={`Cover page of the ${toolkit.name}`}
+                  width={640}
+                  height={828}
+                  loading="lazy"
+                  className="w-full h-44 object-cover object-top rounded-lg border border-gray-100 mb-3"
+                />
+                <a
+                  href={`/toolkit-previews/${toolkit.id}-inside.jpg`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-emerald-700 hover:underline mb-3 self-start"
+                >
+                  See an inside page →
+                </a>
                 <h3 className="font-bold text-gray-900 mb-2">{toolkit.name}</h3>
                 <p className="text-gray-600 text-sm mb-4 flex-1">{toolkit.description}</p>
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
@@ -110,7 +137,7 @@ export default function Resources() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { step: "1", title: "Purchase Instantly", desc: "Secure checkout via Stripe. Instant download the moment payment clears." },
-              { step: "2", title: "Download Your Toolkit", desc: "Google Sheets or Excel file — works on any device, any platform." },
+              { step: "2", title: "Download Your Toolkit", desc: "A printable PDF workbook — fill it in by hand or on any device." },
               { step: "3", title: "Start in 10 Minutes", desc: "Each toolkit includes step-by-step instructions to get started fast." },
             ].map((item) => (
               <div key={item.step} className="text-center">

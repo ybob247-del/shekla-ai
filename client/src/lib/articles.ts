@@ -131,14 +131,6 @@ export const ARTICLES: Article[] = [
     toolkitName: "Annual Bills Planner",
   },
   {
-    slug: "ai-powered-budgeting",
-    title: "AI-Powered Budgeting",
-    description: "How AI tools are transforming personal budgeting",
-    category: "budgeting",
-    categoryEmoji: "💰",
-    readTime: 5,
-  },
-  {
     slug: "budget-on-autopilot",
     title: "Budget on Autopilot",
     description: "Set up automatic transfers and rules to budget without thinking",
@@ -155,15 +147,6 @@ export const ARTICLES: Article[] = [
     readTime: 5,
   },
   {
-    slug: "budgeting-for-beginners",
-    title: "Budgeting for Beginners",
-    description: "Everything you need to know to create your first budget and actually stick to it.",
-    category: "budgeting",
-    categoryEmoji: "💰",
-    readTime: 10,
-    isNew: true,
-  },
-  {
     slug: "stop-living-paycheck-to-paycheck",
     title: "How to Stop Living Paycheck to Paycheck",
     description: "Break the paycheck-to-paycheck cycle with a practical, step-by-step plan that actually works.",
@@ -172,33 +155,8 @@ export const ARTICLES: Article[] = [
     readTime: 9,
     isNew: true,
   },
-  {
-    slug: "zero-based-budgeting-advanced",
-    title: "Zero-Based Budgeting",
-    description: "Learn how zero-based budgeting works and why it's the most powerful method for taking control of your money.",
-    category: "budgeting",
-    categoryEmoji: "💰",
-    readTime: 7,
-    isNew: true,
-  },
 
   // Debt
-  {
-    slug: "debt-snowball",
-    title: "Debt Snowball Method",
-    description: "Pay off smallest debts first for psychological wins",
-    category: "debt",
-    categoryEmoji: "📉",
-    readTime: 6,
-  },
-  {
-    slug: "debt-avalanche",
-    title: "Debt Avalanche Method",
-    description: "Pay off highest-interest debts first to save the most money",
-    category: "debt",
-    categoryEmoji: "📉",
-    readTime: 6,
-  },
   {
     slug: "good-debt-vs-bad-debt",
     title: "Good Debt vs Bad Debt",
@@ -206,14 +164,6 @@ export const ARTICLES: Article[] = [
     category: "debt",
     categoryEmoji: "📉",
     readTime: 5,
-  },
-  {
-    slug: "understanding-credit-score",
-    title: "Understanding Your Credit Score",
-    description: "What affects your credit score and how to improve it fast",
-    category: "debt",
-    categoryEmoji: "📉",
-    readTime: 7,
   },
   {
     slug: "debt-consolidation",
@@ -279,28 +229,12 @@ export const ARTICLES: Article[] = [
 
   // Savings
   {
-    slug: "emergency-fund",
-    title: "Building Your Emergency Fund",
-    description: "Why you need 3-6 months of expenses saved",
-    category: "savings",
-    categoryEmoji: "🏦",
-    readTime: 6,
-  },
-  {
     slug: "52-week-savings-challenge",
     title: "52-Week Savings Challenge",
     description: "Save $1,378 in one year with this simple weekly challenge",
     category: "savings",
     categoryEmoji: "🏦",
     readTime: 5,
-  },
-  {
-    slug: "high-yield-savings",
-    title: "High-Yield Savings Accounts Explained",
-    description: "How to earn 10x more interest on your savings",
-    category: "savings",
-    categoryEmoji: "🏦",
-    readTime: 6,
   },
   {
     slug: "automating-savings",
@@ -319,17 +253,6 @@ export const ARTICLES: Article[] = [
     readTime: 6,
   },
   {
-    slug: "sinking-funds",
-    title: "Sinking Funds Kit",
-    description: "Save for irregular expenses without stress",
-    category: "savings",
-    categoryEmoji: "🏦",
-    readTime: 7,
-    isNew: true,
-    toolkitLink: "/resources",
-    toolkitName: "Sinking Funds Kit",
-  },
-  {
     slug: "how-to-build-emergency-fund",
     title: "How to Build an Emergency Fund",
     description: "A step-by-step guide to building a 3-6 month emergency fund, even when money is tight.",
@@ -338,46 +261,12 @@ export const ARTICLES: Article[] = [
     readTime: 7,
     isNew: true,
   },
-  {
-    slug: "how-to-save-money-fast",
-    title: "How to Save Money Fast",
-    description: "Practical, no-fluff strategies to save more money quickly — whether you need $500 or $5,000.",
-    category: "savings",
-    categoryEmoji: "🏦",
-    readTime: 8,
-    isNew: true,
-  },
-  {
-    slug: "how-to-invest",
-    title: "How to Invest Money for Beginners",
-    description: "A plain-English guide to investing for beginners — from your first $100 to building long-term wealth.",
-    category: "savings",
-    categoryEmoji: "🏦",
-    readTime: 10,
-    isNew: true,
-  },
 
   // Spending
-  {
-    slug: "compound-interest",
-    title: "The Power of Compound Interest",
-    description: "How compound interest works and why starting early matters",
-    category: "spending",
-    categoryEmoji: "🛒",
-    readTime: 6,
-  },
   {
     slug: "lifestyle-inflation",
     title: "Avoiding Lifestyle Inflation",
     description: "Why earning more doesn't always mean saving more — and how to fix it",
-    category: "spending",
-    categoryEmoji: "🛒",
-    readTime: 6,
-  },
-  {
-    slug: "money-habits",
-    title: "Building Positive Money Habits",
-    description: "The daily and weekly habits that separate financially secure people",
     category: "spending",
     categoryEmoji: "🛒",
     readTime: 6,
@@ -418,14 +307,6 @@ export const ARTICLES: Article[] = [
 
   // Financial Health
   {
-    slug: "net-worth",
-    title: "Calculating Your Net Worth",
-    description: "Assets minus liabilities = your financial health",
-    category: "financial-health",
-    categoryEmoji: "💪",
-    readTime: 5,
-  },
-  {
     slug: "financial-goals",
     title: "Setting Financial Goals",
     description: "How to set and achieve meaningful financial goals",
@@ -456,14 +337,6 @@ export const ARTICLES: Article[] = [
     category: "financial-health",
     categoryEmoji: "💪",
     readTime: 7,
-  },
-  {
-    slug: "retirement-savings",
-    title: "How Much to Save for Retirement",
-    description: "Calculate your retirement number and build a plan to get there",
-    category: "financial-health",
-    categoryEmoji: "💪",
-    readTime: 8,
   },
   {
     slug: "financial-literacy",
@@ -526,52 +399,12 @@ export const ARTICLES: Article[] = [
     readTime: 9,
     isNew: true,
   },
-  {
-    slug: "cash-flow-clarity",
-    title: "Cash Flow Clarity",
-    description: "Understanding and optimizing your monthly cash flow",
-    category: "financial-health",
-    categoryEmoji: "💪",
-    readTime: 6,
-  },
-  {
-    slug: "investment-intelligence",
-    title: "Investment Intelligence",
-    description: "Smart investing principles for long-term wealth building",
-    category: "financial-health",
-    categoryEmoji: "💪",
-    readTime: 7,
-  },
 
   // Financial Security
-  {
-    slug: "two-factor-authentication",
-    title: "Two-Factor Authentication",
-    description: "Why 2FA is essential for protecting your financial accounts",
-    category: "financial-security",
-    categoryEmoji: "🔒",
-    readTime: 5,
-  },
   {
     slug: "phishing-scams",
     title: "Recognizing Phishing Scams",
     description: "How to spot and avoid financial phishing attacks",
-    category: "financial-security",
-    categoryEmoji: "🔒",
-    readTime: 6,
-  },
-  {
-    slug: "password-security",
-    title: "Password Security",
-    description: "Best practices for securing your financial accounts with strong passwords",
-    category: "financial-security",
-    categoryEmoji: "🔒",
-    readTime: 6,
-  },
-  {
-    slug: "data-protection",
-    title: "Data Protection & Encryption",
-    description: "How your financial data is protected and what you can do to add more security",
     category: "financial-security",
     categoryEmoji: "🔒",
     readTime: 6,
@@ -586,46 +419,6 @@ export const ARTICLES: Article[] = [
   },
 
   // Account Sync
-  {
-    slug: "open-banking",
-    title: "Understanding Open Banking",
-    description: "What open banking is and how it powers financial apps like Shekla",
-    category: "account-sync",
-    categoryEmoji: "🔗",
-    readTime: 7,
-  },
-  {
-    slug: "data-privacy",
-    title: "Managing Data Privacy",
-    description: "How to control what financial data apps can access",
-    category: "account-sync",
-    categoryEmoji: "🔗",
-    readTime: 7,
-  },
-  {
-    slug: "bank-connection-guide",
-    title: "Secure Bank Connection Guide",
-    description: "Step-by-step guide to securely connecting your bank accounts",
-    category: "account-sync",
-    categoryEmoji: "🔗",
-    readTime: 7,
-  },
-  {
-    slug: "real-time-sync",
-    title: "Real-Time Financial Sync",
-    description: "How real-time transaction syncing works and why it matters",
-    category: "account-sync",
-    categoryEmoji: "🔗",
-    readTime: 7,
-  },
-  {
-    slug: "sync-troubleshooting",
-    title: "Sync Troubleshooting Guide",
-    description: "How to fix common bank connection and sync issues",
-    category: "account-sync",
-    categoryEmoji: "🔗",
-    readTime: 7,
-  },
 
   // New SEO Articles - June 2026
   {

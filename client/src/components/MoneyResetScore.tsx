@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 import {
   Select,
   SelectContent,
@@ -132,6 +133,7 @@ export default function MoneyResetScore() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const scoreResult = calculateScore(answers);
+    track("assessment_complete", { score: scoreResult.score, grade: scoreResult.grade });
     setResult(scoreResult);
     setSubmitted(true);
   };
@@ -190,8 +192,6 @@ export default function MoneyResetScore() {
                 <a
                   key={i}
                   href={TOOLKITS_PATH}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="bg-amber-100 text-amber-800 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-amber-200 transition-colors"
                 >
                   🛒 {toolkit}
@@ -204,8 +204,6 @@ export default function MoneyResetScore() {
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href={TOOLKITS_PATH}
-            target="_blank"
-            rel="noopener noreferrer"
             className="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-xl text-center text-sm transition-colors"
           >
             Get My Recommended Toolkits →

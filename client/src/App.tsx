@@ -155,8 +155,8 @@ function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/learn" className="hover:text-white transition-colors">All Articles</Link></li>
               <li><Link href="/learn/50-30-20-rule" className="hover:text-white transition-colors">50/30/20 Rule</Link></li>
-              <li><Link href="/learn/debt-snowball" className="hover:text-white transition-colors">Debt Snowball</Link></li>
-              <li><Link href="/learn/emergency-fund" className="hover:text-white transition-colors">Emergency Fund</Link></li>
+              <li><Link href="/learn/debt-snowball-vs-avalanche" className="hover:text-white transition-colors">Snowball vs. Avalanche</Link></li>
+              <li><Link href="/learn/how-to-build-emergency-fund" className="hover:text-white transition-colors">Emergency Fund</Link></li>
             </ul>
           </div>
 

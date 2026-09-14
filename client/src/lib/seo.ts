@@ -1,4 +1,5 @@
 import { ARTICLES } from "@/lib/articles";
+import { getArticleContent } from "@/lib/articleContent";
 
 export const SITE_ORIGIN = "https://www.shekla.ai";
 export const DEFAULT_OG_IMAGE = `${SITE_ORIGIN}/og-image.png`;
@@ -135,6 +136,12 @@ export function getSeoMetadata(pathname: string): SeoMetadata {
         keywords: article.seoKeyword || `${article.title}, personal finance, ${article.category}, money management`,
         canonical: normalised,
         ogType: "article",
+        // Articles without hand-written content render one shared template
+        // with only the title swapped. Dozens of near-identical pages drag
+        // down how search engines judge the whole site, so they stay usable
+        // for readers and Pinterest traffic but are kept out of the index
+        // until real content is written for them.
+        noIndex: !getArticleContent(article.slug),
       };
     }
   }

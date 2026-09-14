@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CalculatorUpsell from "@/components/CalculatorUpsell";
 import { formatCurrency } from "@/lib/utils";
 
 interface BudgetResult {
@@ -88,6 +89,11 @@ export default function BudgetCalculator() {
               <span className="font-semibold text-gray-900">{formatCurrency(parseFloat(income))}</span>
             </div>
           </div>
+          <CalculatorUpsell
+            calculator="budget"
+            toolkitId="2-paycheck-budget-system"
+            headline="Split this 50/30/20 plan across every paycheck"
+          />
         </div>
       )}
     </div>
