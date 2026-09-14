@@ -51,7 +51,7 @@ function makePageHtml(template: string, routePath: string, body: string): string
     "name",
     "robots",
     metadata.noIndex
-      ? "noindex, nofollow"
+      ? "noindex, follow"
       : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   );
   html = replaceMeta(html, "property", "og:type", metadata.ogType || "website");
@@ -86,7 +86,7 @@ function makeNotFoundHtml(template: string, body: string): string {
   let html = template.replace(/<title>[^<]*<\/title>/i, () => `<title>${escapeTitle(metadata.title)}</title>`);
   html = replaceMeta(html, "name", "description", metadata.description);
   html = replaceMeta(html, "name", "keywords", "");
-  html = replaceMeta(html, "name", "robots", "noindex, nofollow");
+  html = replaceMeta(html, "name", "robots", "noindex, follow");
   html = replaceMeta(html, "property", "og:title", metadata.title);
   html = replaceMeta(html, "property", "og:description", metadata.description);
   html = replaceMeta(html, "name", "twitter:title", metadata.title);

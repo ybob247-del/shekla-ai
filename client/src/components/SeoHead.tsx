@@ -27,7 +27,7 @@ export default function SeoHead() {
       "name",
       "robots",
       metadata.noIndex
-        ? "noindex, nofollow"
+        ? "noindex, follow"
         : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
     );
     upsertMeta('meta[property="og:title"]', "property", "og:title", metadata.title);
