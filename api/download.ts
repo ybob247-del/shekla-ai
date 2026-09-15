@@ -58,7 +58,10 @@ export default async function handler(req: ApiRequest, res: ApiResponse): Promis
     return;
   }
 
-  if (session.payment_status !== "paid") {
+  // A 100%-off promotion code completes checkout with nothing to charge, which
+  // Stripe reports as "no_payment_required" rather than "paid". Both are a
+  // finished purchase; anything else (unpaid, abandoned) is not.
+  if (session.status !== "complete" || !["paid", "no_payment_required"].includes(session.payment_status)) {
     res.status(403).json({ error: "That purchase is not complete." });
     return;
   }
