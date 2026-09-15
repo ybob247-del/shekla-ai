@@ -29,7 +29,6 @@ export function describeStripeKey(raw: string = process.env.STRIPE_SECRET_KEY ||
     hadWrappingQuotes: normalised !== raw.trim().replace(LABEL, "").trim(),
     prefix: KNOWN_PREFIXES.find((p) => normalised.startsWith(p)) ?? "none-recognised",
     containsSkLiveSomewhere: raw.includes("sk_live_"),
-    containsInnerWhitespace: /[ 	
-]/.test(normalised),
+    containsInnerWhitespace: /\s/.test(normalised),
   };
 }
