@@ -89,8 +89,15 @@ export default async function handler(req: ApiRequest, res: ApiResponse): Promis
 
     res.status(200).json({ url: session.url });
   } catch (error) {
-    console.error("Stripe checkout failed:", error instanceof Error ? error.message : error);
-    res.status(502).json({ error: "Could not start checkout. Please try again." });
+    const stripeError = error as { message?: string; type?: string; code?: string };
+    console.error("Stripe checkout failed:", stripeError.type, stripeError.code, stripeError.message);
+    // Stripe's error code (for example "parameter_invalid_integer") is safe to
+    // expose and turns a blind 502 into something diagnosable. The message is
+    // logged only, since it can echo request details.
+    res.status(502).json({
+      error: "Could not start checkout. Please try again.",
+      code: stripeError.code ?? stripeError.type ?? null,
+    });
   }
 }
 
