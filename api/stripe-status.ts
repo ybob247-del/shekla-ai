@@ -1,9 +1,8 @@
 import Stripe from "stripe";
+import { describeStripeKey, readStripeKey } from "./_stripeKey";
 
 // TEMPORARY diagnostic, to be deleted once checkout is confirmed working.
-// Reports only non-secret facts: the key's prefix (sk_live, rk_live, pk_live,
-// sk_test…) and which Stripe account it authenticates as. It never returns
-// the key itself or any part of it beyond the prefix.
+// Returns only non-secret facts about the key and which account it reaches.
 
 interface ApiResponse {
   status: (code: number) => ApiResponse;
@@ -11,25 +10,19 @@ interface ApiResponse {
 }
 
 export default async function handler(_req: unknown, res: ApiResponse): Promise<void> {
-  const key = process.env.STRIPE_SECRET_KEY || "";
-  const keyType = key.match(/^(sk|rk|pk)_(live|test)/)?.[0] ?? (key ? "unrecognised-format" : "missing");
+  const facts = describeStripeKey();
+  const key = readStripeKey();
 
   if (!key.startsWith("sk_") && !key.startsWith("rk_")) {
-    res.status(200).json({ keyType, account: null, note: "Server key must start with sk_ or rk_." });
+    res.status(200).json({ ...facts, account: null });
     return;
   }
 
-  const stripe = new Stripe(key, { apiVersion: "2025-02-24.acacia" });
   try {
-    const account = await stripe.accounts.retrieve();
-    res.status(200).json({
-      keyType,
-      account: account.id,
-      chargesEnabled: account.charges_enabled,
-      businessName: account.settings?.dashboard?.display_name ?? null,
-    });
+    const account = await new Stripe(key, { apiVersion: "2025-02-24.acacia" }).accounts.retrieve();
+    res.status(200).json({ ...facts, account: account.id, chargesEnabled: account.charges_enabled });
   } catch (error) {
-    const e = error as { type?: string; code?: string; statusCode?: number };
-    res.status(200).json({ keyType, account: null, stripeErrorType: e.type ?? null, stripeErrorCode: e.code ?? null, status: e.statusCode ?? null });
+    const e = error as { type?: string; code?: string };
+    res.status(200).json({ ...facts, account: null, stripeErrorType: e.type ?? null, stripeErrorCode: e.code ?? null });
   }
 }

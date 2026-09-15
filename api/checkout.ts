@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { readStripeKey } from "./_stripeKey";
 import { BUNDLE_ID, displayName, isPurchasable, priceCentsFor } from "./_catalog";
 
 // Prices are sent inline as price_data rather than referencing Stripe Product
@@ -30,7 +31,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse): Promis
     return;
   }
 
-  const secretKey = process.env.STRIPE_SECRET_KEY;
+  const secretKey = readStripeKey();
   if (!secretKey) {
     // Deliberately explicit: this is the one failure a deploy is most likely to
     // hit, and a generic 500 would send someone hunting through Stripe instead.

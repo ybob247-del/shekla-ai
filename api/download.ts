@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { readStripeKey } from "./_stripeKey";
 import fs from "node:fs";
 import path from "node:path";
 import { filesFor, getToolkit } from "./_catalog";
@@ -33,7 +34,7 @@ export default async function handler(req: ApiRequest, res: ApiResponse): Promis
     return;
   }
 
-  const secretKey = process.env.STRIPE_SECRET_KEY;
+  const secretKey = readStripeKey();
   if (!secretKey) {
     console.error("STRIPE_SECRET_KEY is not set");
     res.status(500).json({ error: "Downloads are not configured yet." });
