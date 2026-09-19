@@ -4570,6 +4570,410 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
     ],
   },
 
+  "debt-snowball-vs-avalanche": {
+    slug: "debt-snowball-vs-avalanche",
+    title: "Debt Snowball vs. Avalanche: Which Payoff Method Should You Use?",
+    subtitle: "One saves the most interest. The other keeps the most people going. Here is how to tell which one fits you, with real numbers.",
+    keyLesson: "The avalanche method (highest interest rate first) always costs the least in interest. The snowball method (smallest balance first) gives you faster wins. The best method is the one you will still be following in month twelve.",
+    sections: [
+      {
+        type: "heading",
+        content: "Two Methods, One Shared Rule",
+      },
+      {
+        type: "paragraph",
+        content: "The debt snowball and the debt avalanche work the same way at their core. You pay the minimum on every debt, every month, so nothing goes late. Then you put every extra dollar you can find toward one target debt. When that debt is gone, you take everything you were paying on it and roll it onto the next target. The payment grows each time a debt disappears, which is why both methods speed up as you go.",
+      },
+      {
+        type: "paragraph",
+        content: "The only difference is the order you pick your targets. That one choice changes how much interest you pay and how soon you get your first win.",
+      },
+      {
+        type: "heading",
+        content: "The Debt Snowball: Smallest Balance First",
+      },
+      {
+        type: "paragraph",
+        content: "With the snowball, you list your debts from the smallest balance to the largest and ignore the interest rates. You attack the smallest balance first. Because it is small, it disappears quickly, and you get to cross a debt off your list within a few months.",
+      },
+      {
+        type: "paragraph",
+        content: "That early win is the whole point. Paying off debt is a long project, and most people who quit do not quit because the math was wrong. They quit because months went by and nothing felt different. The snowball is built to fix that: it front-loads the feeling of progress.",
+      },
+      {
+        type: "heading",
+        content: "The Debt Avalanche: Highest Interest Rate First",
+      },
+      {
+        type: "paragraph",
+        content: "With the avalanche, you list your debts from the highest interest rate to the lowest and ignore the balances. You attack the most expensive debt first. Every dollar you put toward it stops the fastest-growing interest in your life, so over the full payoff you pay less interest than with any other order.",
+      },
+      {
+        type: "paragraph",
+        content: "The catch: if your highest-rate debt also has a large balance, it can take a long time before you pay anything off completely. The math is working in your favor the whole time, but it can feel like nothing is happening.",
+      },
+      {
+        type: "heading",
+        content: "Side by Side: The Same Debts, Both Ways",
+      },
+      {
+        type: "paragraph",
+        content: "Here is one set of debts run through both methods. The person in this example can put $500 a month toward debt in total. That covers $275 in minimum payments plus $225 extra.",
+      },
+      {
+        type: "list",
+        content: "The debts:",
+        items: [
+          "Personal loan: $1,500 at 9% interest, $50 minimum payment",
+          "Card B: $3,000 at 19% interest, $75 minimum payment",
+          "Card A: $6,000 at 24% interest, $150 minimum payment",
+        ],
+      },
+      {
+        type: "example",
+        content: "Snowball order (personal loan, then Card B, then Card A): the personal loan is gone in month 6 and Card B in month 15, and everything is paid off in month 27. Total interest paid: about $2,955. Avalanche order (Card A, then Card B, then the personal loan): Card A is gone in month 20, and everything is paid off in month 26. Total interest paid: about $2,460. The avalanche saves roughly $496 and one month, but the first debt does not disappear until month 20, compared with month 6 on the snowball.",
+      },
+      {
+        type: "paragraph",
+        content: "That trade-off is the real decision. In this example, choosing the snowball costs about $500 over two years in exchange for a win in month 6 instead of month 20. For some people that is an excellent deal, because the early win is what keeps them paying. For others, it is $500 they would rather keep.",
+      },
+      {
+        type: "tip",
+        content: "When your smallest debt also has your highest rate, the two methods give the exact same order, so there is nothing to decide. The choice only matters when your small balances carry low rates and your big balances carry high ones.",
+      },
+      {
+        type: "heading",
+        content: "How to Choose",
+      },
+      {
+        type: "list",
+        content: "Choose the snowball if:",
+        items: [
+          "You have started a payoff plan before and stopped partway through",
+          "You have several small balances you could clear in a few months",
+          "The interest rates on your debts are fairly close to each other",
+          "Seeing an account hit zero is what motivates you",
+        ],
+      },
+      {
+        type: "list",
+        content: "Choose the avalanche if:",
+        items: [
+          "One debt has a much higher rate than the rest, such as a card at 25% or more",
+          "You are motivated by the total you are saving, not by accounts closing",
+          "Your balances are large enough that the interest difference is significant",
+          "You are confident you will stick with the plan without early wins",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "A hybrid also works. Some people knock out one or two tiny balances first for momentum, then switch to highest-rate order for the rest. There is no penalty for that. The method is a tool, not a rule you can break.",
+      },
+      {
+        type: "heading",
+        content: "Mistakes That Stall Either Method",
+      },
+      {
+        type: "list",
+        content: "Watch for these:",
+        items: [
+          "Missing a minimum payment on a non-target debt. Late fees and penalty rates can wipe out months of progress. Automate every minimum.",
+          "Adding new debt while paying off old debt. If the cards are still being used, the balances will keep refilling.",
+          "Having no cash buffer. Without even a small emergency fund, the next car repair goes on a card and the plan resets.",
+          "Not rolling the payment forward. When a debt is paid off, the money that was going to it must go to the next target, not back into everyday spending.",
+          "Guessing at the numbers. Pull the actual balance, rate and minimum from each statement before you pick an order.",
+        ],
+      },
+      {
+        type: "keyLesson",
+        content: "Write down every debt with its balance, rate and minimum. Sort it both ways. If the orders match, start today. If they differ, decide whether the early win is worth the extra interest to you, then commit and automate.",
+      },
+      {
+        type: "paragraph",
+        content: "To see your own numbers, the free debt payoff calculator on the Calculators page shows how long your debts will take at the payment you can afford. If you want the whole process laid out on paper, with a debt list organizer, a snowball-or-avalanche worksheet, a monthly payoff plan and a progress tracker, that is what the Debt Payoff Plan Builder toolkit covers.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+
+  "how-to-build-emergency-fund": {
+    slug: "how-to-build-emergency-fund",
+    title: "How to Build an Emergency Fund (Even on a Tight Budget)",
+    subtitle: "A step-by-step plan: how much you really need, where to keep it, and how to find the money when there is nothing left over.",
+    keyLesson: "Build your emergency fund in stages. First a starter buffer, then one month of essential expenses, then three to six months. Keep it in a separate savings account you do not see every day, and automate the deposits so it grows without willpower.",
+    sections: [
+      {
+        type: "heading",
+        content: "What an Emergency Fund Is For",
+      },
+      {
+        type: "paragraph",
+        content: "An emergency fund is money set aside for expenses you cannot predict and cannot avoid: a job loss, a medical bill, a car that will not start, a furnace that dies in January. Its job is to keep one bad week from turning into months of credit card debt.",
+      },
+      {
+        type: "paragraph",
+        content: "It is not for things you know are coming, even if they only come once a year. Car registration, holiday gifts, annual insurance premiums and back-to-school costs are predictable. Those belong in sinking funds, which are separate savings buckets you fill a little each month. Mixing the two is the most common reason emergency funds keep draining.",
+      },
+      {
+        type: "heading",
+        content: "How Much Do You Actually Need?",
+      },
+      {
+        type: "paragraph",
+        content: "The standard guideline is three to six months of essential expenses. Essential means what you must pay to keep your life running: housing, utilities, groceries, transportation, insurance, minimum debt payments and childcare. It does not include dining out, subscriptions or shopping, because in a real emergency you would cut those.",
+      },
+      {
+        type: "list",
+        content: "Aim toward the higher end, around six months or more, if:",
+        items: [
+          "Your income is irregular, commission-based or seasonal",
+          "You are the only earner in your household",
+          "You have dependents",
+          "Your industry has frequent layoffs, or a job search in your field usually takes a while",
+          "You have health issues or an older car or home that is likely to need repairs",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "Three months can be enough if you have a stable job, two incomes in the household, and few dependents. The exact target matters less than getting started, because the first few hundred dollars do the most good.",
+      },
+      {
+        type: "heading",
+        content: "Build It in Three Stages",
+      },
+      {
+        type: "subheading",
+        content: "Stage 1: A starter buffer",
+      },
+      {
+        type: "paragraph",
+        content: "Start with a small, reachable number, somewhere between $500 and $1,000. This is enough to cover the most common surprises: a tire, a copay, a minor car repair. Reaching it quickly matters more than the exact amount. If you are also paying off high-interest debt, many people pause extra debt payments until this buffer exists, so that the next surprise does not go right back on the card.",
+      },
+      {
+        type: "subheading",
+        content: "Stage 2: One month of essentials",
+      },
+      {
+        type: "paragraph",
+        content: "Next, save one full month of essential expenses. This is the point where a late paycheck, a short gap between jobs or a big repair stops being a crisis. Many people find this stage changes how money feels day to day, even before the fund is complete.",
+      },
+      {
+        type: "subheading",
+        content: "Stage 3: Three to six months",
+      },
+      {
+        type: "paragraph",
+        content: "Then build toward your full target. This stage takes the longest, and it is fine to run it alongside other goals, such as paying down debt or saving for retirement, rather than putting everything else on hold.",
+      },
+      {
+        type: "example",
+        content: "Say your essential expenses are $3,000 a month. Your stages are $1,000 (starter), $3,000 (one month) and $9,000 (three months). Saving $300 a month, you reach the starter buffer in about 4 months, one month of expenses in 10 months, and three months of expenses in 30 months. Add a $1,200 tax refund in the first year and the three-month mark moves about 4 months sooner.",
+      },
+      {
+        type: "heading",
+        content: "Where to Keep It",
+      },
+      {
+        type: "paragraph",
+        content: "Keep your emergency fund in a savings account that is separate from your checking account. A high-yield savings account at an FDIC-insured bank, or a credit union insured by the NCUA, is a common choice: the money is protected, earns more interest than a typical checking account, and can usually be moved to checking within a day or two.",
+      },
+      {
+        type: "list",
+        content: "What to look for:",
+        items: [
+          "Deposit insurance (FDIC for banks, NCUA for credit unions)",
+          "No monthly fees and no minimum balance you might fall below",
+          "Easy transfers to your checking account, ideally within one business day",
+          "Not so easy that you see it every time you check your balance. A different bank from your checking account can help.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "Avoid putting emergency money in investments that can drop in value, such as stocks, or in accounts with penalties for early withdrawal. The point of this money is that it is there, in full, on the worst day.",
+      },
+      {
+        type: "heading",
+        content: "Finding the Money When Nothing Is Left Over",
+      },
+      {
+        type: "list",
+        content: "Places people find their first emergency dollars:",
+        items: [
+          "Automate a small transfer on payday, even $20 or $25. Consistency beats size at the start.",
+          "Save windfalls: tax refunds, bonuses, cash gifts, rebates, and money from selling things you no longer use.",
+          "Cancel one or two subscriptions and send that exact amount to savings each month.",
+          "When a bill ends, such as a paid-off loan, keep paying the same amount into savings.",
+          "If you are paid biweekly, two months a year have a third paycheck. Send most of it straight to your fund.",
+          "Round up. Some banks let you round each purchase up to the nearest dollar and move the difference to savings.",
+        ],
+      },
+      {
+        type: "tip",
+        content: "Set up the transfer for the day your paycheck lands, not at the end of the month. Money saved first gets saved. Money saved from whatever is left over usually does not.",
+      },
+      {
+        type: "heading",
+        content: "When to Use It, and What to Do After",
+      },
+      {
+        type: "paragraph",
+        content: "Before you pull from the fund, ask three questions. Is it unexpected? Is it necessary? Is it urgent? If the answer to all three is yes, use the fund. That is what it is for, and using it is not a failure. If the expense was predictable, it belongs to a sinking fund next time.",
+      },
+      {
+        type: "paragraph",
+        content: "After you use it, rebuild. Go back to your regular automatic deposit, or temporarily raise it, until the balance is back where it was.",
+      },
+      {
+        type: "keyLesson",
+        content: "Pick your starter number today, open a separate savings account if you do not have one, and schedule an automatic transfer for your next payday. Then separate out your predictable costs into sinking funds so the emergency fund is only used for real emergencies.",
+      },
+      {
+        type: "paragraph",
+        content: "The free emergency fund calculator on the Calculators page shows your target and how long it will take at your savings rate. If you want to split your predictable expenses out so they stop hitting your emergency fund, the Sinking Funds Setup Kit walks you through it.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+
+  "zero-based-budgeting": {
+    slug: "zero-based-budgeting",
+    title: "Zero-Based Budgeting: How to Give Every Dollar a Job",
+    subtitle: "What zero-based budgeting means, how to set one up step by step, and a full example you can copy.",
+    keyLesson: "In a zero-based budget, income minus everything you plan to spend, save and pay toward debt equals zero. Zero does not mean zero in your account. It means no dollar is left without a plan.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Zero-Based Budgeting Means",
+      },
+      {
+        type: "paragraph",
+        content: "A zero-based budget assigns every dollar of your income to a specific job before the month begins. Rent, groceries, savings, debt payments, and even fun money each get a set amount. When you subtract all of those jobs from your income, the result is zero.",
+      },
+      {
+        type: "paragraph",
+        content: "The name confuses people. Zero-based budgeting does not mean spending everything or leaving your bank account empty. Savings is a job. An emergency fund deposit is a job. If you want to keep $200 in checking as a cushion, that cushion is a job too. The zero means there is no unplanned money left over, because unplanned money is the money that disappears.",
+      },
+      {
+        type: "heading",
+        content: "Why It Works",
+      },
+      {
+        type: "paragraph",
+        content: "Most budgets fail in the gaps. You plan for the rent and the car payment, and the rest of the money is left over for whatever happens. Whatever happens usually spends all of it. Zero-based budgeting closes that gap by forcing a decision about every dollar up front, when you are calm, rather than at the checkout, when you are not.",
+      },
+      {
+        type: "list",
+        content: "It tends to help most when:",
+        items: [
+          "You earn a decent income but cannot explain where it goes",
+          "You keep reaching the end of the month with less than you expected",
+          "You want your savings and debt payoff goals to actually get funded, not just hoped for",
+          "You and a partner need a shared, written plan for money",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How to Build a Zero-Based Budget, Step by Step",
+      },
+      {
+        type: "subheading",
+        content: "Step 1: Write down your monthly take-home income",
+      },
+      {
+        type: "paragraph",
+        content: "Use what actually lands in your account after taxes and deductions, not your salary. If your income varies, use a conservative number, such as your lowest month from the past six to twelve months. You can assign any extra when it arrives.",
+      },
+      {
+        type: "subheading",
+        content: "Step 2: List your fixed bills",
+      },
+      {
+        type: "paragraph",
+        content: "These are the amounts that are the same or nearly the same each month: rent or mortgage, insurance, phone, internet, loan minimums and subscriptions. Pull the exact amounts from your statements.",
+      },
+      {
+        type: "subheading",
+        content: "Step 3: Estimate your variable spending",
+      },
+      {
+        type: "paragraph",
+        content: "Groceries, gas, household supplies and utilities change month to month. Look at your last two or three months of bank and card statements to find a realistic number. Guessing low here is the most common way a first budget breaks.",
+      },
+      {
+        type: "subheading",
+        content: "Step 4: Fund your goals",
+      },
+      {
+        type: "paragraph",
+        content: "Give your savings and debt goals a set amount: emergency fund deposits, extra debt payments, retirement contributions beyond payroll deductions, and sinking funds for predictable costs like car repairs, holidays and annual bills. Sinking funds are what keep irregular expenses from wrecking an otherwise solid budget.",
+      },
+      {
+        type: "subheading",
+        content: "Step 5: Assign what is left until you reach zero",
+      },
+      {
+        type: "paragraph",
+        content: "Subtract every category from your income. If you have money left, give it a job, usually a goal. If you are negative, cut from flexible categories like dining out and shopping until the result is exactly zero. Include some personal spending money. A budget with no room for anything enjoyable rarely survives the month.",
+      },
+      {
+        type: "heading",
+        content: "A Full Example",
+      },
+      {
+        type: "example",
+        content: "Take-home pay: $3,800 a month. Rent $1,300. Utilities $180. Phone and internet $120. Groceries $450. Gas and transportation $200. Car insurance $110. Debt minimums $250. Extra debt payment $300. Emergency fund $250. Sinking funds $135 (car repairs $60, holidays $50, annual subscriptions $25). Personal spending $200. Dining out $120. Streaming and apps $45. Giving $40. Miscellaneous buffer $100. Total assigned: $3,800. Income minus assigned: $0.",
+      },
+      {
+        type: "paragraph",
+        content: "Notice that nearly a quarter of that budget, $935, goes to savings, debt and sinking funds, and there is still money for dining out and personal spending. The plan is not about spending as little as possible. It is about deciding on purpose.",
+      },
+      {
+        type: "heading",
+        content: "Making It Work Past the First Month",
+      },
+      {
+        type: "list",
+        content: "Habits that keep a zero-based budget alive:",
+        items: [
+          "Make a new budget before each month starts. Every month is different: a birthday, a car registration, three paychecks instead of two.",
+          "When you overspend in one category, move money from another. The total still has to equal zero. Adjusting is how the method is supposed to work, not a sign you failed.",
+          "Check in weekly for ten minutes. Compare what you have spent against each category while there is still time to adjust.",
+          "Include a small miscellaneous buffer. Something always comes up that did not fit any category.",
+          "If you are paid every two weeks, budget each paycheck separately so bills are covered by the check that arrives before they are due.",
+        ],
+      },
+      {
+        type: "tip",
+        content: "Expect your first two or three budgets to be wrong. Your estimates get more accurate each month as you see what you really spend. The goal of month one is a complete plan, not a perfect one.",
+      },
+      {
+        type: "heading",
+        content: "Zero-Based Budgeting vs. the 50/30/20 Rule",
+      },
+      {
+        type: "paragraph",
+        content: "The 50/30/20 rule splits take-home pay into broad buckets: 50% for needs, 30% for wants and 20% for savings and debt. It is quicker to set up and a good starting point if you have never budgeted. Zero-based budgeting is more detailed and takes more time, but it gives you more control, especially when money is tight or you are working toward a specific goal. Many people start with 50/30/20 to get a rough picture and move to zero-based once they want every dollar accounted for.",
+      },
+      {
+        type: "keyLesson",
+        content: "Take your next month's take-home pay, list every bill, estimate your variable spending from real statements, fund your goals, and assign the rest until you reach zero. Then check in weekly and adjust as you go.",
+      },
+      {
+        type: "paragraph",
+        content: "If you are paid every two weeks, the 2-Paycheck Budget System toolkit shows you which bills to pay from which paycheck, so the zero-based plan lines up with when money actually arrives. The free budget calculator on the Calculators page is also a quick way to see your starting split.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
