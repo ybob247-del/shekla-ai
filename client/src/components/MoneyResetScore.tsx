@@ -124,6 +124,81 @@ function calculateScore(answers: Record<string, string>): ScoreResult {
 
 const TOOLKITS_PATH = "/resources";
 
+// Shown under the score. The result itself is never gated — the visitor already
+// has it — so this is an optional upgrade: keep the score and the rules that fix
+// it. Only promises what actually exists: the emailed recap and the checklist.
+function ScoreEmailCapture({ grade }: { grade: string }) {
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState<"idle" | "sending" | "done">("idle");
+  const [error, setError] = useState("");
+
+  const submit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    setError("");
+    setState("sending");
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        // The grade rides along as the source so Kit can segment by result.
+        body: JSON.stringify({ email, source: `assessment-${grade}` }),
+      });
+      const data = (await response.json().catch(() => ({}))) as { error?: string };
+      if (!response.ok) throw new Error(data.error || "Something went wrong. Try again?");
+      track("generate_lead", { source: "assessment", grade });
+      setState("done");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong.");
+      setState("idle");
+    }
+  };
+
+  if (state === "done") {
+    return (
+      <div className="mb-6 bg-emerald-50 border border-emerald-200 rounded-xl p-5 text-center">
+        <p className="font-semibold text-emerald-900 mb-1">Check your inbox.</p>
+        <p className="text-sm text-emerald-800 mb-3">
+          Your Money Pattern Checklist is on its way. You can also grab it right now.
+        </p>
+        <a
+          href="/api/checklist"
+          className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold py-2.5 px-5 rounded-lg transition-colors"
+        >
+          Download the checklist →
+        </a>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={submit} className="mb-6 bg-gray-50 border border-gray-200 rounded-xl p-5">
+      <h4 className="font-semibold text-gray-900 mb-1">Keep your score — and the fix</h4>
+      <p className="text-sm text-gray-600 mb-4">
+        We'll email you the free Money Pattern Checklist: seven rules you set once, while calm, so
+        they run when you are not. No spam, unsubscribe anytime.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-2">
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="you@example.com"
+          className="flex-1 border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        />
+        <button
+          type="submit"
+          disabled={state === "sending"}
+          className="bg-emerald-600 hover:bg-emerald-700 disabled:opacity-60 text-white font-semibold py-2.5 px-5 rounded-lg text-sm transition-colors"
+        >
+          {state === "sending" ? "Sending…" : "Email it to me"}
+        </button>
+      </div>
+      {error && <p className="text-sm text-red-600 mt-2">{error}</p>}
+    </form>
+  );
+}
+
 export default function MoneyResetScore() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [income, setIncome] = useState("");
@@ -183,6 +258,8 @@ export default function MoneyResetScore() {
             </ul>
           </div>
         )}
+
+        <ScoreEmailCapture grade={result.grade} />
 
         {result.toolkits.length > 0 && (
           <div className="mb-6">

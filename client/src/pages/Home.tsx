@@ -2,6 +2,14 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import MoneyResetScore from "@/components/MoneyResetScore";
 import { ARTICLES } from "@/lib/articles";
+import {
+  BUNDLE_PRICE_CENTS,
+  BUNDLE_SAVING_CENTS,
+  SEPARATE_TOTAL_CENTS,
+  TOOLKIT_PRICE_CENTS,
+  TOOLKITS,
+  formatUsd,
+} from "@catalog";
 
 const FEATURED_ARTICLES = ARTICLES.slice(0, 3);
 
@@ -135,6 +143,68 @@ export default function Home() {
             </p>
           </div>
           <MoneyResetScore />
+        </div>
+      </section>
+
+      {/* Shop the Money Reset Lab — the paid path, right after the free score.
+          Prices come from the catalog so they can never drift from checkout. */}
+      <section className="py-16 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-3">Shop the Money Reset Lab</h2>
+            <p className="text-gray-600 text-lg">
+              The calculators show you the number. These are the printable systems that fix it.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Start Here */}
+            <div className="border border-gray-200 rounded-2xl p-7 flex flex-col">
+              <span className="self-start bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                START HERE
+              </span>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Paycheck Breakdown Toolkit</h3>
+              <p className="text-gray-600 text-sm mb-5 flex-1">
+                For "I earn money but I cannot see where it goes." Find every dollar from one
+                paycheck and give it a job, in about an hour.
+              </p>
+              <p className="text-3xl font-extrabold text-gray-900 mb-1">{formatUsd(TOOLKIT_PRICE_CENTS)}</p>
+              <p className="text-gray-500 text-xs mb-5">One-time · PDF · instant download</p>
+              <Link href="/resources">
+                <a className="block w-full bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 rounded-xl text-center text-sm transition-colors">
+                  See exactly what's inside →
+                </a>
+              </Link>
+            </div>
+
+            {/* Bundle */}
+            <div className="border-2 border-amber-400 rounded-2xl p-7 flex flex-col relative">
+              <span className="self-start bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                BEST VALUE
+              </span>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">The Complete Bundle</h3>
+              <p className="text-gray-600 text-sm mb-5 flex-1">
+                All {TOOLKITS.length} toolkits: paycheck planning, bills, debt payoff, sinking funds,
+                overdrafts, irregular income and more. The whole reset in one download.
+              </p>
+              <div className="flex items-baseline gap-2 mb-1">
+                <p className="text-3xl font-extrabold text-gray-900">{formatUsd(BUNDLE_PRICE_CENTS)}</p>
+                <p className="text-gray-400 line-through text-lg">{formatUsd(SEPARATE_TOTAL_CENTS)}</p>
+              </div>
+              <p className="text-amber-700 text-xs font-medium mb-5">
+                Save {formatUsd(BUNDLE_SAVING_CENTS)} versus buying separately
+              </p>
+              <Link href="/resources">
+                <a className="block w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-xl text-center text-sm transition-colors">
+                  See the full bundle →
+                </a>
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-center text-gray-500 text-sm mt-6">
+            No subscription. No bank account linking. Yours to keep and reuse.
+          </p>
         </div>
       </section>
 
