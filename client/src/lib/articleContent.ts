@@ -4974,6 +4974,440 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
     ],
   },
+  "stop-living-paycheck-to-paycheck": {
+    slug: "stop-living-paycheck-to-paycheck",
+    title: "How to Stop Living Paycheck to Paycheck",
+    subtitle: "Why the money is gone three days after payday, and the step-by-step way out that does not depend on earning more.",
+    keyLesson: "Living paycheck to paycheck is usually a timing problem, not a willpower problem. Your bills and your paydays are out of sync, and nothing is set aside for the costs that only show up once or twice a year. Fix the timing, build one week of buffer, and the cycle starts to break.",
+    sections: [
+      {
+        type: "heading",
+        content: "Why You Are Broke Three Days After Payday",
+      },
+      {
+        type: "paragraph",
+        content: "Payday lands. Rent goes out, the card gets knocked down, you fill the tank and do a real grocery shop. By Thursday the balance is back to double digits and you are counting days again. That gap between the money running out and the next deposit is where credit cards, overdrafts and buy-now-pay-later get used, and it is the reason the cycle repeats even in months when nothing went wrong.",
+      },
+      {
+        type: "paragraph",
+        content: "The reflex is to call this a discipline problem. Usually it is not. The money went somewhere real. The problem is that almost all of it leaves in the first seventy-two hours, nothing is held back for the costs that do not arrive monthly, and there is no cushion between you and the next surprise.",
+      },
+      {
+        type: "heading",
+        content: "More Money, On Its Own, Does Not Fix This",
+      },
+      {
+        type: "paragraph",
+        content: "People who get a raise and still run out are not imagining things. When income goes up, the costs that rise with it tend to be the fixed ones: a bigger place, a newer car, a better phone plan, another subscription. Fixed costs are the hardest to reverse. The raise gets absorbed, the gap between paydays stays exactly as wide as it was, and the stress does not change.",
+      },
+      {
+        type: "paragraph",
+        content: "This is also why comparing yourself to someone who earns more is not useful. Somebody on twice your income can be in the same position you are. What separates the people who get out is not the size of the paycheck. It is whether the money has been assigned before it arrives, and whether anything at all sits between them and the next unexpected bill.",
+      },
+      {
+        type: "heading",
+        content: "The Four Things Keeping the Cycle Going",
+      },
+      {
+        type: "list",
+        content: "Almost every paycheck-to-paycheck month comes down to some mix of these:",
+        items: [
+          "Your bills and your paydays are out of sync. Rent is due on the 1st, you are paid on the 5th, and the gap gets covered with a card every single month.",
+          "Irregular costs get treated as emergencies. Car registration, the dentist, school fees and the holidays are not surprises. They are predictable costs you are not saving for, so each one lands as a crisis.",
+          "There is no buffer, so every small problem becomes debt. A $180 tire turns into a balance that costs you interest for six months.",
+          "Whatever is left over has no job. Unassigned money is the money that disappears, and you genuinely cannot say where it went.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How to Break It, Step by Step",
+      },
+      {
+        type: "subheading",
+        content: "Step 1: Find your real monthly number",
+      },
+      {
+        type: "paragraph",
+        content: "Not your salary. What actually lands in your account, added up across a whole month. If you are paid weekly or every two weeks, do not just multiply by four, because some months carry an extra check. Add up twelve months of deposits and divide by twelve. If your hours vary, plan around your lowest recent month and treat anything above it as extra you assign when it shows up.",
+      },
+      {
+        type: "subheading",
+        content: "Step 2: Write every bill against the date it is due",
+      },
+      {
+        type: "paragraph",
+        content: "List the bill, the amount and the day of the month. Then write your paydays next to them. You are looking for the pinch points: the bills that land in the days before money arrives. This one page usually explains more about your situation than months of tracking ever will.",
+      },
+      {
+        type: "subheading",
+        content: "Step 3: Move the dates, not just the money",
+      },
+      {
+        type: "paragraph",
+        content: "Most providers will change your due date if you ask. Phone, internet, insurance, utilities and many card issuers will move a payment date to suit your pay cycle, and it costs nothing but a phone call. Shifting three bills to the week after payday can close the gap you have been borrowing to cover.",
+      },
+      {
+        type: "subheading",
+        content: "Step 4: Build one week of buffer before anything else",
+      },
+      {
+        type: "paragraph",
+        content: "Not three months. One week of essential spending, sitting in the account and not touched. This is the single change that stops small problems turning into debt, and it is small enough to actually reach. Put a number on it, something like $300 or $500, and get there before you take on anything more ambitious.",
+      },
+      {
+        type: "subheading",
+        content: "Step 5: Give every dollar a job before payday arrives",
+      },
+      {
+        type: "paragraph",
+        content: "Decide where the money goes while you are calm, not at the checkout. Fixed bills first, then groceries and transport, then savings and debt, then a set amount for personal spending. The personal spending matters. A plan with nothing enjoyable in it does not survive contact with a bad week.",
+      },
+      {
+        type: "subheading",
+        content: "Step 6: Start sinking funds for the once-a-year costs",
+      },
+      {
+        type: "paragraph",
+        content: "Take the costs that wreck you annually, divide each by twelve, and set that aside every month. Car repairs, registration, dentist, the holidays, school costs. Thirty dollars a month toward car repairs feels like nothing. It is also $360 that is already there when the exhaust goes, instead of $360 on a card at twenty-two percent.",
+      },
+      {
+        type: "heading",
+        content: "Can You Do This on a Low Income?",
+      },
+      {
+        type: "paragraph",
+        content: "Yes, but slower, and it is worth being honest about that instead of pretending the numbers are the same for everybody. If the gap between what you earn and what you must spend is genuinely a few dollars, no budgeting system is going to produce a three-month emergency fund this year. What it will do is stop the leaks, fix the timing, and build the small buffer that keeps one bad week from turning into six months of interest.",
+      },
+      {
+        type: "list",
+        content: "When money is tight, do these in this order and ignore the rest for now:",
+        items: [
+          "Get the due dates moved so you stop paying late fees and overdraft charges. This is money straight back in your pocket and usually the fastest win available.",
+          "Build the one-week buffer in whatever increments you can, even $10 or $15 a week. The amount matters less than the account never hitting zero.",
+          "Start one sinking fund, for whichever irregular cost has hurt you most in the past two years.",
+          "Only then worry about paying extra toward debt or building the fund out to three months.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "And if you work through all of that and the math still does not close, the problem is income, not budgeting. The honest next step is more hours, better-paid work, or a benefit you are entitled to and not claiming. A budget makes a tight income survivable. It cannot make an impossible one work, and anyone telling you otherwise is selling something.",
+      },
+      {
+        type: "example",
+        content: "Take-home pay: $2,600 a month, paid every two weeks on the 5th and 20th. Rent $950 due on the 1st, so rent was always late. Fixed bills $410. Groceries and transport $620. Debt minimums $180. Before: the remaining $440 was unassigned, gone by week two, and the rent gap went on a card. After: the phone and insurance dates were moved to the 22nd, which closed the rent gap. The $440 was split into $150 buffer, $90 sinking funds (car $40, dentist $25, holidays $25), $100 extra debt and $100 personal spending. Same income, nothing cut. The buffer reached $500 in just over three months and the card stopped being used for timing.",
+      },
+      {
+        type: "tip",
+        content: "Measure progress by how long your money lasts, not by how much you saved. Going from broke on day three to broke on day nine is the real win, because day nine is where the overdraft fees stop.",
+      },
+      {
+        type: "heading",
+        content: "How Long This Actually Takes",
+      },
+      {
+        type: "paragraph",
+        content: "The timing fixes work immediately, in the first month. The one-week buffer usually takes two to four months. Getting a full month ahead, where this month is paid with last month's money, commonly takes anywhere from six months to two years depending on how much room you have. That last one is the real finish line, because once you are a month ahead, a late paycheck or a bad week stops being an emergency at all.",
+      },
+      {
+        type: "keyLesson",
+        content: "Write every bill against its due date, move the dates that clash with your paydays, build one week of buffer before anything else, assign every dollar before payday, and start one sinking fund for the irregular cost that has hurt you most.",
+      },
+      {
+        type: "paragraph",
+        content: "If you would rather have the worksheets than build them yourself, the Paycheck Breakdown Toolkit walks through allocating a single paycheck, and the 2-Paycheck Budget System covers which bills to pay from which check when you are paid every two weeks. Both are $19. The free budget calculator will give you a rough starting split in a couple of minutes if you want to test the idea first.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+  "paycheck-breakdown-toolkit": {
+    slug: "paycheck-breakdown-toolkit",
+    title: "Paycheck Breakdown: Where Your Money Actually Goes",
+    subtitle: "What your paycheck is really worth once the fixed costs come out, and the 48-hour payday ritual that stops it disappearing.",
+    keyLesson: "Your paycheck is not one number, it is three. Gross pay, take-home pay, and what is left after the costs you cannot avoid. That third number is the only one you actually get to make decisions with, and most people have never worked it out.",
+    sections: [
+      {
+        type: "heading",
+        content: "What Your Paycheck Is Actually Worth",
+      },
+      {
+        type: "paragraph",
+        content: "Ask most people what they earn and they will tell you their salary. Ask what they can spend and they usually cannot say. That gap is where the stress lives, because decisions get made against a number that was never available in the first place.",
+      },
+      {
+        type: "list",
+        content: "There are three numbers, and they are very different:",
+        items: [
+          "Gross pay. What the job is advertised at. You never see this money.",
+          "Take-home pay. What lands in the account after tax, insurance and retirement deductions. Usually somewhere between 70 and 85 percent of gross.",
+          "Free money. What remains after housing, utilities, transport, insurance, debt minimums and groceries. This is the only number you can genuinely make choices with, and it is often shockingly small.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "A $48,000 salary might be $3,200 a month in the account and $380 of genuinely free money. Knowing the $380 is not depressing, it is useful. It is the difference between a plan that works and a plan built on a number that does not exist.",
+      },
+      {
+        type: "heading",
+        content: "Where the Money Actually Goes",
+      },
+      {
+        type: "paragraph",
+        content: "When people say they do not know where it went, they are usually missing one of four buckets. Three of them are easy to see. The fourth is the one that does the damage.",
+      },
+      {
+        type: "list",
+        content: "Every dollar you spend falls into one of these:",
+        items: [
+          "Fixed costs. Same amount, same date, every month. Rent, insurance, phone, loan minimums. Easy to list, hard to change quickly.",
+          "Variable costs. Groceries, gas, utilities, household supplies. The amount moves, but the category is predictable, and this is where most of the controllable money sits.",
+          "Irregular costs. Car registration, repairs, dentist, annual subscriptions, holidays, back-to-school. They are not monthly, so they never make it into a monthly budget, and then they arrive as emergencies.",
+          "Invisible costs. Subscriptions you forgot, app charges, delivery fees, bank fees, the $6 taps that leave no impression. Individually trivial, collectively often $150 to $300 a month.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "The irregular and invisible buckets are where almost all the mystery money sits. If you have ever balanced your fixed and variable spending carefully and still come up short, that is why.",
+      },
+      {
+        type: "heading",
+        content: "The 48-Hour Rule",
+      },
+      {
+        type: "paragraph",
+        content: "Every dollar of a paycheck gets a job within 48 hours of it landing. Not spent, assigned. Written down, moved to the right account, or scheduled.",
+      },
+      {
+        type: "paragraph",
+        content: "Forty-eight hours is deliberate. Money that sits unassigned in a checking account stops feeling like rent or car repairs and starts feeling like available balance, and available balance gets spent. The window is short enough that the money still feels accounted for, and long enough that you are not doing paperwork the moment you get paid.",
+      },
+      {
+        type: "list",
+        content: "Inside the 48 hours, in this order:",
+        items: [
+          "Move money for bills due before your next payday out of the spending account, or schedule those payments now.",
+          "Move savings and sinking fund amounts out. Out of sight is the entire point. Money you can see is money you can spend.",
+          "Set the amount for groceries, gas and anything else variable, and know what the number is before you shop.",
+          "Whatever is genuinely left over gets named before it gets touched.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Your Payday Ritual, In About Fifteen Minutes",
+      },
+      {
+        type: "paragraph",
+        content: "The same five steps, every payday, until you stop having to think about it. This is a routine, not a project, and it stops being effortful after the third or fourth time.",
+      },
+      {
+        type: "list",
+        content: "Repeat every payday:",
+        items: [
+          "Write down the exact amount that landed. Not roughly. Exactly.",
+          "Pay or schedule the fixed bills that fall before your next payday. Rent, utilities, car payment, insurance.",
+          "Set the amounts for variable spending: groceries, gas, personal spending.",
+          "Move savings and debt payments out now, not at the end of the month when nothing is left.",
+          "Note what remains and decide what it is for before it disappears.",
+        ],
+      },
+      {
+        type: "tip",
+        content: "Do the ritual on payday evening, not payday morning. Morning-you is optimistic about the week ahead. Evening-you has already seen the bank balance and is more honest about it.",
+      },
+      {
+        type: "heading",
+        content: "What to Do With What Is Left",
+      },
+      {
+        type: "paragraph",
+        content: "Leftover money with no instructions is money you will not see again. Decide the priority order once, write it down, and then you are not making a fresh decision every two weeks when you are tired.",
+      },
+      {
+        type: "list",
+        content: "A priority order that works for most people:",
+        items: [
+          "Emergency savings, until you have at least one week of essential spending set aside.",
+          "A buffer for the bills you know are coming but have not been charged yet.",
+          "Extra payments on your highest-interest debt.",
+          "Long-term savings and retirement beyond anything taken from payroll.",
+          "Personal spending, assigned deliberately rather than by default.",
+        ],
+      },
+      {
+        type: "example",
+        content: "Take-home pay: $1,600 per paycheck, paid every two weeks. The 48-hour pass looks like this. Fixed bills due before the next check: rent half $600, phone $55, car insurance $95, loan minimum $70. That is $820 moved or scheduled straight away. Variable: groceries $260, gas $110, household $40. That is $410, set aside. Savings and sinking funds: emergency $100, car repairs $40, dentist $25. That is $165, moved out of checking. Remaining: $205, named as $125 personal spending and $80 extra toward the card. Assigned: $1,600. Unassigned: $0. Nothing was cut and nothing was given up. The money simply has instructions now.",
+      },
+      {
+        type: "heading",
+        content: "Why This Works When Tracking Does Not",
+      },
+      {
+        type: "paragraph",
+        content: "Tracking tells you what already happened. It is a receipt. By the time an app shows you that groceries ran $200 over, the $200 is gone and the information only makes you feel worse.",
+      },
+      {
+        type: "paragraph",
+        content: "Allocating happens first, while the money is still there and the decision is still live. It is the same fifteen minutes, spent at the point where it can change the outcome rather than the point where it can only describe it. That is the whole difference, and it is why people who allocate tend to stick with it while people who only track quietly give up around month three.",
+      },
+      {
+        type: "keyLesson",
+        content: "Work out your three numbers, assign every dollar within 48 hours of payday, move savings out of sight immediately, and decide the priority order for leftover money once rather than every time.",
+      },
+      {
+        type: "paragraph",
+        content: "The Paycheck Breakdown Toolkit is the printable version of this: a payday quick-start checklist, a paycheck allocation worksheet, a 50/30/20 spending guide, a fixed-versus-variable expense tracker and a leftover money plan with the priority order laid out. Six pages, $19, and reusable every payday. The free budget calculator is a reasonable place to start if you want to see your split before buying anything.",
+      },
+      {
+        type: "cta",
+        ctaType: "toolkit",
+      },
+    ],
+  },
+  "financial-goals": {
+    slug: "financial-goals",
+    title: "Setting Financial Goals That Actually Happen",
+    subtitle: "How to turn a vague intention into an amount, a date and a weekly transfer, plus the five goals worth hitting before 40.",
+    keyLesson: "A financial goal needs three things to be real: an amount, a date, and an automatic transfer that funds it. Without all three it is an intention, and intentions get funded with whatever is left over, which is nothing.",
+    sections: [
+      {
+        type: "heading",
+        content: "Why Most Financial Goals Never Happen",
+      },
+      {
+        type: "paragraph",
+        content: "Save more. Pay off the card. Buy a house eventually. These are not goals, they are directions, and you cannot tell at any point whether you are succeeding or failing at one. That ambiguity is comfortable, which is exactly why they survive for years without progress.",
+      },
+      {
+        type: "paragraph",
+        content: "The other reason is funding. Most goals are funded with whatever is left at the end of the month. There is never anything left at the end of the month. A goal that depends on leftovers is a goal that depends on luck.",
+      },
+      {
+        type: "heading",
+        content: "What Makes a Goal Real",
+      },
+      {
+        type: "list",
+        content: "Four tests. A goal that fails any of them will not happen:",
+        items: [
+          "It has a specific amount. Not more savings. $2,400.",
+          "It has a date. Not someday. By next September. The date is what turns the amount into a weekly number.",
+          "It is funded automatically, on payday, before anything else can claim the money.",
+          "It is one of no more than two or three active goals. Six goals funded at $20 each all finish in four years. One funded at $120 finishes in eight months, and finishing is what builds the habit.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Short-Term Versus Long-Term Goals",
+      },
+      {
+        type: "paragraph",
+        content: "The time horizon decides where the money lives, which matters more than most people realize. Money you need in eight months has no business being somewhere it can drop 20 percent.",
+      },
+      {
+        type: "list",
+        content: "Three horizons, three homes:",
+        items: [
+          "Short-term, under a year. Emergency fund, car repairs, holidays, a course. Keep it in a plain savings account you can reach in a day. The interest rate is not the point. Certainty is.",
+          "Medium-term, one to five years. A car, a house deposit, a wedding, a career change. A high-yield savings account or a short-term certificate. Still not the stock market, because you cannot wait out a bad year if the car dies in year two.",
+          "Long-term, five years and beyond. Retirement, a child's education. This is where investing belongs, because time is what makes the volatility survivable.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: "Most people get this backward: they keep long-term money in cash where inflation erodes it, and short-term money somewhere volatile where a bad quarter arrives exactly when they need it.",
+      },
+      {
+        type: "heading",
+        content: "Five Financial Goals Worth Hitting Before 40",
+      },
+      {
+        type: "paragraph",
+        content: "The order matters a great deal more than the age does. If you are past 40 and starting here, you are starting from the same step one as everyone else, and the sequence works identically. The only thing the age adds is time, and the order is what makes the time count.",
+      },
+      {
+        type: "subheading",
+        content: "1. A starter emergency fund of $500 to $1,000",
+      },
+      {
+        type: "paragraph",
+        content: "First, before debt payoff, before anything. Without it every unexpected cost goes on a card and undoes whatever progress you made. This is the goal that makes the other four possible.",
+      },
+      {
+        type: "subheading",
+        content: "2. Clear the high-interest debt",
+      },
+      {
+        type: "paragraph",
+        content: "Anything above roughly 10 percent, which usually means credit cards, payday loans and some personal loans. Paying off a card at 22 percent is a guaranteed 22 percent return, which is better than anything you will reliably find anywhere else.",
+      },
+      {
+        type: "subheading",
+        content: "3. Three months of essential expenses saved",
+      },
+      {
+        type: "paragraph",
+        content: "Essential, not total. Rent, utilities, food, transport, insurance, minimum payments. Not streaming and dining out, because in the month you need this fund those stop anyway. Three months of essentials is a much smaller and more reachable number than three months of your current spending.",
+      },
+      {
+        type: "subheading",
+        content: "4. Retirement contributions, starting with any employer match",
+      },
+      {
+        type: "paragraph",
+        content: "If your employer matches contributions, that match is part of your pay, and not claiming it is declining a raise. Start there even while you are working on the other goals. After the match, aim to raise the percentage by one point each year, or each time you get a raise, which you will not feel.",
+      },
+      {
+        type: "subheading",
+        content: "5. One named medium-term goal",
+      },
+      {
+        type: "paragraph",
+        content: "A house deposit, a reliable car, a qualification, time off to care for someone. One, named, with a number and a date. This is the goal that makes the first four feel worth doing, and leaving it out is why purely defensive plans get abandoned.",
+      },
+      {
+        type: "heading",
+        content: "Turning a Goal Into a Weekly Number",
+      },
+      {
+        type: "paragraph",
+        content: "This is the step that does the work. Take the amount, subtract what you already have, divide by the number of weeks until the date. That result is the only number you have to look at from then on.",
+      },
+      {
+        type: "example",
+        content: "Goal: $3,000 for a reliable used car by next August. Today is October, so that is 44 weeks. Already saved: $400. Remaining: $2,600 over 44 weeks is $59 a week. If $59 is not available, you have three honest options and only three: move the date out, lower the amount, or find the $59. December: $59 a week was not realistic, so the date moved to November and the weekly number dropped to $42. The goal did not fail. It got corrected, which is a different thing entirely.",
+      },
+      {
+        type: "tip",
+        content: "Set the transfer for the day after payday, not the day before the next one. Money that has to survive two weeks before being saved does not survive two weeks.",
+      },
+      {
+        type: "heading",
+        content: "Reviewing Without Abandoning",
+      },
+      {
+        type: "paragraph",
+        content: "Check your goals once a month, for about ten minutes. You are only asking two questions: did the transfer actually happen, and is the date still realistic? If a goal has stalled for two months running, the number was wrong, not you. Lower it or move the date and keep going.",
+      },
+      {
+        type: "paragraph",
+        content: "A goal you adjusted four times and finished beats a goal you set perfectly and abandoned in March. Nobody is grading the plan. The only thing that counts is whether the money is there when you need it.",
+      },
+      {
+        type: "keyLesson",
+        content: "Give every goal an amount and a date, divide by the weeks between now and then, automate that transfer for the day after payday, and keep no more than two or three goals active at once.",
+      },
+      {
+        type: "paragraph",
+        content: "The free savings goal calculator will do the weekly maths for you in about thirty seconds, including what happens when you change the date. If you want the goal-setting worksheets on paper, several of the $19 toolkits include them.",
+      },
+      {
+        type: "cta",
+        ctaType: "calculator",
+      },
+    ],
+  },
 };
 export function getArticleContent(slug: string): ArticleContent | undefined {
   return ARTICLE_CONTENT[slug];
