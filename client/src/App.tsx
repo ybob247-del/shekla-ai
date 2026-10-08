@@ -36,9 +36,13 @@ function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">S</span>
-              </div>
+              <img
+                src="/logo-mark.png"
+                alt=""
+                width={32}
+                height={32}
+                className="w-8 h-8 rounded-full"
+              />
               <span className="font-bold text-gray-900 text-lg">Shekla AI</span>
             </div>
           </Link>
@@ -129,9 +133,13 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">S</span>
-              </div>
+              <img
+                src="/logo-mark.png"
+                alt=""
+                width={28}
+                height={28}
+                className="w-7 h-7 rounded-full"
+              />
               <span className="font-bold text-white">Shekla AI</span>
             </div>
             <p className="text-sm leading-relaxed">
