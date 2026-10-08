@@ -89,6 +89,21 @@ function DebtPayoffCalculator() {
         Calculate Payoff
       </button>
 
+      {/* This one handles a single balance. Most people have several, and which
+          one to attack first is the question that actually saves them money. */}
+      <div className="mb-5 bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+        <p className="text-sm text-emerald-900 font-semibold mb-1">Got more than one debt?</p>
+        <p className="text-sm text-emerald-800 mb-2">
+          The full planner takes all of them at once and shows whether paying the highest rate
+          or the smallest balance first saves you more.
+        </p>
+        <Link href="/debt-payoff">
+          <a className="text-sm font-semibold text-emerald-700 underline hover:text-emerald-900">
+            Open the debt payoff planner →
+          </a>
+        </Link>
+      </div>
+
       {result && (
         <div className="space-y-3">
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 flex justify-between">

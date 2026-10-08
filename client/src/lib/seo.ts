@@ -40,6 +40,14 @@ const CORE_METADATA: Record<string, SeoMetadata> = {
       "budget calculator, debt payoff calculator, paycheck calculator, emergency fund calculator, personal finance tools",
     canonical: "/calculators",
   },
+  "/debt-payoff": {
+    title: "Free Debt Payoff Calculator: Avalanche vs. Snowball | Shekla AI",
+    description:
+      "Enter your debts and see when you would be debt free, what the interest costs, and whether paying the highest rate or the smallest balance first saves more. Free, no sign-up.",
+    keywords:
+      "debt payoff calculator, debt avalanche vs snowball, debt free date calculator, credit card payoff calculator, how long to pay off debt",
+    canonical: "/debt-payoff",
+  },
   "/learn": {
     title: "Personal Finance Guides & Budgeting Articles | Shekla AI",
     description:

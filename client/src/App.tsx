@@ -7,6 +7,7 @@ import Assessment from "@/pages/Assessment";
 import Learn from "@/pages/Learn";
 import ArticlePage from "@/pages/ArticlePage";
 import Calculators from "@/pages/Calculators";
+import DebtPayoff from "@/pages/DebtPayoff";
 import Resources from "@/pages/Resources";
 import Insights from "@/pages/Insights";
 import TermsOfService from "@/pages/TermsOfService";
@@ -229,6 +230,7 @@ export default function App() {
           <Route path="/pricing" component={Pricing} />
           <Route path="/assessment" component={Assessment} />
           <Route path="/calculators" component={Calculators} />
+          <Route path="/debt-payoff" component={DebtPayoff} />
           <Route path="/learn" component={Learn} />
           <Route path="/learn/:slug" component={ArticlePage} />
           <Route path="/insights" component={Insights} />

@@ -20,6 +20,16 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
 app.use("/api/webhook", express.raw({ type: "application/json" }));
 app.use(express.json());
 
+// ─── Debt payoff planner ─────────────────────────────────────────────────────
+// In production this is a Vercel function at api/debt/plan.ts. This dev server
+// predates that convention and routes by hand, so the same handler is mounted
+// here too. Without it the planner works live and 404s locally, which is the
+// sort of gap that gets found by a customer rather than by us.
+app.post("/api/debt/plan", async (req, res) => {
+  const { default: handler } = await import("../api/debt/plan.js");
+  await handler(req as never, res as never);
+});
+
 // ─── Health Check ───────────────────────────────────────────────────────────
 app.get("/api/health", (_req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
