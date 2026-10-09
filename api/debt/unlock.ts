@@ -143,6 +143,21 @@ export default async function handler(req: ApiRequest, res: ApiResponse): Promis
 
   const ai = await aiNarrative(facts);
 
+  // An access log, not a record of the plan. Digital-goods disputes turn on
+  // being able to show the buyer received what they paid for, and this is the
+  // evidence for that: session, time, and whether delivery succeeded. It
+  // deliberately holds no balances, rates or payoff figures, so it is a log
+  // rather than a copy of anyone's finances.
+  console.log(
+    "[debt/unlock] delivered",
+    JSON.stringify({
+      session: sessionId,
+      at: new Date().toISOString(),
+      months: best.months,
+      narrative: ai ? "model" : "written",
+    }),
+  );
+
   res.status(200).json({
     ok: true,
     recommended: result.recommended,
