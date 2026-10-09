@@ -18,6 +18,7 @@
  * thing this site could hold, and the surest way never to leak them is never
  * to keep them.
  */
+import { rateLimited } from "../_rateLimit";
 import {
   compare,
   DebtInputError,
@@ -31,9 +32,12 @@ import {
 interface ApiRequest {
   method?: string;
   body?: unknown;
+  headers: Record<string, string | string[] | undefined>;
+  socket?: { remoteAddress?: string };
 }
 
 interface ApiResponse {
+  setHeader: (name: string, value: string) => void;
   status: (code: number) => ApiResponse;
   json: (body: unknown) => void;
 }
@@ -54,6 +58,14 @@ function summarise(r: PayoffResult) {
 export default async function handler(req: ApiRequest, res: ApiResponse): Promise<void> {
   if (req.method !== "POST") {
     res.status(405).json({ error: "Method not allowed" });
+    return;
+  }
+
+  // This endpoint costs nothing per call: the maths is local and no model is
+  // involved. The limit is only to stop someone hammering it for CPU, so it is
+  // generous. The paid narrative endpoint will sit behind Stripe, which is a
+  // far harder gate than any rate limit.
+  if (await rateLimited(req, res, { name: "debt-plan", limit: 30, windowSeconds: 3600 })) {
     return;
   }
 
