@@ -4690,7 +4690,7 @@ export const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
       {
         type: "paragraph",
-        content: "To see your own numbers, the free debt payoff calculator on the Calculators page shows how long your debts will take at the payment you can afford. If you want the whole process laid out on paper, with a debt list organizer, a snowball-or-avalanche worksheet, a monthly payoff plan and a progress tracker, that is what the Debt Payoff Plan Builder toolkit covers.",
+        content: "To stop guessing and see your own numbers, the free debt payoff planner does this comparison for you: enter every debt and it works out your payoff date, the total interest each way, and which order saves you more. That part costs nothing. If you would rather have the whole process on paper, with a debt list organizer, a snowball-or-avalanche worksheet, a monthly payoff plan and a progress tracker, that is what the Debt Payoff Plan Builder toolkit covers.",
       },
       {
         type: "cta",

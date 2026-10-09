@@ -91,6 +91,39 @@ export default function Resources() {
           </div>
         )}
 
+        {/* The interactive plan sits alongside the printable toolkits rather than
+            replacing the Debt Payoff Plan PDF: same price, same problem, but one
+            is a worksheet you fill in and the other does the arithmetic for you. */}
+        <div className="mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Built For You, Not Printed</h2>
+          <div className="bg-gray-900 text-white rounded-2xl p-7 sm:p-9">
+            <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <span className="inline-block bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                  NEW
+                </span>
+                <h3 className="text-2xl font-bold">Personalised Debt Payoff Plan</h3>
+              </div>
+              <p className="text-3xl font-extrabold">$19</p>
+            </div>
+            <p className="text-gray-300 mb-5 leading-relaxed">
+              Enter your debts and see your payoff date, what the interest costs you, and
+              whether paying the highest rate or the smallest balance first saves more. That
+              part is free. $19 unlocks the month-by-month schedule built from your own
+              numbers, with the reasoning written out.
+            </p>
+            <Link
+              href="/debt-payoff"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-7 py-3 rounded-xl transition-colors"
+            >
+              See your payoff date free →
+            </Link>
+            <p className="text-gray-500 text-xs mt-4">
+              Nothing is stored. Your balances stay in your browser and are never saved.
+            </p>
+          </div>
+        </div>
+
         {/* Individual Toolkits */}
         <div className="mb-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Individual Toolkits</h2>
