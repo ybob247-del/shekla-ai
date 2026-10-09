@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
 /**
- * The free half of the debt payoff plan generator.
+ * The debt payoff plan generator.
  *
- * Everything on this page is computed by code on the server (api/debt/_engine.ts),
- * never by a language model. The paid plan adds the month-by-month schedule and a
- * written explanation; the numbers here are the proof that it is worth having.
+ * Every number here is computed by code on the server (api/debt/_engine.ts),
+ * never by a language model. The free view shows the payoff date and the saving;
+ * $19 adds the month-by-month schedule and a written explanation of it.
  *
- * Debts are held in component state and posted per request. Nothing is saved,
- * here or on the server.
+ * Nothing is stored on the server. The debts live in component state, and the
+ * one exception is the handoff to Stripe: paying means leaving the site, so the
+ * figures are parked in this browser's localStorage and picked back up on the
+ * way in. They never travel to Stripe and they are cleared once the plan opens.
  */
 
 interface DebtRow {
@@ -42,6 +44,25 @@ interface PlanOk {
   snowball: Summary;
 }
 
+interface UnlockedPlan {
+  ok: true;
+  duration: string;
+  debtFreeBy: string;
+  months: number;
+  totalInterestCents: number;
+  monthlyOutlayCents: number;
+  order: { name: string; month: number }[];
+  schedule: {
+    month: number;
+    focus: string | null;
+    totalPaidCents: number;
+    remainingCents: number;
+    payments: { name: string; paidCents: number; interestCents: number; balanceCents: number }[];
+  }[];
+  narrative: string[];
+  narrativeSource: string;
+}
+
 interface PlanFail {
   ok: false;
   reason: string;
@@ -50,6 +71,8 @@ interface PlanFail {
 
 const usd = (cents: number) =>
   `$${Math.round(cents / 100).toLocaleString("en-US")}`;
+
+const DRAFT_KEY = "shekla.debtPlan.draft";
 
 let nextId = 4;
 const BLANK: DebtRow[] = [
@@ -64,6 +87,83 @@ export default function DebtPayoff() {
   const [result, setResult] = useState<PlanOk | null>(null);
   const [problem, setProblem] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [plan, setPlan] = useState<UnlockedPlan | null>(null);
+  const [unlocking, setUnlocking] = useState(false);
+  const [unlockProblem, setUnlockProblem] = useState<string | null>(null);
+
+  // Coming back from Stripe. The debts were parked before the redirect because
+  // they are never sent to Stripe, so they have to be picked up again here.
+  useEffect(() => {
+    const sessionId = new URLSearchParams(window.location.search).get("session_id");
+    if (!sessionId) return;
+
+    let draft: { debts: unknown; extraPerMonth: number } | null = null;
+    try {
+      const raw = window.localStorage.getItem(DRAFT_KEY);
+      if (raw) draft = JSON.parse(raw);
+    } catch {
+      draft = null;
+    }
+    if (!draft) {
+      setUnlockProblem(
+        "Your payment went through, but this browser no longer has the debts you entered. Enter them again and the plan will open without charging you a second time.",
+      );
+      return;
+    }
+
+    setUnlocking(true);
+    fetch("/api/debt/unlock", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sessionId, ...draft }),
+    })
+      .then((r) => r.json())
+      .then((data: UnlockedPlan | { ok: false; message: string }) => {
+        if (data.ok) {
+          setPlan(data);
+          try {
+            window.localStorage.removeItem(DRAFT_KEY);
+          } catch {
+            /* nothing to clean up */
+          }
+        } else {
+          setUnlockProblem(data.message);
+        }
+      })
+      .catch(() =>
+        setUnlockProblem("Your payment went through but the plan did not load. Refresh and it will try again."),
+      )
+      .finally(() => setUnlocking(false));
+  }, []);
+
+  async function buy() {
+    setUnlockProblem(null);
+    const debts = rows
+      .filter((r) => r.balance.trim() !== "")
+      .map((r) => ({
+        name: r.name.trim() || "Debt",
+        balance: Number(r.balance),
+        apr: Number(r.apr || 0),
+        minimum: Number(r.minimum),
+      }));
+    try {
+      window.localStorage.setItem(
+        DRAFT_KEY,
+        JSON.stringify({ debts, extraPerMonth: Number(extra || 0) }),
+      );
+    } catch {
+      setUnlockProblem("This browser is blocking storage, so the plan cannot be saved across checkout.");
+      return;
+    }
+    try {
+      const response = await fetch("/api/debt/checkout", { method: "POST" });
+      const data = (await response.json()) as { url?: string; error?: string };
+      if (data.url) window.location.href = data.url;
+      else setUnlockProblem(data.error || "Could not start checkout.");
+    } catch {
+      setUnlockProblem("Could not reach checkout. Try again in a moment.");
+    }
+  }
 
   const update = (id: number, field: keyof DebtRow, value: string) =>
     setRows((r) => r.map((row) => (row.id === id ? { ...row, [field]: value } : row)));
@@ -132,6 +232,80 @@ export default function DebtPayoff() {
 
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
+          {unlocking && (
+            <div className="bg-white border border-gray-200 rounded-2xl p-7 mb-8 text-center">
+              <p className="text-gray-700 font-semibold">Building your plan…</p>
+              <p className="text-gray-500 text-sm mt-1">This takes a few seconds.</p>
+            </div>
+          )}
+
+          {unlockProblem && (
+            <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
+              <p className="text-amber-900 text-sm">{unlockProblem}</p>
+            </div>
+          )}
+
+          {plan && (
+            <div className="mb-10 space-y-6">
+              <div className="bg-emerald-600 text-white rounded-2xl p-7 text-center">
+                <p className="text-emerald-100 text-sm uppercase tracking-wide font-semibold mb-1">
+                  Your plan
+                </p>
+                <p className="text-3xl font-extrabold">Debt free by {plan.debtFreeBy}</p>
+                <p className="text-emerald-100 mt-1">
+                  {plan.duration} at {usd(plan.monthlyOutlayCents)} a month
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-2xl p-7 space-y-4">
+                {plan.narrative.map((para, i) => (
+                  <p key={i} className="text-gray-800 leading-relaxed">
+                    {para}
+                  </p>
+                ))}
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 overflow-x-auto">
+                <h3 className="font-bold text-gray-900 mb-1">Month by month</h3>
+                <p className="text-gray-500 text-sm mb-4">
+                  Pay these amounts each month. &ldquo;Focus&rdquo; is where the extra goes.
+                </p>
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="text-left text-gray-500 border-b border-gray-200">
+                      <th className="py-2 pr-3 font-semibold">Month</th>
+                      <th className="py-2 pr-3 font-semibold">Focus</th>
+                      <th className="py-2 pr-3 font-semibold text-right">Paid</th>
+                      <th className="py-2 font-semibold text-right">Left owing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {plan.schedule.map((m) => (
+                      <tr key={m.month} className="border-b border-gray-100 last:border-0">
+                        <td className="py-2 pr-3 text-gray-600">{m.month}</td>
+                        <td className="py-2 pr-3 text-gray-900 font-medium">{m.focus}</td>
+                        <td className="py-2 pr-3 text-right text-gray-900">{usd(m.totalPaidCents)}</td>
+                        <td className="py-2 text-right text-gray-600">{usd(m.remainingCents)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <button
+                  type="button"
+                  onClick={() => window.print()}
+                  className="mt-5 w-full border border-gray-300 text-gray-700 font-semibold py-2.5 rounded-xl hover:bg-gray-50 transition-colors"
+                >
+                  Print or save as PDF
+                </button>
+              </div>
+
+              <p className="text-center text-gray-400 text-xs">
+                Print this now if you want to keep it. Nothing was saved on our side, so we cannot
+                send it to you again.
+              </p>
+            </div>
+          )}
+
           <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8">
             <h2 className="text-xl font-bold text-gray-900 mb-1">Your debts</h2>
             <p className="text-gray-500 text-sm mb-6">
@@ -313,11 +487,14 @@ export default function DebtPayoff() {
                 </p>
                 <button
                   type="button"
-                  disabled
-                  className="w-full bg-gray-200 text-gray-500 font-bold py-3.5 rounded-xl cursor-not-allowed"
+                  onClick={buy}
+                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 rounded-xl transition-colors"
                 >
-                  Coming soon
+                  Unlock my plan — $19
                 </button>
+                <p className="text-gray-500 text-xs text-center mt-2">
+                  One payment. No subscription. Your figures are not sent to the payment page.
+                </p>
                 <p className="text-gray-400 text-xs text-center mt-3">
                   In the meantime, the{" "}
                   <Link href="/resources" className="underline hover:text-gray-600">
