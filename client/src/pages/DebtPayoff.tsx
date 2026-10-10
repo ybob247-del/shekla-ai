@@ -555,6 +555,22 @@ export default function DebtPayoff() {
                   which debt every single month until you hit zero, written out in your own
                   figures, plus what to do in a month you cannot make the extra payment.
                 </p>
+                {/* Above the button and hard to skim past, not grey text
+                    underneath it. Someone who buys without registering this is
+                    the person who later says they never received anything, and
+                    that is a dispute we would deserve to lose. */}
+                <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-5 mb-5">
+                  <p className="text-amber-900 font-bold text-base mb-1.5">
+                    Read this before you pay
+                  </p>
+                  <p className="text-amber-900 text-sm leading-relaxed">
+                    We never store your balances, so{" "}
+                    <strong>there is no copy of this plan on our side.</strong> We cannot email it
+                    to you and we cannot send it again later. When it opens, download it straight
+                    away. It will reopen on this browser for 60 days, but not on your phone, and
+                    not if you clear your browsing data.
+                  </p>
+                </div>
                 <button
                   type="button"
                   onClick={buy}
@@ -562,11 +578,8 @@ export default function DebtPayoff() {
                 >
                   Unlock my plan — $19
                 </button>
-                <p className="text-gray-500 text-xs text-center mt-3 leading-relaxed">
-                  One payment, no subscription. Your figures are never sent to the payment page and
-                  never stored by us, which also means{" "}
-                  <strong className="text-gray-700">we cannot email the plan to you or send it again</strong>
-                  {" "}— you download it when it opens.
+                <p className="text-gray-500 text-xs text-center mt-3">
+                  One payment, no subscription. Your figures are never sent to the payment page.
                 </p>
                 <p className="text-gray-400 text-xs text-center mt-3">
                   In the meantime, the{" "}
