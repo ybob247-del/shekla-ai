@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
+import { track } from "@/lib/analytics";
 
 /**
  * The debt payoff plan generator.
@@ -178,6 +179,12 @@ export default function DebtPayoff() {
       .then((data: UnlockedPlan | { ok: false; message: string }) => {
         if (data.ok) {
           setPlan(data);
+          track("purchase", {
+            item_name: "debt-payoff-plan",
+            value: 19,
+            currency: "USD",
+            narrative_source: data.narrativeSource,
+          });
           try {
             window.localStorage.removeItem(DRAFT_KEY);
             window.localStorage.setItem(PLAN_KEY, JSON.stringify({ at: Date.now(), plan: data }));
@@ -216,7 +223,10 @@ export default function DebtPayoff() {
     try {
       const response = await fetch("/api/debt/checkout", { method: "POST" });
       const data = (await response.json()) as { url?: string; error?: string };
-      if (data.url) window.location.href = data.url;
+      if (data.url) {
+        track("begin_checkout", { item_name: "debt-payoff-plan", value: 19, currency: "USD" });
+        window.location.href = data.url;
+      }
       else setUnlockProblem(data.error || "Could not start checkout.");
     } catch {
       setUnlockProblem("Could not reach checkout. Try again in a moment.");
@@ -260,6 +270,14 @@ export default function DebtPayoff() {
       const data = (await response.json()) as PlanOk | PlanFail;
       if (data.ok) {
         setResult(data);
+        // The top of this funnel. Without it there is no way to tell whether
+        // Pinterest traffic reaches the tool at all, which is the question
+        // the whole channel decision rests on.
+        track("debt_plan_calculated", {
+          debts: debts.length,
+          has_extra: Number(extra || 0) > 0,
+          recommended: data.recommended,
+        });
       } else {
         setProblem(data.message);
       }
@@ -351,7 +369,10 @@ export default function DebtPayoff() {
                 <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <button
                     type="button"
-                    onClick={() => downloadPlan(plan)}
+                    onClick={() => {
+                      track("debt_plan_downloaded");
+                      downloadPlan(plan);
+                    }}
                     className="w-full bg-gray-900 hover:bg-gray-800 text-white font-semibold py-2.5 rounded-xl transition-colors"
                   >
                     Download my plan
