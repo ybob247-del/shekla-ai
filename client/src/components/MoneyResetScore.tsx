@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { track } from "@/lib/analytics";
+import { startCheckout } from "@/lib/checkout";
 import {
   Select,
   SelectContent,
@@ -127,6 +128,66 @@ const TOOLKITS_PATH = "/resources";
 // Shown under the score. The result itself is never gated — the visitor already
 // has it — so this is an optional upgrade: keep the score and the rules that fix
 // it. Only promises what actually exists: the emailed recap and the checklist.
+// The score already works out which toolkit fits the answers given. Until now
+// that only produced a pill linking to the shop, which asks someone who has
+// just been told what their problem is to go and find the fix themselves.
+// This names the single best match and sells it on the spot, while the
+// diagnosis is still on screen.
+const TOOLKIT_IDS: Record<string, string> = {
+  "Paycheck Breakdown Toolkit": "paycheck-breakdown-toolkit",
+  "No-Overdraft System": "no-overdraft-system",
+  "2-Paycheck Budget System": "2-paycheck-budget-system",
+  "Bill Catch-Up Plan": "bill-catch-up-plan",
+  "Food Budget Reset Kit": "food-budget-reset-kit",
+  "Debt Payoff Plan": "debt-payoff-plan",
+  "Spending Cuts Habit Tracker": "spending-cuts-that-dont-hurt",
+  "Irregular Income Budget Kit": "irregular-income-budget-kit",
+  "Sinking Funds Kit": "sinking-funds-kit",
+  "Annual Bills Planner": "annual-bills-planner",
+};
+
+function TopPick({ toolkit, grade }: { toolkit: string; grade: string }) {
+  const [busy, setBusy] = useState(false);
+  const [failed, setFailed] = useState("");
+  const productId = TOOLKIT_IDS[toolkit];
+  if (!productId) return null;
+
+  return (
+    <div className="mb-6 border-2 border-amber-400 rounded-2xl p-5 bg-amber-50">
+      <p className="text-amber-800 text-xs font-bold uppercase tracking-wide mb-1">
+        Start here, based on your answers
+      </p>
+      <h4 className="font-bold text-gray-900 text-lg mb-1">{toolkit}</h4>
+      <p className="text-gray-700 text-sm mb-4">
+        A printable system for the exact problem your score flagged. One payment of $19,
+        instant download, yours to reuse every payday.
+      </p>
+      <button
+        type="button"
+        disabled={busy}
+        onClick={async () => {
+          setBusy(true);
+          setFailed("");
+          track("tripwire_click", { item_id: productId, grade });
+          try {
+            await startCheckout(productId);
+          } catch (error) {
+            setFailed(error instanceof Error ? error.message : "Could not start checkout.");
+            setBusy(false);
+          }
+        }}
+        className="w-full bg-amber-500 hover:bg-amber-600 disabled:opacity-60 text-white font-bold py-3 rounded-xl transition-colors"
+      >
+        {busy ? "Opening checkout…" : `Get the ${toolkit} — $19`}
+      </button>
+      {failed && <p className="text-red-600 text-xs mt-2">{failed}</p>}
+      <p className="text-gray-500 text-xs text-center mt-2">
+        Or see all ten and the $79 bundle on the Toolkits page.
+      </p>
+    </div>
+  );
+}
+
 function ScoreEmailCapture({ grade }: { grade: string }) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "done">("idle");
@@ -260,6 +321,10 @@ export default function MoneyResetScore() {
         )}
 
         <ScoreEmailCapture grade={result.grade} />
+
+        {result.toolkits.length > 0 && (
+          <TopPick toolkit={result.toolkits[0]} grade={result.grade} />
+        )}
 
         {result.toolkits.length > 0 && (
           <div className="mb-6">
