@@ -10,13 +10,41 @@ function DebtPayoffCalculator() {
   const [rate, setRate] = useState("");
   const [payment, setPayment] = useState("");
   const [result, setResult] = useState<{ months: number; totalInterest: number; totalPaid: number } | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const calculate = () => {
     const b = parseFloat(balance);
     const r = parseFloat(rate) / 100 / 12;
     const p = parseFloat(payment);
 
-    if (!b || !r || !p || p <= b * r) {
+    // Clear both first, or a stale result sits on screen under a new error.
+    setResult(null);
+    setError(null);
+
+    if (!Number.isFinite(b) || b <= 0) {
+      setError("Enter the balance you owe on this debt.");
+      return;
+    }
+    if (!Number.isFinite(r) || r < 0) {
+      setError("Enter the interest rate. Use 0 if this is a 0% card.");
+      return;
+    }
+    if (!Number.isFinite(p) || p <= 0) {
+      setError("Enter what you can put toward this debt each month.");
+      return;
+    }
+
+    // The payment has to beat one month of interest or the balance grows.
+    // This is the most common real case at card rates, so it gets a real answer
+    // rather than a dead button.
+    const monthlyInterest = b * r;
+    if (p <= monthlyInterest) {
+      setError(
+        `Interest alone is ${formatCurrency(monthlyInterest)} a month on this balance, so ` +
+          `${formatCurrency(p)} never clears it — the balance grows instead. You need at least ` +
+          `${formatCurrency(Math.ceil(monthlyInterest) + 1)} a month before it starts coming down. ` +
+          `That is arithmetic, not willpower.`
+      );
       return;
     }
 
@@ -30,6 +58,16 @@ function DebtPayoffCalculator() {
       remaining = remaining + interest - p;
       months++;
       if (remaining < 0) remaining = 0;
+    }
+
+    // Hit the cap rather than reaching zero — reporting 600 months here would be
+    // a made-up answer.
+    if (remaining > 0) {
+      setError(
+        `At ${formatCurrency(p)} a month this runs past 50 years, further than this calculator ` +
+          `models. A small increase to the payment changes that dramatically — try a higher figure.`
+      );
+      return;
     }
 
     setResult({ months, totalInterest, totalPaid: b + totalInterest });
@@ -103,6 +141,12 @@ function DebtPayoffCalculator() {
           </a>
         </Link>
       </div>
+
+      {error && (
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-3">
+          <p className="text-sm text-amber-900">{error}</p>
+        </div>
+      )}
 
       {result && (
         <div className="space-y-3">
