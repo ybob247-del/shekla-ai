@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { track } from "@/lib/analytics";
 import { startCheckout } from "@/lib/checkout";
 import {
@@ -265,6 +265,17 @@ export default function MoneyResetScore() {
   const [income, setIncome] = useState("");
   const [result, setResult] = useState<ScoreResult | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const resultRef = useRef<HTMLDivElement>(null);
+
+  // The result replaces the form, and the result is shorter. Without this the
+  // browser keeps the scroll offset from down by the submit button, so the
+  // visitor lands partway into the result — below their own score, on the
+  // toolkit offer. They came for the number; show them the number.
+  useEffect(() => {
+    if (submitted && result) {
+      resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [submitted, result]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -283,7 +294,7 @@ export default function MoneyResetScore() {
 
   if (submitted && result) {
     return (
-      <div className="bg-white rounded-2xl border border-gray-200 p-8 max-w-2xl mx-auto">
+      <div ref={resultRef} className="bg-white rounded-2xl border border-gray-200 p-8 max-w-2xl mx-auto scroll-mt-24">
         <div className="text-center mb-8">
           <div
             className={`inline-flex items-center justify-center w-24 h-24 rounded-full text-4xl font-bold mb-4 ${
